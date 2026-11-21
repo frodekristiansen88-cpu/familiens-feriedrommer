@@ -22,7 +22,11 @@
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Kløfter",
+      "Gangbroer"
+    ]
   },
   {
     "id": "6j44JRfV4V2GR65m",
@@ -1938,7 +1942,12 @@
       "distanceKm": 4.9,
       "confidence": "Foreløpig GPX – ikke kvalitetssikret"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Kløfter",
+      "Fosser",
+      "Familieturer"
+    ]
   },
   {
     "id": "6j44hhrCX9cjhC4F",
@@ -1963,12 +1972,16 @@
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Fosser",
+      "Skogsturer"
+    ]
   },
   {
     "id": "6j44j9m3j2Fw4M9m",
     "name": "Görlitz",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 51.1563185,
     "lng": 14.991018,
@@ -1986,12 +1999,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Historiske byer",
+      "Arkitektur"
+    ]
   },
   {
     "id": "6j44j9pcH2xMqPRF",
     "name": "Bad Wimpfen",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 49.2303439,
     "lng": 9.1621599,
@@ -2009,12 +2026,15 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Historiske byer"
+    ]
   },
   {
     "id": "6j44j9jwfWGpQ4xF",
     "name": "Kelheim",
-    "country": "",
+    "country": "Tyskland",
     "category": "Natur og utsikt",
     "lat": 48.91849,
     "lng": 11.8722777,
@@ -2032,12 +2052,15 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Elvelandskap"
+    ]
   },
   {
     "id": "6j44j9qRx4r7XFvm",
     "name": "Spreewald",
-    "country": "",
+    "country": "Tyskland",
     "category": "Natur og utsikt",
     "lat": 51.9532976,
     "lng": 13.8848784,
@@ -2055,12 +2078,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Kanaler",
+      "Natur"
+    ]
   },
   {
     "id": "6j44j9vqhqpx8vQF",
     "name": "Dahner Felsenland",
-    "country": "",
+    "country": "Tyskland",
     "category": "Fotturer",
     "lat": 49.1102539,
     "lng": 7.7705851,
@@ -2078,12 +2105,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Fjellformasjoner",
+      "Skogsturer"
+    ]
   },
   {
     "id": "6j44j9qQRrH5g29F",
     "name": "Upper Danube Valley",
-    "country": "",
+    "country": "Tyskland",
     "category": "Fotturer",
     "lat": 45.8025196,
     "lng": 18.8861614,
@@ -2101,12 +2132,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Elvelandskap",
+      "Utsiktspunkter"
+    ]
   },
   {
     "id": "6j44j9rFRHqHmchm",
     "name": "Amrum",
-    "country": "",
+    "country": "Tyskland",
     "category": "Natur og utsikt",
     "lat": 54.6602197,
     "lng": 8.3287701,
@@ -2124,12 +2159,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Øyer",
+      "Strender"
+    ]
   },
   {
     "id": "6j44j9vfMC3pPRGF",
     "name": "Schwerin",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 53.6288297,
     "lng": 11.4148038,
@@ -2147,12 +2186,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Slott",
+      "Historiske byer"
+    ]
   },
   {
     "id": "6j44j9xG32f3m6mF",
     "name": "Quedlinburg",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 51.7855428,
     "lng": 11.1519933,
@@ -2170,12 +2213,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Historiske byer",
+      "Arkitektur"
+    ]
   },
   {
     "id": "6j44jC2Q3WHV2vwF",
     "name": "Cochem",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 50.1483916,
     "lng": 7.1663195,
@@ -2193,12 +2240,16 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Slott",
+      "Historiske byer"
+    ]
   },
   {
     "id": "6j44j9wqwW2J7vMm",
     "name": "Goslar",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 51.9059936,
     "lng": 10.4266284,
@@ -2216,12 +2267,15 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Historiske byer"
+    ]
   },
   {
     "id": "6j44jC2rPpxMR9Jm",
     "name": "Lichtenstein Castle",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 50.1416891,
     "lng": 10.7793294,
@@ -2239,12 +2293,15 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Slott"
+    ]
   },
   {
     "id": "6j44jC55GJfH4j6F",
     "name": "Wetzlar",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 50.570561,
     "lng": 8.531245,
@@ -2262,12 +2319,15 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Historiske byer"
+    ]
   },
   {
     "id": "6j44jC523rjfWw5F",
     "name": "Mespelbrunn Castle",
-    "country": "",
+    "country": "Tyskland",
     "category": "Byer og kultur",
     "lat": 49.905385,
     "lng": 9.3073639,
@@ -2285,7 +2345,10 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Slott"
+    ]
   },
   {
     "id": "6j44jRQhXjCJrxGm",
@@ -2310,7 +2373,12 @@
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Fjelltopper",
+      "Utsiktspunkter",
+      "Madeira"
+    ]
   },
   {
     "id": "6j44jg56FRWv66Vm",
@@ -2335,7 +2403,11 @@
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Kløfter",
+      "Gangbroer"
+    ]
   },
   {
     "id": "6j44jr8rCXfw6p8F",
@@ -2358,7 +2430,11 @@
     "routeSource": "",
     "routeNote": "",
     "route": {},
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Slott",
+      "Arkitektur"
+    ]
   },
   {
     "id": "6j44m489hmcM5cMF",
@@ -2383,6 +2459,11 @@
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": []
+    "stops": [],
+    "tags": [
+      "Kløfter",
+      "Fosser",
+      "Gangbroer"
+    ]
   }
 ]
