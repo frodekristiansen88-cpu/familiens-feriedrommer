@@ -37,6 +37,15 @@ ARTICLES = {
     "Castillo de Colomares": [("es", "Castillo de Colomares")],
     "Liechtensteinklamm": [("de", "Liechtensteinklamm")],
 }
+CURATED_FILES = {
+    "Upper Danube Valley": "FFH-Gebiet Oberes Donautal zwischen Beuron und Sigmaringen.jpg",
+    "Uracher Wasserfall": "Wasserfall in Bad Urach.jpg",
+    "Lichtenstein Castle": "Honau Schloss Lichtenstein 2024 01.jpg",
+    "Kriebstein Castle": "20230917 2 Burg Kriebstein.jpg",
+    "Castillo de Colomares": "Castillo de Colomares, Benalmádena, Málaga, España, 2023-05-18, DD 75.jpg",
+    "Dahner Felsenland": "Dahner Felsenpfad 2025.jpg",
+    "Liechtensteinklamm": "Lichtensteinklamm.jpg",
+}
 USER_AGENT = "FamiliensFeriedrommer/1.0 (https://github.com/frodekristiansen88-cpu/familiens-feriedrommer)"
 BAD_NAME = ("coat_of_arms", "wappen", "flagge", "flag_of", "logo", "locator", "location_map", "lage", "karte", "map_", "plan_", "icon")
 BAD_LICENSE = ("nc", "nd")
@@ -115,6 +124,16 @@ def main():
     for place in places:
         if place.get("image") or place["name"] not in ARTICLES:
             continue
+        if place["name"] in CURATED_FILES:
+            try:
+                photo = photo_data(CURATED_FILES[place["name"]])
+                if photo:
+                    place.update(photo)
+                    updated += 1
+                    print("CURATED PHOTO:", place["name"])
+                    continue
+            except Exception as exc:
+                print("CURATED PHOTO FAILED:", place["name"], str(exc)[:110])
         for lang, title in ARTICLES[place["name"]]:
             try:
                 filename = page_image(lang, title)
