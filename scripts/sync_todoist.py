@@ -108,11 +108,10 @@ for t in tasks():
     summary = extract(desc,"Kort fortalt") or extract(desc,"Opplevelse") or previous.get("description","")
     image = first_link(desc,"Bilde") or previous.get("image","")
     detail_text = extract_block(desc,"Utfyllende informasjon") or previous.get("details","")
-    route_type = extract(desc,"Turtype") or previous.get("routeType", "Enkeltsted")
+    explicit_route_type = extract(desc,"Turtype")
+    route_type = explicit_route_type or previous.get("routeType", "")
     if route_type not in ("Enkeltsted", "Dagstur", "Flerdagstur"):
-        route_type = "Enkeltsted"
-    if route_type == "Enkeltsted" and category == "Fotturer":
-        route_type = "Dagstur"
+        route_type = "Dagstur" if category == "Fotturer" else "Enkeltsted"
     route_url = first_link(desc,"GPX") or previous.get("routeUrl","")
     route_source = first_link(desc,"Rutekilde") or previous.get("routeSource","")
     tags = sorted(set(previous.get("tags", [])) | {label for label in labels if label not in CATEGORIES})
