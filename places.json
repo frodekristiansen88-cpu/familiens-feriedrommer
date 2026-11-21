@@ -9051,8 +9051,8 @@
     "name": "Congost de Mont-rebei og Pasarelas de Montfalcó",
     "country": "Spania",
     "category": "Fotturer",
-    "lat": 42.091,
-    "lng": 0.697,
+    "lat": 42.097455225884914,
+    "lng": 0.696234488859773,
     "description": "En spektakulær kløft der en smal tursti er hugget inn i bratte kalksteinsvegger over turkist vann. Ruten forbindes med de berømte tretrappene ved Montfalcó og hengebroer, men disse tretrappene er stengt etter steinras i august 2026.",
     "video": "https://www.facebook.com/reel/1769233194126717",
     "todoist": "https://app.todoist.com/app/task/6j44jg56FRWv66Vm",
@@ -9064,14 +9064,14 @@
     "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0",
     "routeType": "Dagstur",
     "routeUrl": "https://www.rutaspirineos.org/images/congost-de-mont-rebei/descargar.php?id=congost-de-mont-rebei&tipo=gpx",
-    "routeSource": "https://caminosnaturales.es/es/red-de-caminos-naturales/camino-detalle/sector-noreste/montfalco",
+    "routeSource": "https://www.rutaspirineos.org/rutas/congost-de-mont-rebei",
     "tags": [
       "Gangbroer",
       "Kajakk",
       "Kløfter",
       "Stengninger"
     ],
-    "routeNote": "OFFISIELL STENGING: Montfalcó-gangbroene er stengt etter ras. GPX-data fra spanske myndigheter beskriver historisk trasé, ikke tilgjengelig ferdselsrute. Ikke følg denne stien før myndighetene melder gjenåpning. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting.",
+    "routeNote": "Importert GPS-spor fra Rutas Pirineos viser den katalanske turstien FRA LA MASIETA gjennom kløften til hengebroen ved Seguer, ca. 4,6 km én vei (retur kommer i tillegg). Dette er IKKE stien over Montfalcós tretrapper: disse er fortsatt stengt etter ras. GPS-sporet er kun for inspirasjon, og aktuell adgang ved La Masieta, eventuelle stengninger og siste kartbeskjeder må kontrolleres før ferdsel.",
     "route": {
       "confidence": "Foreløpig GPX – ikke kvalitetssikret",
       "coordinates": [
