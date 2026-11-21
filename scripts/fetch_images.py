@@ -46,6 +46,14 @@ CURATED_FILES = {
     "Castillo de Colomares": "Castillo de Colomares, Benalmádena, Málaga, España, 2023-05-18, DD 75.jpg",
     "Dahner Felsenland": "Dahner Felsenpfad 2025.jpg",
     "Liechtensteinklamm": "Lichtensteinklamm.jpg",
+    "Görlitz": "Untermarkt - Görlitz (2026).jpg",
+    "Bad Wimpfen": "Bad Wimpfen - Altstadt.jpg",
+    "Spreewald": "Spreewaldkanal near Lübbenau.jpg",
+    "Quedlinburg": "Quedlinburg - Fachwerkhäuser am Marktplatz.jpg",
+    "Cochem": "Cochem and Reichsburg.jpg",
+    "Goslar": "Goslar Altstadt.jpg",
+    "Wetzlar": "Wetzlar, die Alte Lahnbrücke.jpg",
+    "Mespelbrunn Castle": "Schloss Mespelbrunn.jpg",
 }
 USER_AGENT = "FamiliensFeriedrommer/1.0 (https://github.com/frodekristiansen88-cpu/familiens-feriedrommer)"
 BAD_NAME = ("coat_of_arms", "wappen", "flagge", "flag_of", "logo", "locator", "location_map", "lage", "karte", "map_", "plan_", "icon")
