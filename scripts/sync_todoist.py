@@ -9,7 +9,7 @@ PROJECT = "6hvJmr29qp2mmf5F"
 SECTION = "6j44Hq4M8CFrjj8F"
 EXTRA_PROJECT = "6j4679mJqhXv7C5W"
 PATH = Path("places.json")
-CATEGORIES = ("Fotturer", "Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser", "Strender og badeplasser")
+CATEGORIES = ("Fotturer", "Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser", "Strender og badeplasser", "Mat og drikke")
 TOKEN = os.environ["TODOIST_API_TOKEN"]
 HEADERS = {"Authorization": f"Bearer {TOKEN}", "User-Agent": "FamiliensFeriedrommer/1.0"}
 URL_RE = re.compile(r"https?://[^\s)<>]+")
@@ -40,7 +40,7 @@ def tasks():
 
 def clean_name(content):
     s = re.sub(r"^[^\w]+", "", content, flags=re.UNICODE).strip()
-    if content.startswith(("📷","🎢","🏞️","🏛️","🏖️","🥾")):
+    if content.startswith(("📷","🎢","🏞️","🏛️","🏖️","🥾","🍽️")):
         return s
     return re.split(r"\s+[–—-]\s+", s, 1)[0].strip()
 def extract(desc, label):
@@ -243,7 +243,7 @@ for t in tasks():
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
         candidates = [location, name + (", Madeira, Portugal" if is_madeira else ", " + country if country else "")]
-        if is_madeira and category in ("Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser"):
+        if is_madeira and category in ("Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser", "Mat og drikke"):
             specific = re.sub(r"\s*\([^)]*\)","",name).strip()
             # For a landmark, do not use a general town as a fallback; queries must
             # identify the attraction. Guided activities intentionally use an area.
