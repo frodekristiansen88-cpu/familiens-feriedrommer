@@ -9,7 +9,11 @@
     "description": "Gangbroer gjennom en spektakulær kløft ved Málaga.",
     "video": "https://www.facebook.com/reel/890801160789168",
     "todoist": "https://app.todoist.com/app/task/6j44J36GpH48Jj8F",
-    "info": ""
+    "info": "",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Caminito_del_Rey_2018_0.jpg?width=960",
+    "imageCredit": "Eliza Saroma-Stepniewska · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Caminito_del_Rey_2018_0.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
     "id": "6j44JRfV4V2GR65m",
@@ -21,6 +25,10 @@
     "description": "Alpekløft med fossefall og grensekryssing til fots.",
     "video": "https://www.facebook.com/reel/1123509233366498",
     "todoist": "https://app.todoist.com/app/task/6j44JRfV4V2GR65m",
-    "info": ""
+    "info": "",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Leutasch_-_Leutascher_Geisterklamm.jpg?width=960",
+    "imageCredit": "Kirk · CC BY-SA 3.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Leutasch_-_Leutascher_Geisterklamm.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0/"
   }
 ]
