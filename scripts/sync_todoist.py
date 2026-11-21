@@ -36,6 +36,14 @@ def clean_name(content):
 def extract(desc, label):
     match = re.search(r"(?im)^\*\*" + re.escape(label) + r"\*\*:\s*(.+)$", desc)
     return match.group(1).strip() if match else ""
+def extract_block(desc, label):
+    match = re.search(r"(?im)^\\*\\*" + re.escape(label) + r"\\*\\*:\\s*(.*)$", desc)
+    if not match: return ""
+    first = match.group(1).strip()
+    rest = desc[match.end():]
+    end = re.search(r"(?m)^\\*\\*[^\\n]+\\*\\*:", rest)
+    body = rest[:end.start() if end else None].strip()
+    return (first + ("\\n" if first and body else "") + body).strip()
 def first_link(desc, label):
     line = extract(desc, label)
     match = URL_RE.search(line)
@@ -82,12 +90,12 @@ for t in tasks():
     if not coords:
         print(f"SKIPPED: No verified coordinates for {name}")
         continue
-    summary = extract(desc,"Opplevelse") or previous.get("description","")
+    summary = extract(desc,"Kort fortalt") or extract(desc,"Opplevelse") or previous.get("description","")
     # Full description can be displayed in the map; remove duplicate link-only lines.
     details = [line.strip() for line in desc.splitlines() if line.strip() and not any(line.startswith("**"+key+"**:") for key in ("Sted","Opplevelse","Inspirasjonsvideo","Video som inspirerte","Video","Bilder og inspirasjon","Kart","Offisiell side / billetter","Mer informasjon","Bilde","Koordinater"))]
     if details: summary = summary + ("\n\n" if summary else "") + "\n".join(details)
     image = first_link(desc,"Bilde") or previous.get("image","")
-    detail_text = previous.get("details","")
+    detail_text = extract_block(desc,"Utfyllende informasjon") or previous.get("details","")
     new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense","")})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
