@@ -37,6 +37,12 @@ ARTICLES = {
     "Congost de Mont-rebei og Pasarelas de Montfalcó": [("ca", "Congost de Mont-rebei"), ("es", "Congost de Mont-rebei")],
     "Castillo de Colomares": [("es", "Castillo de Colomares")],
     "Liechtensteinklamm": [("de", "Liechtensteinklamm")],
+    "Liechtenstein Trail": [("de", "Liechtenstein-Weg"), ("en", "Liechtenstein")],
+    "Cathedral Cave og Slater's Bridge": [("en", "Cathedral Quarry"), ("en", "Slater's Bridge")],
+    "Gruta Iris – Monasterio de Piedra": [("es", "Monasterio de Piedra")],
+    "Ponte dei Salti": [("de", "Ponte dei Salti"), ("en", "Ponte dei Salti")],
+    "Parrizal de Beceite": [("es", "Beceite")],
+    "Coto Cuende og Gibaja": [("es", "Gibaja")],
 }
 CURATED_FILES = {
     "Upper Danube Valley": "FFH-Gebiet Oberes Donautal zwischen Beuron und Sigmaringen.jpg",
@@ -54,6 +60,10 @@ CURATED_FILES = {
     "Goslar": "Goslar Altstadt.jpg",
     "Wetzlar": "Wetzlar, die Alte Lahnbrücke.jpg",
     "Mespelbrunn Castle": "Schloss Mespelbrunn.jpg",
+    "Gruta Iris – Monasterio de Piedra": "Monasterio de Piedra 104.jpg",
+    "Ponte dei Salti": "Ponte dei Salti, Lavertezzo.jpg",
+    "Cathedral Cave og Slater's Bridge": "Cathedral Quarry - geograph.org.uk - 3941760.jpg",
+    "Liechtenstein Trail": "Schloss Gutenberg in Balzers, Liechtenstein.jpg",
 }
 USER_AGENT = "FamiliensFeriedrommer/1.0 (https://github.com/frodekristiansen88-cpu/familiens-feriedrommer)"
 BAD_NAME = ("coat_of_arms", "wappen", "flagge", "flag_of", "logo", "locator", "location_map", "lage", "karte", "map_", "plan_", "icon")
