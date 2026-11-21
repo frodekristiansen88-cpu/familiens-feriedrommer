@@ -52420,5 +52420,2080 @@
     "routeNote": "",
     "route": {},
     "stops": []
+  },
+  {
+    "id": "6j46PvPh3rh2h7w4",
+    "name": "Potsdamer Platz",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5098014,
+    "lng": 13.3755898,
+    "description": "Moderne bysentrum og historiske rester av Berlinmuren.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvPh3rh2h7w4",
+    "info": "https://www.visitberlin.de/en/potsdamer-platz",
+    "details": "15–20 min.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Berlin_-_Potsdamer_Platz_-_2016.jpg/960px-Berlin_-_Potsdamer_Platz_-_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Avda · CC BY-SA 3.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Berlin_-_Potsdamer_Platz_-_2016.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Berlin",
+      "Berlinmuren",
+      "Gratis",
+      "Historie"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvMPX7hGJcMW",
+    "name": "Topographie des Terrors",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5062137,
+    "lng": 13.3841548,
+    "description": "Dokumentasjonssenter på stedet for Gestapo og SS, med en original del av Berlinmuren.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvMPX7hGJcMW",
+    "info": "https://www.visitberlin.de/en/topography-terror",
+    "details": "45–60 min. Normalt 10–20; uteområdet stenger ved skumring.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Topographie_des_Terrors_Berlin.JPG/960px-Topographie_des_Terrors_Berlin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Superchilum · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Topographie_des_Terrors_Berlin.JPG",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Berlinmuren",
+      "Gratis",
+      "Historie",
+      "Museum"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvPRG2QrgP34",
+    "name": "Checkpoint Charlie",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5069095,
+    "lng": 13.3906865,
+    "description": "Historisk grenseovergang mellom øst og vest; rekonstruert vakthus.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvPRG2QrgP34",
+    "info": "https://www.visitberlin.de/en/checkpoint-charlie",
+    "details": "10–15 min; utendørs gratis.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Checkpoint_Charlie1.jpg/960px-Checkpoint_Charlie1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Lyricmac at en.wikipedia · CC BY-SA 3.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Checkpoint_Charlie1.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Berlinmuren",
+      "Gratis",
+      "Historie"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvRqwX86mR7W",
+    "name": "Gendarmenmarkt",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5135698,
+    "lng": 13.392297,
+    "description": "Monumentalt torg med Konzerthaus og de tyske og franske kirkebygningene.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvRqwX86mR7W",
+    "info": "https://www.visitberlin.de/en/gendarmenmarkt",
+    "details": "15 min utendørs.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg/960px-150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Ansgar Koreng · CC BY 3.0 de",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Berlin",
+      "Gratis",
+      "Historie"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvRpfjjgfpp4",
+    "name": "Holocaust-minnesmerket",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5138731,
+    "lng": 13.3787346,
+    "description": "Minnesmerket over Europas myrdede jøder med 2711 betongsteler.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvRpfjjgfpp4",
+    "info": "https://www.stiftung-denkmal.de/en/",
+    "details": "15–20 min; opptre respektfullt.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Memorial_to_the_Murdered_Jews_of_Europeabove.jpg/960px-Memorial_to_the_Murdered_Jews_of_Europeabove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Alexander Blum · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Memorial_to_the_Murdered_Jews_of_Europeabove.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Gratis",
+      "Historie",
+      "Minnesmerke"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvVCjF7pJQFW",
+    "name": "Brandenburger Tor",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5163553,
+    "lng": 13.3786828,
+    "description": "Berlins ikoniske byport og symbol på tysk gjenforening.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvVCjF7pJQFW",
+    "info": "https://www.visitberlin.de/en/brandenburg-gate",
+    "details": "15 min; flott ved skumring.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Brandenburger_Tor_%281988%29.jpg/960px-Brandenburger_Tor_%281988%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Raugeier · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_(1988).jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Berlin",
+      "Gratis",
+      "Historie"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvQPvWwRRJ2W",
+    "name": "Reichstag og glasskuppelen",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.5186538,
+    "lng": 13.3761015,
+    "description": "Parlamentsbygning med glasskuppel og panoramautsikt.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvQPvWwRRJ2W",
+    "info": "https://www.bundestag.de/en/visittheBundestag/dome/registration-245686",
+    "details": "45–60 min. Gratis forhåndsregistrering med navn og fødselsdato for alle. Ta med legitimasjon. Sikt mot 16.30–17.00 om vinteren.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Reichstagsgeb%C3%A4ude_von_Westen.jpg/960px-Reichstagsgeb%C3%A4ude_von_Westen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Jörg Braukmann · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Reichstagsgeb%C3%A4ude_von_Westen.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Berlin",
+      "Gratis",
+      "Historie",
+      "Reservasjon påkrevd",
+      "Utsikt"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvR8GMf5WX7W",
+    "name": "Schöneberger Weltlaterne",
+    "country": "Tyskland",
+    "category": "Mat og drikke",
+    "lat": 52.4948531,
+    "lng": 13.339702,
+    "description": "Uformell tradisjonell berlinsk kro med klassiske retter og stemningsfullt interiør.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvR8GMf5WX7W",
+    "info": "https://schoeneberger-weltlaterne.de/",
+    "details": "Normalt tirsdag–søndag 17–24. Prøv Kohlroulade; reservasjon anbefales.\nKontroller åpningstider før besøk.",
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": "",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Historiske omgivelser",
+      "Restaurant",
+      "Tradisjonell matkultur"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvVj6W75pc8W",
+    "name": "Restaurant Elefant",
+    "country": "Tyskland",
+    "category": "Mat og drikke",
+    "lat": 52.4990141,
+    "lng": 13.3453747,
+    "description": "Nabolagsrestaurant med klassisk tysk mat som Eisbein, Rinderroulade og schnitzel.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvVj6W75pc8W",
+    "info": "https://restaurant-elefant.de/",
+    "details": "Normalt lørdag 12–23, kjøkken til 22. Sjekk meny og priser.\nKontroller åpningstider før besøk.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Bonn%2C_Kasernenstra%C3%9Fe_Ecke_Sternstra%C3%9Fe_--_2020_--_6520.jpg/960px-Bonn%2C_Kasernenstra%C3%9Fe_Ecke_Sternstra%C3%9Fe_--_2020_--_6520.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Dietmar Rabich · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bonn%2C_Kasernenstra%C3%9Fe_Ecke_Sternstra%C3%9Fe_--_2020_--_6520.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Familievennlig",
+      "Restaurant",
+      "Tradisjonell matkultur"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvXw7269fj94",
+    "name": "Alt-Berliner Wirtshaus",
+    "country": "Tyskland",
+    "category": "Mat og drikke",
+    "lat": 52.5144508,
+    "lng": 13.3813932,
+    "description": "Rustikk kro nær Brandenburger Tor med Eisbein, currywurst og Kasseler.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvXw7269fj94",
+    "info": "https://www.altberliner-wirtshaus.de/",
+    "details": "Normalt daglig 12–23; tar ikke reservasjoner.\nKontroller åpningstider før besøk.",
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": "",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Berlin",
+      "Familievennlig",
+      "Restaurant",
+      "Tradisjonell matkultur"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
+    "id": "6j46PvWvQVGvC9CW",
+    "name": "Berlin – historisk byvandring",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 52.4974388,
+    "lng": 13.3621362,
+    "description": "Halvdags byvandring fra Schöneberg gjennom Berlins historiske sentrum, med tradisjonell tysk middag.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46PvWvQVGvC9CW",
+    "info": "https://www.visitberlin.de/en",
+    "details": "Start 13.30 fra Schöneberg. Ca. 6–8 km totalt avhengig av restaurant (anslag, ikke målt GPS-spor).\n13.50 Potsdamer Platz; 14.10 Topographie des Terrors; 15.10 Checkpoint Charlie; 15.30 Gendarmenmarkt; 16.00 Holocaust-minnesmerket; 16.20 Brandenburger Tor; 16.45 Reichstag. Juster etter bekreftet kuppelreservasjon.\n18.30 Tradisjonell middag: Schöneberger Weltlaterne (førstevalg), Restaurant Elefant eller Alt-Berliner Wirtshaus (nær Brandenburger Tor). Retur til Schöneberg etter middag.\n[Gangrute del 1 – Schöneberg til Gendarmenmarkt](https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Potsdamer%20Stra%C3%9Fe%20129%2C%20Berlin%2C%20Tyskland&destination=Gendarmenmarkt%2C%20Berlin%2C%20Tyskland&waypoints=Potsdamer%20Platz%2C%20Berlin%7CTopographie%20des%20Terrors%2C%20Berlin%7CCheckpoint%20Charlie%2C%20Berlin)\n[Gangrute del 2 – Gendarmenmarkt til Reichstag](https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Gendarmenmarkt%2C%20Berlin%2C%20Tyskland&destination=Reichstag%2C%20Berlin%2C%20Tyskland&waypoints=Denkmal%20f%C3%BCr%20die%20ermordeten%20Juden%20Europas%2C%20Berlin%7CBrandenburger%20Tor%2C%20Berlin)\nRestaurantene ligger som egne kartoppføringer under Mat og drikke. Ingen bestilling er foretatt.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Brandenburger_Tor_%281988%29.jpg/960px-Brandenburger_Tor_%281988%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Raugeier · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_(1988).jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Dagstur",
+    "routeUrl": "",
+    "routeSource": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Potsdamer%20Stra%C3%9Fe%20129%2C%20Berlin%2C%20Tyskland&destination=Gendarmenmarkt%2C%20Berlin%2C%20Tyskland&waypoints=Potsdamer%20Platz%2C%20Berlin%7CTopographie%20des%20Terrors%2C%20Berlin%7CCheckpoint%20Charlie%2C%20Berlin",
+    "tags": [
+      "Arkitektur",
+      "Berlin",
+      "Berlinmuren",
+      "Byvandring",
+      "Familievennlig",
+      "Historie"
+    ],
+    "routeNote": "Gangrute fra OpenStreetMap (FOSSGIS/OSRM), © OpenStreetMap contributors. Slutter ved Reichstag; middag og retur velges separat.",
+    "route": {
+      "coordinates": [
+        [
+          52.497447,
+          13.362086
+        ],
+        [
+          52.497546,
+          13.362129
+        ],
+        [
+          52.497569,
+          13.362166
+        ],
+        [
+          52.497589,
+          13.362175
+        ],
+        [
+          52.497601,
+          13.36218
+        ],
+        [
+          52.497646,
+          13.3622
+        ],
+        [
+          52.497679,
+          13.362214
+        ],
+        [
+          52.497722,
+          13.362233
+        ],
+        [
+          52.497811,
+          13.362271
+        ],
+        [
+          52.497853,
+          13.362289
+        ],
+        [
+          52.49788,
+          13.362301
+        ],
+        [
+          52.497956,
+          13.362335
+        ],
+        [
+          52.497967,
+          13.362339
+        ],
+        [
+          52.498005,
+          13.362355
+        ],
+        [
+          52.498022,
+          13.362335
+        ],
+        [
+          52.49858,
+          13.362563
+        ],
+        [
+          52.499022,
+          13.362742
+        ],
+        [
+          52.499061,
+          13.362758
+        ],
+        [
+          52.49945,
+          13.362896
+        ],
+        [
+          52.499543,
+          13.362939
+        ],
+        [
+          52.49959,
+          13.362998
+        ],
+        [
+          52.499623,
+          13.363011
+        ],
+        [
+          52.499648,
+          13.363022
+        ],
+        [
+          52.499657,
+          13.363026
+        ],
+        [
+          52.499665,
+          13.36303
+        ],
+        [
+          52.499698,
+          13.363045
+        ],
+        [
+          52.499737,
+          13.363062
+        ],
+        [
+          52.499769,
+          13.363077
+        ],
+        [
+          52.499783,
+          13.363083
+        ],
+        [
+          52.49983,
+          13.363105
+        ],
+        [
+          52.500018,
+          13.363242
+        ],
+        [
+          52.50029,
+          13.363477
+        ],
+        [
+          52.500683,
+          13.363817
+        ],
+        [
+          52.500699,
+          13.363831
+        ],
+        [
+          52.500724,
+          13.363851
+        ],
+        [
+          52.500769,
+          13.363888
+        ],
+        [
+          52.500814,
+          13.363925
+        ],
+        [
+          52.500847,
+          13.363952
+        ],
+        [
+          52.500863,
+          13.363966
+        ],
+        [
+          52.501332,
+          13.364377
+        ],
+        [
+          52.501521,
+          13.364543
+        ],
+        [
+          52.502266,
+          13.365195
+        ],
+        [
+          52.502945,
+          13.365803
+        ],
+        [
+          52.502977,
+          13.365834
+        ],
+        [
+          52.502998,
+          13.365854
+        ],
+        [
+          52.503037,
+          13.365873
+        ],
+        [
+          52.503108,
+          13.365906
+        ],
+        [
+          52.503125,
+          13.365922
+        ],
+        [
+          52.503157,
+          13.365954
+        ],
+        [
+          52.503542,
+          13.366311
+        ],
+        [
+          52.503888,
+          13.366678
+        ],
+        [
+          52.504477,
+          13.367304
+        ],
+        [
+          52.504491,
+          13.36732
+        ],
+        [
+          52.504532,
+          13.367365
+        ],
+        [
+          52.504572,
+          13.367409
+        ],
+        [
+          52.504608,
+          13.367449
+        ],
+        [
+          52.505065,
+          13.367968
+        ],
+        [
+          52.505217,
+          13.368118
+        ],
+        [
+          52.505363,
+          13.368229
+        ],
+        [
+          52.505411,
+          13.368259
+        ],
+        [
+          52.505454,
+          13.368288
+        ],
+        [
+          52.505497,
+          13.368322
+        ],
+        [
+          52.505588,
+          13.368421
+        ],
+        [
+          52.505637,
+          13.368528
+        ],
+        [
+          52.505648,
+          13.368516
+        ],
+        [
+          52.505678,
+          13.368484
+        ],
+        [
+          52.505721,
+          13.368434
+        ],
+        [
+          52.505742,
+          13.368448
+        ],
+        [
+          52.50575,
+          13.368453
+        ],
+        [
+          52.505804,
+          13.368487
+        ],
+        [
+          52.50586,
+          13.368524
+        ],
+        [
+          52.506132,
+          13.368677
+        ],
+        [
+          52.506164,
+          13.368704
+        ],
+        [
+          52.506179,
+          13.368716
+        ],
+        [
+          52.506229,
+          13.368743
+        ],
+        [
+          52.506292,
+          13.368778
+        ],
+        [
+          52.506296,
+          13.36878
+        ],
+        [
+          52.506314,
+          13.36879
+        ],
+        [
+          52.50631,
+          13.368808
+        ],
+        [
+          52.506319,
+          13.368832
+        ],
+        [
+          52.506337,
+          13.368878
+        ],
+        [
+          52.50636,
+          13.368937
+        ],
+        [
+          52.506365,
+          13.368948
+        ],
+        [
+          52.506371,
+          13.368963
+        ],
+        [
+          52.506421,
+          13.368918
+        ],
+        [
+          52.506461,
+          13.36891
+        ],
+        [
+          52.506506,
+          13.368903
+        ],
+        [
+          52.506565,
+          13.368917
+        ],
+        [
+          52.506996,
+          13.369169
+        ],
+        [
+          52.507104,
+          13.369224
+        ],
+        [
+          52.507297,
+          13.36933
+        ],
+        [
+          52.50806,
+          13.369763
+        ],
+        [
+          52.508174,
+          13.369831
+        ],
+        [
+          52.508302,
+          13.36991
+        ],
+        [
+          52.50839,
+          13.370018
+        ],
+        [
+          52.508443,
+          13.370106
+        ],
+        [
+          52.508509,
+          13.370239
+        ],
+        [
+          52.508729,
+          13.370684
+        ],
+        [
+          52.50877,
+          13.370767
+        ],
+        [
+          52.508796,
+          13.370821
+        ],
+        [
+          52.508841,
+          13.370913
+        ],
+        [
+          52.508876,
+          13.371043
+        ],
+        [
+          52.508894,
+          13.37115
+        ],
+        [
+          52.508908,
+          13.371324
+        ],
+        [
+          52.508918,
+          13.371474
+        ],
+        [
+          52.508923,
+          13.371549
+        ],
+        [
+          52.508941,
+          13.371751
+        ],
+        [
+          52.508932,
+          13.371793
+        ],
+        [
+          52.508936,
+          13.371835
+        ],
+        [
+          52.508938,
+          13.371854
+        ],
+        [
+          52.508945,
+          13.371931
+        ],
+        [
+          52.508951,
+          13.371991
+        ],
+        [
+          52.508954,
+          13.372026
+        ],
+        [
+          52.508957,
+          13.372053
+        ],
+        [
+          52.50899,
+          13.372046
+        ],
+        [
+          52.508996,
+          13.372045
+        ],
+        [
+          52.509053,
+          13.372033
+        ],
+        [
+          52.509093,
+          13.372024
+        ],
+        [
+          52.509176,
+          13.372007
+        ],
+        [
+          52.50925,
+          13.371991
+        ],
+        [
+          52.509299,
+          13.371981
+        ],
+        [
+          52.509309,
+          13.371979
+        ],
+        [
+          52.509338,
+          13.371973
+        ],
+        [
+          52.509348,
+          13.37196
+        ],
+        [
+          52.509411,
+          13.37278
+        ],
+        [
+          52.509413,
+          13.372802
+        ],
+        [
+          52.509426,
+          13.372972
+        ],
+        [
+          52.50977,
+          13.373189
+        ],
+        [
+          52.509753,
+          13.37336
+        ],
+        [
+          52.509761,
+          13.37353
+        ],
+        [
+          52.509822,
+          13.373645
+        ],
+        [
+          52.509853,
+          13.373685
+        ],
+        [
+          52.509757,
+          13.374042
+        ],
+        [
+          52.509711,
+          13.374212
+        ],
+        [
+          52.509675,
+          13.374233
+        ],
+        [
+          52.50965,
+          13.374307
+        ],
+        [
+          52.509648,
+          13.374319
+        ],
+        [
+          52.509642,
+          13.374344
+        ],
+        [
+          52.509578,
+          13.374628
+        ],
+        [
+          52.509636,
+          13.37545
+        ],
+        [
+          52.509749,
+          13.375574
+        ],
+        [
+          52.509751,
+          13.375598
+        ],
+        [
+          52.509779,
+          13.375593
+        ],
+        [
+          52.509779,
+          13.375593
+        ],
+        [
+          52.509783,
+          13.375663
+        ],
+        [
+          52.509788,
+          13.375731
+        ],
+        [
+          52.509761,
+          13.375734
+        ],
+        [
+          52.509762,
+          13.375756
+        ],
+        [
+          52.509751,
+          13.375844
+        ],
+        [
+          52.509712,
+          13.375841
+        ],
+        [
+          52.509672,
+          13.375839
+        ],
+        [
+          52.509671,
+          13.375884
+        ],
+        [
+          52.509587,
+          13.375879
+        ],
+        [
+          52.509586,
+          13.375906
+        ],
+        [
+          52.509583,
+          13.376035
+        ],
+        [
+          52.509582,
+          13.376062
+        ],
+        [
+          52.509582,
+          13.37609
+        ],
+        [
+          52.509581,
+          13.376118
+        ],
+        [
+          52.509579,
+          13.376189
+        ],
+        [
+          52.508884,
+          13.376146
+        ],
+        [
+          52.508907,
+          13.376231
+        ],
+        [
+          52.508917,
+          13.376272
+        ],
+        [
+          52.508922,
+          13.376288
+        ],
+        [
+          52.508932,
+          13.376329
+        ],
+        [
+          52.508939,
+          13.376355
+        ],
+        [
+          52.508968,
+          13.376554
+        ],
+        [
+          52.508977,
+          13.376594
+        ],
+        [
+          52.509029,
+          13.376836
+        ],
+        [
+          52.509038,
+          13.376876
+        ],
+        [
+          52.509047,
+          13.376917
+        ],
+        [
+          52.509048,
+          13.376943
+        ],
+        [
+          52.50905,
+          13.37699
+        ],
+        [
+          52.509039,
+          13.376993
+        ],
+        [
+          52.508967,
+          13.377004
+        ],
+        [
+          52.508944,
+          13.377008
+        ],
+        [
+          52.508926,
+          13.377011
+        ],
+        [
+          52.508911,
+          13.377014
+        ],
+        [
+          52.508879,
+          13.377034
+        ],
+        [
+          52.508853,
+          13.377058
+        ],
+        [
+          52.508614,
+          13.377347
+        ],
+        [
+          52.508406,
+          13.37761
+        ],
+        [
+          52.508376,
+          13.377647
+        ],
+        [
+          52.508339,
+          13.377692
+        ],
+        [
+          52.50817,
+          13.377896
+        ],
+        [
+          52.507939,
+          13.378177
+        ],
+        [
+          52.5076,
+          13.378608
+        ],
+        [
+          52.507457,
+          13.378787
+        ],
+        [
+          52.507153,
+          13.379166
+        ],
+        [
+          52.507102,
+          13.379229
+        ],
+        [
+          52.507087,
+          13.379248
+        ],
+        [
+          52.507049,
+          13.379296
+        ],
+        [
+          52.50698,
+          13.379381
+        ],
+        [
+          52.506958,
+          13.379408
+        ],
+        [
+          52.506805,
+          13.379596
+        ],
+        [
+          52.506745,
+          13.37967
+        ],
+        [
+          52.506621,
+          13.37983
+        ],
+        [
+          52.506545,
+          13.379928
+        ],
+        [
+          52.506196,
+          13.380376
+        ],
+        [
+          52.506101,
+          13.380499
+        ],
+        [
+          52.505849,
+          13.380825
+        ],
+        [
+          52.506065,
+          13.381273
+        ],
+        [
+          52.506094,
+          13.381802
+        ],
+        [
+          52.506071,
+          13.38184
+        ],
+        [
+          52.506056,
+          13.381871
+        ],
+        [
+          52.506044,
+          13.381906
+        ],
+        [
+          52.506037,
+          13.381935
+        ],
+        [
+          52.506032,
+          13.381977
+        ],
+        [
+          52.506032,
+          13.382022
+        ],
+        [
+          52.50604,
+          13.382099
+        ],
+        [
+          52.506053,
+          13.382148
+        ],
+        [
+          52.506069,
+          13.382189
+        ],
+        [
+          52.506093,
+          13.382223
+        ],
+        [
+          52.506122,
+          13.382252
+        ],
+        [
+          52.506132,
+          13.382376
+        ],
+        [
+          52.50618,
+          13.382879
+        ],
+        [
+          52.506165,
+          13.382885
+        ],
+        [
+          52.506197,
+          13.383134
+        ],
+        [
+          52.506256,
+          13.38371
+        ],
+        [
+          52.506296,
+          13.383924
+        ],
+        [
+          52.506315,
+          13.384027
+        ],
+        [
+          52.506264,
+          13.384111
+        ],
+        [
+          52.506233,
+          13.384049
+        ],
+        [
+          52.50619,
+          13.384106
+        ],
+        [
+          52.506233,
+          13.384049
+        ],
+        [
+          52.506264,
+          13.384111
+        ],
+        [
+          52.506315,
+          13.384027
+        ],
+        [
+          52.506592,
+          13.385544
+        ],
+        [
+          52.507136,
+          13.385263
+        ],
+        [
+          52.507146,
+          13.385314
+        ],
+        [
+          52.507156,
+          13.385366
+        ],
+        [
+          52.50716,
+          13.385391
+        ],
+        [
+          52.507176,
+          13.38552
+        ],
+        [
+          52.506488,
+          13.385869
+        ],
+        [
+          52.506495,
+          13.385911
+        ],
+        [
+          52.506513,
+          13.386022
+        ],
+        [
+          52.506527,
+          13.386101
+        ],
+        [
+          52.506537,
+          13.38616
+        ],
+        [
+          52.506522,
+          13.386224
+        ],
+        [
+          52.506572,
+          13.387006
+        ],
+        [
+          52.506722,
+          13.389385
+        ],
+        [
+          52.506762,
+          13.390013
+        ],
+        [
+          52.506774,
+          13.390197
+        ],
+        [
+          52.506781,
+          13.39031
+        ],
+        [
+          52.506798,
+          13.390358
+        ],
+        [
+          52.5068,
+          13.390389
+        ],
+        [
+          52.506804,
+          13.390481
+        ],
+        [
+          52.506809,
+          13.390575
+        ],
+        [
+          52.506811,
+          13.39061
+        ],
+        [
+          52.506903,
+          13.390593
+        ],
+        [
+          52.506976,
+          13.390579
+        ],
+        [
+          52.507,
+          13.390575
+        ],
+        [
+          52.507619,
+          13.390477
+        ],
+        [
+          52.507637,
+          13.390474
+        ],
+        [
+          52.507696,
+          13.390464
+        ],
+        [
+          52.507752,
+          13.390455
+        ],
+        [
+          52.507779,
+          13.390451
+        ],
+        [
+          52.508499,
+          13.390331
+        ],
+        [
+          52.508524,
+          13.390327
+        ],
+        [
+          52.508566,
+          13.39032
+        ],
+        [
+          52.5086,
+          13.390315
+        ],
+        [
+          52.508634,
+          13.390309
+        ],
+        [
+          52.508653,
+          13.390307
+        ],
+        [
+          52.509383,
+          13.390194
+        ],
+        [
+          52.509411,
+          13.39019
+        ],
+        [
+          52.50946,
+          13.390182
+        ],
+        [
+          52.509508,
+          13.390174
+        ],
+        [
+          52.509536,
+          13.390169
+        ],
+        [
+          52.509577,
+          13.39078
+        ],
+        [
+          52.509624,
+          13.390771
+        ],
+        [
+          52.509705,
+          13.390759
+        ],
+        [
+          52.509989,
+          13.390718
+        ],
+        [
+          52.510089,
+          13.390707
+        ],
+        [
+          52.510179,
+          13.390687
+        ],
+        [
+          52.510258,
+          13.390673
+        ],
+        [
+          52.510301,
+          13.390667
+        ],
+        [
+          52.510369,
+          13.391708
+        ],
+        [
+          52.510393,
+          13.391703
+        ],
+        [
+          52.510469,
+          13.391689
+        ],
+        [
+          52.510545,
+          13.391675
+        ],
+        [
+          52.510568,
+          13.391671
+        ],
+        [
+          52.510583,
+          13.391673
+        ],
+        [
+          52.510871,
+          13.391627
+        ],
+        [
+          52.51125,
+          13.391559
+        ],
+        [
+          52.511283,
+          13.391537
+        ],
+        [
+          52.51133,
+          13.391544
+        ],
+        [
+          52.511384,
+          13.391535
+        ],
+        [
+          52.51141,
+          13.391548
+        ],
+        [
+          52.511412,
+          13.391587
+        ],
+        [
+          52.511416,
+          13.391642
+        ],
+        [
+          52.511417,
+          13.391673
+        ],
+        [
+          52.511423,
+          13.391761
+        ],
+        [
+          52.511431,
+          13.3918
+        ],
+        [
+          52.511481,
+          13.391793
+        ],
+        [
+          52.511512,
+          13.391789
+        ],
+        [
+          52.511545,
+          13.391784
+        ],
+        [
+          52.511799,
+          13.391748
+        ],
+        [
+          52.511852,
+          13.391722
+        ],
+        [
+          52.512149,
+          13.391674
+        ],
+        [
+          52.512162,
+          13.391883
+        ],
+        [
+          52.512184,
+          13.39188
+        ],
+        [
+          52.512207,
+          13.391876
+        ],
+        [
+          52.512228,
+          13.391873
+        ],
+        [
+          52.512246,
+          13.39187
+        ],
+        [
+          52.512263,
+          13.391867
+        ],
+        [
+          52.512287,
+          13.391863
+        ],
+        [
+          52.512311,
+          13.391859
+        ],
+        [
+          52.512331,
+          13.391856
+        ],
+        [
+          52.512388,
+          13.391927
+        ],
+        [
+          52.51256,
+          13.392076
+        ],
+        [
+          52.512581,
+          13.39203
+        ],
+        [
+          52.512702,
+          13.392012
+        ],
+        [
+          52.51281,
+          13.391997
+        ],
+        [
+          52.512847,
+          13.392037
+        ],
+        [
+          52.513019,
+          13.392622
+        ],
+        [
+          52.513177,
+          13.392595
+        ],
+        [
+          52.51361,
+          13.392521
+        ],
+        [
+          52.513604,
+          13.392419
+        ],
+        [
+          52.513598,
+          13.392293
+        ],
+        [
+          52.513604,
+          13.392419
+        ],
+        [
+          52.51361,
+          13.392521
+        ],
+        [
+          52.514047,
+          13.392447
+        ],
+        [
+          52.513994,
+          13.391597
+        ],
+        [
+          52.513978,
+          13.391333
+        ],
+        [
+          52.513918,
+          13.391342
+        ],
+        [
+          52.513915,
+          13.391303
+        ],
+        [
+          52.513911,
+          13.391235
+        ],
+        [
+          52.513907,
+          13.391168
+        ],
+        [
+          52.513905,
+          13.391139
+        ],
+        [
+          52.513809,
+          13.389466
+        ],
+        [
+          52.513806,
+          13.389431
+        ],
+        [
+          52.513799,
+          13.389336
+        ],
+        [
+          52.513793,
+          13.38924
+        ],
+        [
+          52.51379,
+          13.389205
+        ],
+        [
+          52.513726,
+          13.388216
+        ],
+        [
+          52.513613,
+          13.386482
+        ],
+        [
+          52.513611,
+          13.386455
+        ],
+        [
+          52.513607,
+          13.386373
+        ],
+        [
+          52.513603,
+          13.386291
+        ],
+        [
+          52.513601,
+          13.386265
+        ],
+        [
+          52.513528,
+          13.3852
+        ],
+        [
+          52.513521,
+          13.385157
+        ],
+        [
+          52.513512,
+          13.385107
+        ],
+        [
+          52.513503,
+          13.385056
+        ],
+        [
+          52.513494,
+          13.385003
+        ],
+        [
+          52.51365,
+          13.384927
+        ],
+        [
+          52.513846,
+          13.38483
+        ],
+        [
+          52.514358,
+          13.384657
+        ],
+        [
+          52.51426,
+          13.383858
+        ],
+        [
+          52.514222,
+          13.383668
+        ],
+        [
+          52.513926,
+          13.38233
+        ],
+        [
+          52.513956,
+          13.382314
+        ],
+        [
+          52.513996,
+          13.382291
+        ],
+        [
+          52.514044,
+          13.382263
+        ],
+        [
+          52.514061,
+          13.382254
+        ],
+        [
+          52.51408,
+          13.382157
+        ],
+        [
+          52.514058,
+          13.382056
+        ],
+        [
+          52.514033,
+          13.381938
+        ],
+        [
+          52.514028,
+          13.381915
+        ],
+        [
+          52.513999,
+          13.381855
+        ],
+        [
+          52.513985,
+          13.381785
+        ],
+        [
+          52.513967,
+          13.38169
+        ],
+        [
+          52.513796,
+          13.380811
+        ],
+        [
+          52.513697,
+          13.380309
+        ],
+        [
+          52.513664,
+          13.380145
+        ],
+        [
+          52.513716,
+          13.380118
+        ],
+        [
+          52.513823,
+          13.380063
+        ],
+        [
+          52.513823,
+          13.379941
+        ],
+        [
+          52.513821,
+          13.379613
+        ],
+        [
+          52.513821,
+          13.379273
+        ],
+        [
+          52.513819,
+          13.378735
+        ],
+        [
+          52.513819,
+          13.378586
+        ],
+        [
+          52.51411,
+          13.378583
+        ],
+        [
+          52.514399,
+          13.37858
+        ],
+        [
+          52.514398,
+          13.377896
+        ],
+        [
+          52.514397,
+          13.377611
+        ],
+        [
+          52.514436,
+          13.377616
+        ],
+        [
+          52.514504,
+          13.377627
+        ],
+        [
+          52.514516,
+          13.377629
+        ],
+        [
+          52.514527,
+          13.37763
+        ],
+        [
+          52.51456,
+          13.377636
+        ],
+        [
+          52.514583,
+          13.37764
+        ],
+        [
+          52.514641,
+          13.37765
+        ],
+        [
+          52.514648,
+          13.377651
+        ],
+        [
+          52.514741,
+          13.377666
+        ],
+        [
+          52.515266,
+          13.37774
+        ],
+        [
+          52.515587,
+          13.377786
+        ],
+        [
+          52.515659,
+          13.37779
+        ],
+        [
+          52.515841,
+          13.377712
+        ],
+        [
+          52.515959,
+          13.37757
+        ],
+        [
+          52.516002,
+          13.377544
+        ],
+        [
+          52.516148,
+          13.377516
+        ],
+        [
+          52.516259,
+          13.377495
+        ],
+        [
+          52.516265,
+          13.377609
+        ],
+        [
+          52.516273,
+          13.377752
+        ],
+        [
+          52.516275,
+          13.377798
+        ],
+        [
+          52.51629,
+          13.378034
+        ],
+        [
+          52.516317,
+          13.378241
+        ],
+        [
+          52.516322,
+          13.378315
+        ],
+        [
+          52.516347,
+          13.378684
+        ],
+        [
+          52.516322,
+          13.378315
+        ],
+        [
+          52.516317,
+          13.378241
+        ],
+        [
+          52.516451,
+          13.378214
+        ],
+        [
+          52.516546,
+          13.378197
+        ],
+        [
+          52.516541,
+          13.378122
+        ],
+        [
+          52.516539,
+          13.37809
+        ],
+        [
+          52.516538,
+          13.378073
+        ],
+        [
+          52.516816,
+          13.378031
+        ],
+        [
+          52.516822,
+          13.378012
+        ],
+        [
+          52.516838,
+          13.377966
+        ],
+        [
+          52.516973,
+          13.377938
+        ],
+        [
+          52.517081,
+          13.377916
+        ],
+        [
+          52.517073,
+          13.37778
+        ],
+        [
+          52.517063,
+          13.377602
+        ],
+        [
+          52.517054,
+          13.377469
+        ],
+        [
+          52.517688,
+          13.37717
+        ],
+        [
+          52.51771,
+          13.377171
+        ],
+        [
+          52.517734,
+          13.377173
+        ],
+        [
+          52.517781,
+          13.377124
+        ],
+        [
+          52.517809,
+          13.377109
+        ],
+        [
+          52.517847,
+          13.377089
+        ],
+        [
+          52.5179,
+          13.377062
+        ],
+        [
+          52.517888,
+          13.376915
+        ],
+        [
+          52.517973,
+          13.376918
+        ],
+        [
+          52.518647,
+          13.376934
+        ]
+      ],
+      "distanceKm": 6.2,
+      "confidence": "OSM fotgjengerruting – kontroller lokal adkomst"
+    },
+    "stops": [
+      {
+        "name": "Start",
+        "lat": 52.4974388,
+        "lng": 13.3621362,
+        "note": "Utgangspunkt i Schöneberg"
+      },
+      {
+        "name": "Potsdamer Platz",
+        "lat": 52.5098014,
+        "lng": 13.3755898,
+        "note": "Moderne bysentrum og historiske rester av Berlinmuren."
+      },
+      {
+        "name": "Topographie des Terrors",
+        "lat": 52.5062137,
+        "lng": 13.3841548,
+        "note": "Dokumentasjonssenter på stedet for Gestapo og SS, med en original del av Berlinmuren."
+      },
+      {
+        "name": "Checkpoint Charlie",
+        "lat": 52.5069095,
+        "lng": 13.3906865,
+        "note": "Historisk grenseovergang mellom øst og vest; rekonstruert vakthus."
+      },
+      {
+        "name": "Gendarmenmarkt",
+        "lat": 52.5135698,
+        "lng": 13.392297,
+        "note": "Monumentalt torg med Konzerthaus og de tyske og franske kirkebygningene."
+      },
+      {
+        "name": "Holocaust-minnesmerket",
+        "lat": 52.5138731,
+        "lng": 13.3787346,
+        "note": "Minnesmerket over Europas myrdede jøder med 2711 betongsteler."
+      },
+      {
+        "name": "Brandenburger Tor",
+        "lat": 52.5163553,
+        "lng": 13.3786828,
+        "note": "Berlins ikoniske byport og symbol på tysk gjenforening."
+      },
+      {
+        "name": "Reichstag og glasskuppelen",
+        "lat": 52.5186538,
+        "lng": 13.3761015,
+        "note": "Parlamentsbygning med glasskuppel og panoramautsikt."
+      }
+    ]
   }
 ]
