@@ -37,7 +37,7 @@ def extract(desc, label):
     match = re.search(r"(?im)^\*\*" + re.escape(label) + r"\*\*:\s*(.+)$", desc)
     return match.group(1).strip() if match else ""
 def extract_block(desc, label):
-    match = re.search(r"(?im)^\\*\\*" + re.escape(label) + r"\\*\\*:\\s*(.*)$", desc)
+    match = re.search(r"(?im)^\\*\\*" + re.escape(label) + r"\\*\\*:[ \\t]*(.*)$", desc)
     if not match: return ""
     first = match.group(1).strip()
     rest = desc[match.end():]
@@ -91,12 +91,19 @@ for t in tasks():
         print(f"SKIPPED: No verified coordinates for {name}")
         continue
     summary = extract(desc,"Kort fortalt") or extract(desc,"Opplevelse") or previous.get("description","")
-    # Full description can be displayed in the map; remove duplicate link-only lines.
-    details = [line.strip() for line in desc.splitlines() if line.strip() and not any(line.startswith("**"+key+"**:") for key in ("Sted","Opplevelse","Inspirasjonsvideo","Video som inspirerte","Video","Bilder og inspirasjon","Kart","Offisiell side / billetter","Mer informasjon","Bilde","Koordinater"))]
-    if details: summary = summary + ("\n\n" if summary else "") + "\n".join(details)
     image = first_link(desc,"Bilde") or previous.get("image","")
     detail_text = extract_block(desc,"Utfyllende informasjon") or previous.get("details","")
-    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense","")})
+    route_type = extract(desc,"Turtype") or previous.get("routeType", "Enkeltsted")
+    if route_type not in ("Enkeltsted", "Dagstur", "Flerdagstur"):
+        route_type = "Enkeltsted"
+    if route_type == "Enkeltsted" and category == "Fotturer":
+        route_type = "Dagstur"
+    route_url = first_link(desc,"GPX") or previous.get("routeUrl","")
+    route_source = first_link(desc,"Rutekilde") or previous.get("routeSource","")
+    # Route geometry is curated separately. Never infer a walking trail from straight-line coordinates.
+    route = previous.get("route",{})
+    stops = previous.get("stops",[])
+    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"route":route,"stops":stops})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
