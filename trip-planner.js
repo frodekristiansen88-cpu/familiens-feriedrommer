@@ -1,5 +1,5 @@
 /* Turmapper for familiens feriekart.
-   Lagring skjer kun i denne nettleseren, ikke i GitHub eller Todoist. */
+   Lokale mapper og innloggede skymapper holdes adskilt. */
 (() => {
   "use strict";
   const STORAGE_KEY = "familien-feriedrommer-turplaner-v1";
@@ -32,7 +32,43 @@
   let selectedId=typeof saved?.selectedId==="string"&&trips.some(t=>t.id===saved.selectedId)?saved.selectedId:trips[0].id;
   let mode="all",places=[],byId=new Map();
   let map=null,baseLayer=null,controls={};
-  const current=()=>trips.find(t=>t.id===selectedId)||trips[0];
+  const EMPTY={id:"",name:"Ingen tur valgt",lat:47,lng:8,radiusKm:100,placeIds:[]};
+  const current=()=>trips.find(t=>t.id===selectedId)||trips[0]||EMPTY;
+  let localState=null;
+  const cloud=()=>window.ferieCloud;
+  const cloudActive=()=>!!localState;
+  const canMutate=()=>!cloudActive()||cloud()?.writable();
+  const canEdit=()=>!!current().id&&canMutate();
+  const canDelete=()=>canEdit()&&(!cloudActive()||cloud()?.canDelete(current().id));
+  function refreshControls(){
+    if(!controls.root)return;
+    for(const id of ["trip-rename","trip-set-center","trip-center"]){
+      const el=controls.root.querySelector("#"+id);if(el)el.disabled=id==="trip-center"?!current().id:!canEdit();
+    }
+    controls.radius.disabled=!canEdit();
+    controls.root.querySelector("#trip-new").disabled=!canMutate();
+    controls.root.querySelector("#trip-delete").disabled=!canDelete()||(!cloudActive()&&trips.length<=1);
+    controls.root.querySelector("#trip-import").disabled=!canMutate();
+    controls.root.querySelector("#trip-export").disabled=!trips.length;
+    controls.root.querySelectorAll(".trip-tiny-add,.trip-remove").forEach(el=>el.disabled=!canEdit());
+    document.querySelectorAll("[data-trip-place-id]").forEach(el=>el.disabled=!canEdit());
+    for(const [name,b] of Object.entries(controls.modes||{}))b.disabled=name!=="all"&&!current().id;
+  }
+  function replaceCloudTrips(next){
+    trips=next.map(sanitizeTrip).filter(Boolean);
+    if(!trips.some(t=>t.id===selectedId))selectedId=trips[0]?.id||"";
+    if(!trips.length)mode="all";
+    renderSelect();updateView(false);
+  }
+  function enterCloud(){
+    if(!localState)localState={trips:copy(trips),selectedId,mode};
+    replaceCloudTrips([]);
+  }
+  function leaveCloud(){
+    if(!localState)return;
+    trips=localState.trips;selectedId=localState.selectedId;mode=localState.mode;localState=null;
+    renderSelect();updateView(false);
+  }
   const numberFormat=new Intl.NumberFormat("nb-NO",{maximumFractionDigits:0});
   function km(a,b) {
     const deg=Math.PI/180, r1=a[0]*deg,r2=b[0]*deg;
@@ -41,7 +77,11 @@
     return 12742*Math.asin(Math.sqrt(Math.min(1,h)));
   }
   function save() {
-    if (!storageAvailable) return false;
+    if(cloudActive()){cloud()?.save(copy(trips));return true;}
+    return saveLocal();
+  }
+  function saveLocal() {
+    if(cloudActive()||!storageAvailable) return false;
     try {localStorage.setItem(STORAGE_KEY,JSON.stringify({version:1,trips,selectedId}));return true;}
     catch(e){storageAvailable=false;renderStorageNote();return false;}
   }
@@ -54,7 +94,7 @@
   function hasPlace(placeId){return current().placeIds.includes(String(placeId));}
   function togglePlace(placeId){
     const t=current(),id=String(placeId);
-    if (!byId.has(id)) return;
+    if (!canEdit()||!byId.has(id)) return;
     if (t.placeIds.includes(id)) t.placeIds=t.placeIds.filter(x=>x!==id);
     else t.placeIds.push(id);
     save();
@@ -66,6 +106,7 @@
       button.textContent=selected?"✓ I turen – fjern":"+ Legg til i tur";
       button.classList.toggle("trip-added",selected);
       button.title=selected?"Fjern fra "+current().name+" (behold i feriedrømmene)":"Legg til i "+current().name;
+      button.disabled=!canEdit();
       button.setAttribute("aria-pressed",String(selected));
     });
   }
@@ -77,6 +118,7 @@
     const selected=hasPlace(String(placeId));
     button.textContent=selected?"✓ I turen – fjern":"+ Legg til i tur";
     button.classList.toggle("trip-added",selected);
+    button.disabled=!canEdit();
     button.setAttribute("aria-pressed",String(selected));
     button.title=selected?"Fjern fra "+current().name+" (behold i feriedrømmene)":"Legg til i "+current().name;
     button.addEventListener("click",event=>{event.stopPropagation();togglePlace(placeId);});
@@ -95,13 +137,13 @@
   function renderHomeMarker(){
     if(!map||!baseLayer) return;
     baseLayer.clearLayers();
-    if(mode==="all")return;
+    if(mode==="all"||!current().id)return;
     const t=current(),point=[t.lat,t.lng];
     L.circleMarker(point,{radius:8,color:"#174e68",weight:3,fillColor:"#42b7cf",fillOpacity:1})
       .addTo(baseLayer).bindPopup("Område for turen: "+t.name+" · "+t.radiusKm+" km søkeradius");
   }
   function zoomToTrip(){
-    if(!map) return;
+    if(!map||!current().id) return;
     const t=current();
     map.setView([t.lat,t.lng],t.radiusKm<=70?10:t.radiusKm<=170?9:8);
     renderHomeMarker();
@@ -119,6 +161,12 @@
     if(!controls.selected||!controls.nearby)return;
     const t=current();
     controls.selected.replaceChildren();
+    if(!t.id){
+      controls.count.textContent="Ingen turmapper i skyen";
+      controls.selected.append(element("p","trip-empty","Opprett en ny tur eller velg «Kopier lokale turmapper» under Skysynkronisering."));
+      controls.nearby.replaceChildren();controls.nearLabel.textContent="Nærliggende feriedrømmer";
+      refreshControls();return;
+    }
     const selected=t.placeIds.map(id=>byId.get(id)).filter(Boolean);
     controls.count.textContent=selected.length+" aktuelle reisemål";
     if(!selected.length) controls.selected.append(element("p","trip-empty","Ingen steder lagt til ennå. Velg fra forslagene under eller fra et kort i kartet."));
@@ -126,7 +174,7 @@
       const row=element("div","trip-entry"),name=element("span","trip-entry-name",p.name);
       const open=element("button","trip-tiny","Kart");
       open.type="button";open.addEventListener("click",()=>showPlace(p));
-      const remove=element("button","trip-tiny","Fjern");
+      const remove=element("button","trip-tiny trip-remove","Fjern");
       remove.type="button";remove.title="Fjern bare fra denne turen";
       remove.addEventListener("click",()=>togglePlace(p.id));
       row.append(name,open,remove);controls.selected.append(row);
@@ -147,9 +195,11 @@
       row.append(name,focus,add);controls.nearby.append(row);
     }
     if(near.length>15)controls.nearby.append(element("p","trip-empty","Viser de 15 nærmeste. Bruk «Vis i nærheten» for hele området."));
+    refreshControls();
   }
   function renderStorageNote(){
     if(!controls.storage)return;
+    if(cloudActive()){controls.storage.textContent="Innloggede turmapper lagres i Supabase. De lokale originalene beholdes separat. Eksporter ved behov.";return;}
     controls.storage.textContent=storageAvailable?
       "Lagres i denne nettleseren. Bruk «Eksporter» for sikkerhetskopi eller overføring til en annen enhet.":
       "Nettleseren tillater ikke lagring. Endringer vil forsvinne når siden lukkes – eksporter en sikkerhetskopi.";
@@ -159,6 +209,7 @@
     controls.select.replaceChildren();
     for(const t of trips){const opt=new Option(t.name,t.id);controls.select.append(opt);}
     controls.select.value=selectedId;
+    controls.select.disabled=!trips.length;
     controls.radius.value=String(current().radiusKm);
     renderMode();
     renderLists();
@@ -172,7 +223,7 @@
     }
   }
   function setMode(next){
-    if(!["all","near","selected"].includes(next))return;
+    if(!["all","near","selected"].includes(next)||next!=="all"&&!current().id)return;
     mode=next;
     renderMode();
     updateView(false);
@@ -199,17 +250,24 @@
       if(loaded.format!=="familiens-feriedrommer-turer" || !Array.isArray(loaded.trips))throw new Error("Ukjent sikkerhetskopi");
       const cleaned=loaded.trips.map(sanitizeTrip).filter(Boolean).slice(0,40);
       if(!cleaned.length)throw new Error("Ingen gyldige turmapper");
-      if(!confirm("Erstatte de nåværende turmappene i denne nettleseren med "+cleaned.length+" fra sikkerhetskopien?"))return;
-      trips=cleaned;selectedId=trips[0].id;mode="all";
+      if(!canMutate())throw new Error("Vent til skysynkroniseringen er ferdig.");
+      if(cloudActive()){
+        if(!confirm("Importere "+cleaned.length+" turmapper som nye, private kopier i skyen? Ingen eksisterende skymapper erstattes."))return;
+        const copies=cleaned.map(t=>({...t,id:crypto.randomUUID()}));
+        trips=[...trips,...copies];selectedId=copies[0].id;mode="all";
+      }else{
+        if(!confirm("Erstatte de nåværende lokale turmappene med "+cleaned.length+" fra sikkerhetskopien?"))return;
+        trips=cleaned;selectedId=trips[0].id;mode="all";
+      }
       save();renderSelect();updateView(false);
-      alert("Turplanene ble importert. Feriedrømmene i hovedlisten er ikke endret.");
     }catch(err){alert("Kunne ikke lese turplanene: "+err.message);}
   }
   function createFolder(){
-    if(trips.length>=40){alert("Maksimalt 40 turmapper.");return;}
+    if(!canMutate())return;
+    if(trips.length>=40){alert("Maksimalt 40 turmapper ved manuell opprettelse.");return;}
     const name=prompt("Navn på turen (kartets nåværende sentrum brukes som geografisk utgangspunkt):","Ny tur");
     if(!name?.trim())return;
-    const mid=map.getCenter(),id="tur-"+Date.now()+"-"+Math.floor(Math.random()*10000);
+    const mid=map.getCenter(),id=crypto.randomUUID();
     const t={id,name:name.trim().slice(0,90),lat:mid.lat,lng:mid.lng,radiusKm:100,placeIds:[]};
     trips.push(t);selectedId=id;mode="near";save();renderSelect();updateView(false);
   }
@@ -228,13 +286,14 @@
       count=root.querySelector("#trip-count"),
       nearLabel=root.querySelector("#trip-near-label"),
       storage=root.querySelector("#trip-storage");
-    controls={select,radius,selected,nearby,count,nearLabel,storage,modes:{}};
+    controls={root,select,radius,selected,nearby,count,nearLabel,storage,modes:{}};
     for(const button of root.querySelectorAll("[data-trip-mode]")){
       controls.modes[button.dataset.tripMode]=button;
       button.addEventListener("click",()=>setMode(button.dataset.tripMode));
     }
-    select.addEventListener("change",()=>{selectedId=select.value;save();renderSelect();updateView(false);zoomToTrip();});
+    select.addEventListener("change",()=>{selectedId=select.value;if(!cloudActive())saveLocal();renderSelect();updateView(false);cloud()?.updateUI();zoomToTrip();});
     radius.addEventListener("change",()=>{
+      if(!canEdit()){radius.value=String(current().radiusKm);return;}
       const n=Number(radius.value);
       if(!Number.isFinite(n)){radius.value=String(current().radiusKm);return;}
       current().radiusKm=Math.round(Math.min(500,Math.max(10,n)));
@@ -242,19 +301,22 @@
     });
     root.querySelector("#trip-new").addEventListener("click",createFolder);
     root.querySelector("#trip-rename").addEventListener("click",()=>{
+      if(!canEdit())return;
       const next=prompt("Gi turmappen nytt navn:",current().name);
       if(!next?.trim())return;current().name=next.trim().slice(0,90);
       save();renderSelect();refreshButtons();
     });
     root.querySelector("#trip-delete").addEventListener("click",()=>{
       const t=current();
-      if(trips.length<=1){alert("Du må beholde minst én turmappe.");return;}
+      if(!canDelete())return;
+      if(!cloudActive()&&trips.length<=1){alert("Du må beholde minst én lokal turmappe.");return;}
       if(!confirm('Slette turmappen «'+t.name+'»? Stedene beholdes i hovedlisten.'))return;
-      trips=trips.filter(x=>x.id!==t.id);selectedId=trips[0].id;
+      trips=trips.filter(x=>x.id!==t.id);selectedId=trips[0]?.id||"";
       mode="all";save();renderSelect();updateView(false);
     });
     root.querySelector("#trip-center").addEventListener("click",zoomToTrip);
     root.querySelector("#trip-set-center").addEventListener("click",()=>{
+      if(!canEdit())return;
       const c=map.getCenter();
       if(!confirm("Bruke kartets nåværende midtpunkt som området for «"+current().name+"»?"))return;
       current().lat=c.lat;current().lng=c.lng;save();renderSelect();updateView(false);
@@ -266,6 +328,10 @@
     renderSelect();
     refreshButtons();
     window.ferieRerender?.(false);
+    cloud()?.init({
+      sanitize:sanitizeTrip, getTrips:()=>copy(trips), localTrips:()=>copy(localState?.trips||trips),
+      selectedId:()=>current().id, replace:replaceCloudTrips,enterCloud,leaveCloud,refreshControls
+    });
   }
   window.feriePlanner={createToggleButton,filterPlaces,isSelected:hasPlace,setMode};
   function onReady(){
