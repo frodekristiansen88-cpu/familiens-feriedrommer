@@ -181,23 +181,110 @@ def photo_data(filename):
         "imageLicense": license_url,
     }
 
+
+# Explicit aliases and known Commons file titles. A thumbnail from a licensed
+# video is allowed; the source is still the original video and credited as such.
+CURATED_FILES.update({
+    "Canyoning – Ribeira das Cales": "Ribeira das Cales.jpg",
+    "Canyoning – Ribeira da Hortelã": "Hortelã Inferior, Madeira.webm",
+    "Cascata da Levada Nova": "Gewässerkreuzung an der Levada Nova zwischen Raposeira Do Logarinho und Prazeres, Madeira II.jpg",
+    "Cascata do Caldeirão Verde": "Levada do Caldeirão Verde, Madeira - Aug 2012 - 05.jpg",
+})
+ALIASES = {
+    "Praia do Porto do Seixal": ["Praia do Seixal", "Seixal beach", "Praia do Porto do Seixal"],
+    "Praia da Banda d’Além": ["Praia da Banda d'Além", "Banda d Além", "Machico beach"],
+    "Praia do Almirante Reis": ["Praia do Almirante Reis", "Almirante Reis beach"],
+    "Teleférico do Funchal": ["Funchal cable car", "Teleférico do Funchal", "Teleférico Funchal Monte"],
+    "Teleférico das Achadas da Cruz": ["Achadas da Cruz cable car", "Teleférico das Achadas da Cruz"],
+    "Teleférico da Fajã dos Padres": ["Fajã dos Padres cable car", "Teleférico da Fajã dos Padres"],
+    "Teleférico do Jardim Botânico": ["Jardim Botânico cable car", "Teleférico do Jardim Botânico"],
+    "Teleférico do Garajau": ["Garajau cable car", "Teleférico do Garajau"],
+    "Cascata das 25 Fontes": ["25 Fontes waterfall", "Cascata das 25 Fontes", "25 Fontes"],
+    "Cascata do Caldeirão Verde": ["Caldeirão Verde waterfall", "Cascata do Caldeirão Verde"],
+    "Garganta Funda": ["Garganta Funda waterfall", "Cascata da Garganta Funda", "Garganta Funda"],
+    "Coasteering – Madeira": ["coasteering Madeira"],
+    "Terrengsykling (Enduro) – Poiso": ["Poiso mountain bike", "Poiso BTT"],
+    "Delfin- og hvalsafari (Funchal)": ["Funchal whale watching", "Funchal dolphin watching"],
+    "Delfin- og hvalsafari (Calheta)": ["Calheta whale watching", "Calheta dolphin watching"],
+    "Dykking i Garajau naturreservat": ["Garajau diving", "Garajau underwater"],
+    "Havkajakk ved São Lourenço": ["São Lourenço kayak", "Ponta de São Lourenço canoe"],
+    "Båttur til Ilhas Desertas": ["Ilhas Desertas", "Desertas Islands"],
+    "Tandemparagliding (Arco da Calheta)": ["Arco da Calheta paragliding"],
+    "Stjernekikking (Pico do Areeiro)": ["Pico do Areeiro night", "Pico do Arieiro stars"],
+}
+IRRELEVANT = re.compile(r"transformer|substation|power.station|power.pole|coat.of.arms|log[oó]tipo|logo|locator.map|statue.johannes.paul|azenha.carlos.reis|playing.cards", re.I)
+def fold(value):
+    import unicodedata
+    return " ".join(re.findall(r"[a-z0-9]+", "".join(c for c in unicodedata.normalize("NFKD",value.casefold()) if not unicodedata.combining(c))))
+def is_bad_file(filename):
+    return bool(IRRELEVANT.search(urllib.parse.unquote(filename))) or any(s in filename.casefold() for s in BAD_NAME)
+def search_photo(place):
+    name = place["name"]
+    madeira = "Madeira" in place.get("tags", [])
+    full = re.sub(r"^PR \d+(?:\.\d+)?\s+", "", name)
+    full = re.sub(r"^Canyoning\s+[–—-]\s+", "", full)
+    full = re.sub(r"\s*\([^)]*\)", "", full).strip()
+    aliases = ALIASES.get(name, [full])
+    aliases = list(dict.fromkeys(aliases))
+    region = "Madeira" if madeira else place.get("country","")
+    for alias in aliases[:3]:
+        # A distinctive, contiguous name must occur in the title or description.
+        # Do not force 'Madeira' into the filename: use full-text geographic evidence.
+        query = '"' + alias.replace('"','') + '" ' + region
+        try:
+            data = get_json("commons.wikimedia.org", {
+                "action":"query", "generator":"search", "gsrsearch":query,
+                "gsrnamespace":"6","gsrlimit":"12", "prop":"imageinfo",
+                "iiprop":"url|extmetadata", "iiurlwidth":"960", "format":"json"
+            })
+            for page in sorted(data.get("query",{}).get("pages",{}).values(), key=lambda p:p.get("index",999)):
+                filename = page.get("title","").removeprefix("File:")
+                if is_bad_file(filename) or not filename.lower().endswith((".jpg",".jpeg",".png",".webp",".webm")):
+                    continue
+                ii = (page.get("imageinfo") or [{}])[0]
+                meta = ii.get("extmetadata",{})
+                caption = plaintext(meta.get("ImageDescription",{}).get("value",""))
+                categories = plaintext(meta.get("Categories",{}).get("value",""))
+                evidence = fold(filename + " " + caption)
+                if fold(alias) not in evidence:
+                    continue
+                # Generic terms and homonyms need geographic confirmation.
+                if madeira and "madeira" not in fold(filename+" "+caption+" "+categories):
+                    continue
+                photo = photo_data(filename)
+                if photo:
+                    if filename.lower().endswith(".webm"):
+                        photo["imageCredit"] += " · stillbilde fra video"
+                    return photo
+        except Exception as exc:
+            print("SEARCH PHOTO FAILED:", name, str(exc)[:150])
+        finally:
+            time.sleep(.5)
+    return None
+
 def main():
     places = json.loads(PATH.read_text(encoding="utf-8"))
     updated = 0
     for place in places:
-        if place.get("image") or place["name"] not in ARTICLES:
+        if place.get("image") and is_bad_file(place.get("imageSource",place["image"])):
+            for key in ("image","imageCredit","imageSource","imageLicense"):
+                place[key] = ""
+            updated += 1
+        if place.get("image"):
             continue
         if place["name"] in CURATED_FILES:
             try:
                 photo = photo_data(CURATED_FILES[place["name"]])
                 if photo:
+                    if CURATED_FILES[place["name"]].lower().endswith(".webm"):
+                        photo["imageCredit"] += " · stillbilde fra video"
                     place.update(photo)
                     updated += 1
                     print("CURATED PHOTO:", place["name"])
                     continue
             except Exception as exc:
                 print("CURATED PHOTO FAILED:", place["name"], str(exc)[:110])
-        for lang, title in ARTICLES[place["name"]]:
+        for lang, title in ARTICLES.get(place["name"], []):
             try:
                 filename = page_image(lang, title)
                 if not filename:
@@ -213,7 +300,13 @@ def main():
             finally:
                 time.sleep(.3)
         if not place.get("image"):
-            print("NO LICENSED PHOTO:", place["name"])
+            photo = search_photo(place)
+            if photo:
+                place.update(photo)
+                updated += 1
+                print("MATCHED PHOTO:",place["name"],photo["imageSource"])
+            else:
+                print("NO LICENSED PHOTO:", place["name"])
     if updated:
         PATH.write_text(json.dumps(places, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print("New Wikimedia images:", updated)
