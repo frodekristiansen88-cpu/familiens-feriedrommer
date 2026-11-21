@@ -17,10 +17,13 @@
     "summary": "En spektakulær vandring på smale gangbroer festet til bratte fjellvegger over Gaitanes-kløften, nordvest for Málaga. Høydepunktet er utsikten ned i juvet og hengebroen nær slutten av turen.",
     "details": "OM STEDET\nCaminito del Rey ble opprinnelig anlagt som adkomst for arbeidere ved vannkraftanleggene i området tidlig på 1900-tallet. Den gamle stien ble senere kjent for sin utsatte beliggenhet. Dagens restaurerte trasé er tilrettelagt og har sikkerhetstiltak.\n\nHVA KAN VI OPPLEVE?\n• Gå på gangbroer høyt over elven Guadalhorce.\n• Se de smale passasjene gjennom Desfiladero de los Gaitanes.\n• Krysse en hengebro og oppleve imponerende utsikt.\n• Kombinere besøket med innsjøene ved Ardales eller landsbyen El Chorro.\n\nPRAKTISK\n• Ruten er enveiskjørt, vanligvis fra nord til sør.\n• Regn omtrent 3–4 timer totalt, avhengig av transport og tempo.\n• Bestill billetter på forhånd; åpning og gjennomføring avhenger av vær og sikkerhetsforhold.\n• Bruk gode sko, ta med vann og sjekk regler for barn og bagasje.\n• Passer best for dem som tåler høyder og trapper.\n\nI NÆRHETEN\nArdales, El Chorro og innsjøområdet Embalses del Guadalhorce. En naturlig dagstur fra Málaga.",
     "routeType": "Dagstur",
-    "route": {},
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
     "stops": [],
-    "routeUrl": "https://entremontanas.com/travesias/el-caminito-del-rey",
-    "routeSource": "https://entremontanas.com/travesias/el-caminito-del-rey"
+    "routeUrl": "https://www.wikiloc.com/hiking-trails/caminito-del-rey-286693283",
+    "routeSource": "https://www.caminitodelrey.info/en/your-visit/access-route",
+    "routeNote": "Offisiell enveisrute på ca. 8 km. Wikiloc-sporet er brukerregistrert og kan avvike i adkomst og trasé; bekreft med offisiell rutebeskrivelse."
   },
   {
     "id": "6j44JRfV4V2GR65m",
@@ -40,8 +43,13 @@
     "summary": "En vakker kløftvandring mellom Mittenwald i Bayern og Leutasch i Tirol, med turkist vann, fossefall og gangbroer. Et spesielt høydepunkt er at man kan krysse grensen mellom Tyskland og Østerrike til fots.",
     "details": "OM STEDET\nLeutascher Geisterklamm ligger i Karwendel-området i Alpene. Stiene følger kløften over og langs den brusende Leutascher Ache. Området er kjent for dramatiske fjellvegger, gangbroer og fortellinger om kløftens «ånder».\n\nHVA KAN VI OPPLEVE?\n• Vandre på gangbroer og broer med utsikt ned i kløften.\n• Besøke den korte Wasserfallsteig på tysk side for nærkontakt med fossen.\n• Krysse landegrensen mellom Bayern og Tirol til fots.\n• Kombinere med en tur i den sjarmerende alpebyen Mittenwald.\n\nPRAKTISK\n• Det finnes flere turvarianter, fra kort fossebesøk til lengre runder i området.\n• Wasserfallsteig omtales som rundt 200 meter; den er ikke hele kløftvandringen.\n• Gangbroer og stier kan være stengt ved vinterforhold, dårlig vær eller vedlikehold.\n• Bruk solide sko; deler av turen kan ha trapper og være utfordrende ved høydeskrekk.\n• Sjekk aktuell sesong, adkomst og eventuelle avgifter før besøket.\n\nI NÆRHETEN\nMittenwald, Leutasch, Karwendel-fjellene og Seefeld. Et fint stopp på bilferie gjennom Alpene.",
     "routeType": "Dagstur",
-    "route": {},
-    "stops": []
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
+    "stops": [],
+    "routeUrl": "https://tirol.mapservices.eu/nefos_app/api/gpx/imx_xR7kIE5LaSrqNTM6/de/generate/32118038",
+    "routeSource": "https://www.tirol.at/aktivitaeten/sport/wandern/wandertouren/leutascher-geisterklamm",
+    "routeNote": "GPX fra Tirols turistside for ca. 5 km rundtur. Kort Wasserfallsteig kan være en separat avstikker. Sesongstengt om vinteren."
   },
   {
     "id": "6j44hhrCX9cjhC4F",
@@ -57,8 +65,13 @@
     "info": "",
     "image": "",
     "routeType": "Dagstur",
-    "route": {},
-    "stops": []
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
+    "stops": [],
+    "routeUrl": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
+    "routeSource": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
+    "routeNote": "Alternativ rundtur fra regional turistaktør med GPX på kildesiden. Kan avvike fra 10 km-ruten i inspirasjonsvideoen."
   },
   {
     "id": "6j44jRQhXjCJrxGm",
@@ -74,8 +87,13 @@
     "info": "",
     "image": "",
     "routeType": "Enkeltsted",
-    "route": {},
-    "stops": []
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
+    "stops": [],
+    "routeUrl": "https://levadas.live/trails/PR1/",
+    "routeSource": "https://www.visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-1-vereda-do-areeiro/",
+    "routeNote": "PR1 er en separat fjelltur, ikke nødvendig for å besøke utsiktspunktet. GPX fra OSM-data. Deler av PR1 kan være stengt eller enveisregulert; sjekk offisiell status."
   },
   {
     "id": "6j44jg56FRWv66Vm",
@@ -91,8 +109,13 @@
     "info": "https://www.turismodearagon.com/ficha/congosto-de-mont-rebei/",
     "image": "",
     "routeType": "Dagstur",
-    "route": {},
-    "stops": []
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
+    "stops": [],
+    "routeUrl": "https://turismoribagorza.org/en/wp-content/Uploads/2025/06/natural_path_footbridges.gpx",
+    "routeSource": "https://turismoribagorza.org/en/rue/natural-path-from-montfalco-to-the-gorge-of-mont-rebei/",
+    "routeNote": "GPX fra regional turistaktør, men denne traséen inkluderer Montfalcó-gangbroene. Ikke bruk den som aktuell turplan før stengningene er opphevet."
   },
   {
     "id": "6j44jr8rCXfw6p8F",
@@ -125,9 +148,12 @@
     "info": "",
     "image": "",
     "routeType": "Dagstur",
-    "route": {},
+    "route": {
+      "confidence": "Kilde funnet – GPS-spor ikke importert"
+    },
     "stops": [],
     "routeUrl": "https://www.bergfex.at/sommer/salzburg/touren/themenweg/1459137,liechtensteinklamm-mit-helix/",
-    "routeSource": "https://www.bergfex.at/sommer/salzburg/touren/themenweg/1459137,liechtensteinklamm-mit-helix/"
+    "routeSource": "https://www.bergfex.at/sommer/salzburg/touren/themenweg/1459137,liechtensteinklamm-mit-helix/",
+    "routeNote": "Rutekart fra tredjepart. Sammenlign med gjeldende besøksrute og åpningstider; ikke bekreftet at GPX kan lastes ned uten innlogging."
   }
 ]
