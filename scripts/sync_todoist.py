@@ -83,7 +83,11 @@ for t in tasks():
         print(f"SKIPPED: No verified coordinates for {name}")
         continue
     summary = extract(desc,"Opplevelse") or previous.get("description","")
-    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info})
+    # Full description can be displayed in the map; remove duplicate link-only lines.
+    details = [line.strip() for line in desc.splitlines() if line.strip() and not any(line.startswith("**"+key+"**:") for key in ("Sted","Opplevelse","Inspirasjonsvideo","Video som inspirerte","Video","Bilder og inspirasjon","Kart","Offisiell side / billetter","Mer informasjon","Bilde","Koordinater"))]
+    if details: summary = summary + ("\n\n" if summary else "") + "\n".join(details)
+    image = first_link(desc,"Bilde") or previous.get("image","")
+    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"image":image})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
