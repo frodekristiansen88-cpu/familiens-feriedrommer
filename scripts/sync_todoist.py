@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Synchronize the Todoist Feriedrømmer section to places.json."""
-import json, os, re, time, urllib.parse, urllib.request
+import json, os, re, time, unicodedata, urllib.parse, urllib.request
 from pathlib import Path
 from import_gpx import download, parse_gpx, simplify, km
 from fetch_images import get_json as wiki_json, photo_data
@@ -8,7 +8,7 @@ from fetch_images import get_json as wiki_json, photo_data
 PROJECT = "6hvJmr29qp2mmf5F"
 SECTION = "6j44Hq4M8CFrjj8F"
 PATH = Path("places.json")
-CATEGORIES = ("Fotturer", "Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser")
+CATEGORIES = ("Fotturer", "Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser", "Strender og badeplasser")
 TOKEN = os.environ["TODOIST_API_TOKEN"]
 HEADERS = {"Authorization": f"Bearer {TOKEN}", "User-Agent": "FamiliensFeriedrommer/1.0"}
 URL_RE = re.compile(r"https?://[^\s)<>]+")
@@ -125,7 +125,7 @@ def madeira_track(desc, name):
 # Restrict Commons search to route-specific name; never invent images or licence.
 def madeira_photo(name):
     match = re.match(r"^PR \d+(?:\.\d+)? (.+)",name)
-    title = match.group(1) if match else name
+    title = match.group(1) if match else re.sub(r"\s*\([^)]*\)","",name).strip()
     short = re.sub(r"^(?:Vereda (?:do|da|dos|das) |Levada (?:do|da|das|dos) |Caminho (?:Real )?(?:do|da) )","",title,flags=re.I)
     if short in ("Ilha","Monte","Moinho","Rei","Norte","Risco","Barreiro","Burro"):
         terms = [title]
@@ -161,6 +161,44 @@ def madeira_photo(name):
     print("NO ROUTE-SPECIFIC LICENSED PHOTO:",name)
     return None
 
+# Accept named mapped coastal features only, never a municipality or hotel
+# centroid as a verified beach. Missing pins remain available in Todoist.
+def norm_name(value):
+    value=unicodedata.normalize("NFKD",value.casefold())
+    return " ".join(re.findall(r"[a-z0-9]+","".join(c for c in value if not unicodedata.combining(c))))
+
+def beach_geocode(name, desc):
+    main = re.sub(r"\s*\([^)]*\)","",name).strip()
+    aliases=[main]+re.findall(r"\(([^)]+)\)",name)
+    aliases=[a for a in aliases if len(a)>4 and a.casefold() not in ("badeplass","badebukt","badeanlegg")]
+    loc=extract(desc,"Kartlokasjon")
+    variants=[loc,main+", Madeira, Portugal"]
+    variants.extend(a+", Madeira, Portugal" for a in aliases[1:])
+    for query in dict.fromkeys(q for q in variants if q):
+        params={"q":query,"format":"jsonv2","limit":8,"countrycodes":"pt","namedetails":"1","viewbox":"-17.30,32.90,-16.63,32.60","bounded":"1"}
+        try:
+            req=urllib.request.Request("https://nominatim.openstreetmap.org/search?"+urllib.parse.urlencode(params),headers={"User-Agent":"FamiliensFeriedrommer/1.0 (personal family travel map)","Accept":"application/json"})
+            with urllib.request.urlopen(req,timeout=18) as response:
+                results=json.load(response)
+            for item in results:
+                lat,lng=float(item["lat"]),float(item["lon"])
+                if not (32.60<=lat<=32.90 and -17.30<=lng<=-16.63): continue
+                cat=item.get("category",item.get("class",""));typ=item.get("type","")
+                if cat in ("boundary","place","highway","railway","building","office","shop") or typ in ("hotel","restaurant","viewpoint","peak","village","town","city","hamlet","locality","cable_car","station"): continue
+                names=[item.get("name",""),*item.get("namedetails",{}).values()]
+                keys={norm_name(x) for x in names if isinstance(x,str)}
+                akeys={norm_name(a) for a in aliases}
+                # Accept exact feature name, including official multilingual alternate names.
+                if not (keys&akeys): continue
+                print("BEACH GEO:",name,lat,lng)
+                return lat,lng
+        except Exception as exc:
+            print("BEACH GEOCODE FAILED:",name,str(exc)[:120])
+        finally:
+            time.sleep(1.2)
+    print("BEACH PIN NOT VERIFIED:",name)
+    return None
+
 old = json.loads(PATH.read_text(encoding="utf-8")) if PATH.exists() else []
 by_id = {str(p.get("id")):p for p in old if p.get("id")}
 by_name = {p.get("name","").casefold():p for p in old}
@@ -179,6 +217,7 @@ for t in tasks():
     coords = coordinates_from_description(desc)
     is_madeira_hike = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")] and category == "Fotturer"
     is_madeira_pr = is_madeira_hike and bool(re.match(r"^PR \d",name))
+    is_madeira_beach = category=="Strender og badeplasser" and "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")]
     imported = None
     if is_madeira_hike and not len((previous.get("route") or {}).get("coordinates",[]))>=2:
         imported = madeira_track(desc,name)
@@ -186,6 +225,10 @@ for t in tasks():
             coords = imported[1]
     if not coords and previous.get("lat") is not None and previous.get("lng") is not None:
         coords = previous["lat"], previous["lng"]
+    if not coords and is_madeira_beach:
+        coords=beach_geocode(name,desc)
+        if not coords:
+            continue
     if not coords:
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
@@ -231,7 +274,7 @@ for t in tasks():
         route_note = "Uklassifisert sti. Kontroller lokal adgang, stengninger og eventuelle avgiftsbelagte PR-delstrekninger. GPX-kilde: Tripmadeira eller oppgitt rutekilde; ikke kvalitetssikret for navigasjon."
     if is_madeira_hike and not (route or {}).get("coordinates"):
         route_note += " Kartnålen viser omtrentlig område; GPS-spor er ikke importert."
-    photo = madeira_photo(name) if is_madeira_hike and not image else None
+    photo = madeira_photo(name) if (is_madeira_hike or is_madeira_beach) and not image else None
     if photo: image=photo["image"]
     photo_fields = photo or previous
     stops = previous.get("stops",[])
