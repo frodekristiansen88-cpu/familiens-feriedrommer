@@ -136,7 +136,7 @@
     const near=places.filter(p=>validCoordinate(+p.lat,+p.lng)&&!hasPlace(p.id)&&
       km([t.lat,t.lng],[+p.lat,+p.lng])<=t.radiusKm).sort((a,b)=>
       km([t.lat,t.lng],[a.lat,a.lng])-km([t.lat,t.lng],[b.lat,b.lng]));
-    controls.nearLabel.textContent="Andre feriedrømmer innen "+t.radiusKm+" km ("+near.length+")";
+    controls.nearLabel.textContent="Andre feriedrømmer innen "+t.radiusKm+" km i luftlinje ("+near.length+")";
     if(!near.length)controls.nearby.append(element("p","trip-empty","Ingen flere registrerte reisemål i denne radiusen. Prøv å øke søkeavstanden."));
     for(const p of near.slice(0,15)){
       const d=numberFormat.format(km([t.lat,t.lng],[p.lat,p.lng]));
