@@ -331,7 +331,7 @@ for place in new:
         if any(not (52.45<y<52.57 and 13.29<x<13.46) for y,x in pts):
             raise ValueError("Outside central Berlin")
         place["route"] = {"coordinates":pts,"distanceKm":round(distance,1),"confidence":"OSM fotgjengerruting – kontroller lokal adkomst"}
-        place["routeNote"] = "Gangrute fra OpenStreetMap (FOSSGIS/OSRM), © OpenStreetMap contributors. Slutter ved Reichstag; middag og retur velges separat."
+        place["routeNote"] = "Gangrute fra OpenStreetMap (FOSSGIS/OSRM), © OpenStreetMap contributors. Følger de nummererte stoppene; eventuell retur og alternative restauranter fremgår av beskrivelsen."
         print("WALKING ROUTE:",place["name"],round(distance,1))
     except Exception as exc:
         print("WALKING ROUTE UNAVAILABLE:",place["name"],str(exc)[:150])
