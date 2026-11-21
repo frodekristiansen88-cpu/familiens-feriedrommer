@@ -161,7 +161,7 @@ def photo_data(filename):
     normalized = lic.casefold()
     allowed = ("cc by" in normalized or "cc0" in normalized or
                "public domain" in normalized or normalized == "pd")
-    if not allowed or any("cc " + k in normalized for k in BAD_LICENSE):
+    if not allowed or re.search(r"\b(?:nc|nd)\b|noncommercial|no derivatives", normalized):
         return None
     artist = plaintext(meta.get("Artist", {}).get("value", ""))
     if not artist:
@@ -170,7 +170,7 @@ def photo_data(filename):
         return None
     artist = artist[:135]
     source = "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":()")
-    image = details.get("thumburl") or details.get("url")
+    image = details.get("thumburl") or (details.get("url") if not filename.lower().endswith(".webm") else None)
     license_url = meta.get("LicenseUrl", {}).get("value", "")
     if not image or not license_url:
         return None
@@ -187,8 +187,6 @@ def photo_data(filename):
 CURATED_FILES.update({
     "Canyoning – Ribeira das Cales": "Ribeira das Cales.jpg",
     "Canyoning – Ribeira da Hortelã": "Hortelã Inferior, Madeira.webm",
-    "Cascata da Levada Nova": "Gewässerkreuzung an der Levada Nova zwischen Raposeira Do Logarinho und Prazeres, Madeira II.jpg",
-    "Cascata do Caldeirão Verde": "Levada do Caldeirão Verde, Madeira - Aug 2012 - 05.jpg",
 })
 ALIASES = {
     "Praia do Porto do Seixal": ["Praia do Seixal", "Seixal beach", "Praia do Porto do Seixal"],
@@ -266,7 +264,7 @@ def main():
     places = json.loads(PATH.read_text(encoding="utf-8"))
     updated = 0
     for place in places:
-        if place.get("image") and is_bad_file(place.get("imageSource",place["image"])):
+        if place.get("image") and IRRELEVANT.search(urllib.parse.unquote(place.get("imageSource") or place["image"])):
             for key in ("image","imageCredit","imageSource","imageLicense"):
                 place[key] = ""
             updated += 1
