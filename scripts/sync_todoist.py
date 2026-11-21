@@ -212,6 +212,7 @@ old = json.loads(PATH.read_text(encoding="utf-8")) if PATH.exists() else []
 by_id = {str(p.get("id")):p for p in old if p.get("id")}
 by_name = {p.get("name","").casefold():p for p in old}
 new = []
+requested_stops = {}
 for t in tasks():
     if (str(t.get("section_id")) != SECTION and str(t.get("project_id")) != EXTRA_PROJECT) or t.get("is_completed") or t.get("is_uncompletable") or "Familiens feriekart" in t.get("content", ""):
         continue
@@ -294,7 +295,47 @@ for t in tasks():
     if photo: image=photo["image"]
     photo_fields = photo or previous
     stops = previous.get("stops",[])
+    requested = extract(desc, "Kartstopp")
+    if requested:
+        requested_stops[str(t["id"])] = [part.strip() for part in requested.split("|") if part.strip()]
     new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":photo_fields.get("imageCredit",""),"imageSource":photo_fields.get("imageSource",""),"imageLicense":photo_fields.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"tags":tags,"routeNote":route_note,"route":route,"stops":stops})
+
+# Link ordered day-trip stops to the individual mapped attractions. If any
+# coordinates are missing, keep the verified stops and don't draw a fake path.
+by_new_name = {p["name"].casefold(): p for p in new}
+for place in new:
+    requested = requested_stops.get(place["id"])
+    if not requested:
+        continue
+    stops = [{"name":"Start", "lat":place["lat"], "lng":place["lng"], "note":"Utgangspunkt i Schöneberg"}]
+    for name in requested:
+        stop = by_new_name.get(name.casefold())
+        if stop:
+            stops.append({"name":stop["name"], "lat":stop["lat"], "lng":stop["lng"], "note":stop["description"]})
+        else:
+            print("ROUTE STOP NOT MAPPED:", name)
+    place["stops"] = stops
+    place["route"] = {}
+    place["routeNote"] = "Nummererte stopp; se navigasjonslenkene i beskrivelsen for gangrute. Ingen GPS-linje uten verifisert gangnett."
+    if len(stops) != len(requested) + 1:
+        continue
+    try:
+        positions = ";".join(f'{s["lng"]},{s["lat"]}' for s in stops)
+        url = "https://routing.openstreetmap.de/routed-foot/route/v1/driving/" + positions + "?overview=full&geometries=geojson&steps=false"
+        result = get_json(url, {"User-Agent":"FamiliensFeriedrommer/1.0 (personal travel map)"})
+        route = result["routes"][0]
+        pts = [[float(y),float(x)] for x,y in route["geometry"]["coordinates"]]
+        distance = float(route["distance"])/1000
+        if result.get("code") != "Ok" or not (2 < distance < 12) or len(pts)<10:
+            raise ValueError("Unexpected walking route")
+        if any(not (52.45<y<52.57 and 13.29<x<13.46) for y,x in pts):
+            raise ValueError("Outside central Berlin")
+        place["route"] = {"coordinates":pts,"distanceKm":round(distance,1),"confidence":"OSM fotgjengerruting – kontroller lokal adkomst"}
+        place["routeNote"] = "Gangrute fra OpenStreetMap (FOSSGIS/OSRM), © OpenStreetMap contributors. Slutter ved Reichstag; middag og retur velges separat."
+        print("WALKING ROUTE:",place["name"],round(distance,1))
+    except Exception as exc:
+        print("WALKING ROUTE UNAVAILABLE:",place["name"],str(exc)[:150])
+
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
