@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'scripts/*.py'
+      - '.github/workflows/sync.yml'
 permissions:
   contents: write
 concurrency:
@@ -15,8 +16,11 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Hent feriedrømmer fra Todoist
@@ -34,5 +38,20 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add places.json
             git commit -m "Oppdater feriedrømmer fra Todoist"
-            git push
+            # A workflow may run for several minutes while other commits arrive.
+            # Integrate concurrent changes without force-pushing or replacing data.
+            for attempt in 1 2 3 4; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                echo "::error::Kartdata ble endret samtidig. Starter ikke en risikabel overskriving; kjør en ny synkronisering fra siste main."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep $((attempt * 3))
+            done
+            echo "::error::Publisering mislyktes etter fire forsøk."
+            exit 1
           fi
