@@ -40,6 +40,8 @@ def tasks():
 
 def clean_name(content):
     s = re.sub(r"^[^\w]+", "", content, flags=re.UNICODE).strip()
+    if content.startswith(("📷","🎢","🏞️","🏛️","🏖️","🥾")):
+        return s
     return re.split(r"\s+[–—-]\s+", s, 1)[0].strip()
 def extract(desc, label):
     """Read either **Label:** value or **Label**: value."""
@@ -155,6 +157,7 @@ def madeira_photo(name):
             for candidate in result.get("query",{}).get("search",[]):
                 filename=candidate.get("title","").removeprefix("File:")
                 if not filename.lower().endswith((".jpg",".jpeg",".png",".webp")): continue
+                if any(bad in filename.casefold() for bad in ("transformer","substation","power pole","electricity pole","coat of arms","locator map","logo")): continue
                 # Search results must match the specific geographic subject in filename.
                 if term.casefold() not in filename.replace("_"," ").casefold(): continue
                 photo=photo_data(filename)
@@ -240,6 +243,12 @@ for t in tasks():
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
         candidates = [location, name + (", Madeira, Portugal" if is_madeira else ", " + country if country else "")]
+        if is_madeira and category in ("Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser"):
+            specific = re.sub(r"\s*\([^)]*\)","",name).strip()
+            # For a landmark, do not use a general town as a fallback; queries must
+            # identify the attraction. Guided activities intentionally use an area.
+            if "Guidet aktivitet" not in extract(desc,"Emneknagger"):
+                candidates = [location, specific + ", Madeira, Portugal"]
         for query in dict.fromkeys(q for q in candidates if q):
             coords = geocode(query, country)
             time.sleep(1.15)
