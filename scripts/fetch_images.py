@@ -65,6 +65,47 @@ CURATED_FILES = {
     "Cathedral Cave og Slater's Bridge": "Cathedral Quarry - geograph.org.uk - 3941760.jpg",
     "Liechtenstein Trail": "Schloss Gutenberg in Balzers, Liechtenstein.jpg",
 }
+ARTICLES.update({
+    "Ciudad Encantada": [("es", "Ciudad Encantada")],
+    "Orbaneja del Castillo": [("es", "Orbaneja del Castillo")],
+    "Adršpach Rocks": [("cs", "Adršpašsko-teplické skály"), ("en", "Adršpach-Teplice Rocks")],
+    "Ruta del Cares": [("es", "Ruta del Cares"), ("es", "Picos de Europa")],
+    "Szczeliniec Wielki": [("pl", "Szczeliniec Wielki")],
+    "Wodospad Kamieńczyka": [("pl", "Wodospad Kamieńczyka")],
+    "Wąwóz Czarownic": [("pl", "Skamieniałe Miasto")],
+    "Acueducto de Peña Cortada": [("es", "Acueducto de Peña Cortada"), ("es", "Chelva")],
+    "Sainte-Chapelle": [("fr", "Sainte-Chapelle")],
+    "Stoos Ridge Hike": [("de", "Fronalpstock"), ("de", "Klingenstock")],
+    "Stuðlagil Canyon": [("en", "Stuðlagil"), ("is", "Stuðlagil")],
+    "Bisse de Gorperi": [("de", "Ausserberg")],
+    "Donnerkogel Via Ferrata": [("de", "Großer Donnerkogel")],
+    "Oeschinensee": [("de", "Oeschinensee")],
+    "Quinta da Regaleira": [("pt", "Quinta da Regaleira")],
+    "Palácio da Pena": [("pt", "Palácio Nacional da Pena")],
+    "Castelo dos Mouros": [("pt", "Castelo dos Mouros")],
+    "Palácio de Monserrate": [("pt", "Palácio de Monserrate")],
+    "Cabo da Roca": [("pt", "Cabo da Roca")],
+    "Borrås skåra": [("sv", "Borrås skåra")],
+    "Tilas Stoll": [("sv", "Högbergsfältet")],
+    "Lago di Resia": [("it", "Lago di Resia")],
+    "Madonna della Corona": [("it", "Santuario della Madonna della Corona")],
+    "Campo Imperatore": [("it", "Campo Imperatore")],
+    "Pietrapertosa": [("it", "Pietrapertosa")],
+    "Val di Funes": [("it", "Val di Funes")],
+    "Tofana di Mezzo": [("it", "Tofana di Mezzo")],
+    "Passo Giau": [("it", "Passo Giau")],
+    "Alleghe": [("it", "Alleghe")],
+    "Lago di Misurina": [("it", "Lago di Misurina")],
+    "Tre Cime di Lavaredo": [("it", "Tre Cime di Lavaredo")],
+    "Val Fiscalina": [("it", "Val Fiscalina")],
+    "Lago di Dobbiaco": [("it", "Lago di Dobbiaco")],
+    "Lago di Sorapis": [("it", "Lago di Sorapiss"), ("it", "Lago di Sorapis")],
+    "Cortina d'Ampezzo": [("it", "Cortina d'Ampezzo")],
+    "Rifugio Giussani": [("it", "Rifugio Giussani"), ("it", "Tofana di Rozes")],
+})
+CURATED_FILES.update({
+    "Tilas Stoll": "Tilas Stoll in Högbergsfältet.JPG",
+})
 USER_AGENT = "FamiliensFeriedrommer/1.0 (https://github.com/frodekristiansen88-cpu/familiens-feriedrommer)"
 BAD_NAME = ("coat_of_arms", "wappen", "flagge", "flag_of", "logo", "locator", "location_map", "lage", "karte", "map_", "plan_", "icon")
 BAD_LICENSE = ("nc", "nd")
