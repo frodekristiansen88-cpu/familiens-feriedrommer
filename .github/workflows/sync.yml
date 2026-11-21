@@ -20,6 +20,8 @@ jobs:
         env:
           TODOIST_API_TOKEN: ${{ secrets.TODOIST_API_TOKEN }}
         run: python scripts/sync_todoist.py
+      - name: Importer tilgjengelige GPX-spor
+        run: python scripts/import_gpx.py
       - name: Lagre oppdaterte kartdata
         run: |
           if ! git diff --quiet -- places.json; then
