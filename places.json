@@ -27683,7 +27683,7 @@
   },
   {
     "id": "6j45q92GQRVM4fPF",
-    "name": "PR 6.8 Levada do Paul II",
+    "name": "PR 6.8 Levada do Paul II – Um Caminho para Todos",
     "country": "Portugal",
     "category": "Fotturer",
     "lat": 32.753726,
@@ -28139,7 +28139,7 @@
   },
   {
     "id": "6j45q8xVxM2FWJxm",
-    "name": "PR 9.1 Levada do Caldeirão Verde",
+    "name": "PR 9.1 Levada do Caldeirão Verde – Um Caminho para Todos",
     "country": "Portugal",
     "category": "Fotturer",
     "lat": 32.783675,
@@ -49839,6 +49839,35 @@
     "stops": []
   },
   {
+    "id": "6j46737fRWfCCjCm",
+    "name": "Miradouro Pico (Porto Moniz)",
+    "country": "Portugal",
+    "category": "Natur og utsikt",
+    "lat": 32.8219204,
+    "lng": -16.9036329,
+    "description": "Utsikt over porto Moniz sett ovenfra.",
+    "video": "",
+    "todoist": "https://app.todoist.com/app/task/6j46737fRWfCCjCm",
+    "info": "https://www.visitmadeira.com/en/what-to-do/nature-seekers/viewpoints/",
+    "details": "Utsiktspunkt ved Porto Moniz. Porto Moniz sett ovenfra.  Sjekk lokal adgang, været og åpning før besøk. Eventuell parkering eller transport kan koste.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Vista_from_Miradouro_Pico_dos_Barcelos_DSCF2522_%2852613322354%29.jpg/960px-Vista_from_Miradouro_Pico_dos_Barcelos_DSCF2522_%2852613322354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Michael Gaylard from Horsham, UK · CC BY 2.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Vista_from_Miradouro_Pico_dos_Barcelos_DSCF2522_(52613322354).jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by/2.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
+    "tags": [
+      "Gratis",
+      "Madeira",
+      "Panoramautsikt",
+      "Utsiktspunkt"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
+  },
+  {
     "id": "6j46735V66rvmH6F",
     "name": "Miradouro Achadas da Cruz",
     "country": "Portugal",
@@ -50421,7 +50450,7 @@
   },
   {
     "id": "6j4677wh2F87F9WF",
-    "name": "Canyoning",
+    "name": "Canyoning – Ribeiro Frio",
     "country": "Portugal",
     "category": "Aktiviteter og opplevelser",
     "lat": 32.7396155,
@@ -50451,7 +50480,7 @@
   },
   {
     "id": "6j467822JRQCcX9F",
-    "name": "Canyoning",
+    "name": "Canyoning – Ribeira da Água Negra",
     "country": "Portugal",
     "category": "Aktiviteter og opplevelser",
     "lat": 32.7615289,
@@ -50481,7 +50510,7 @@
   },
   {
     "id": "6j4677xqRgr4pcrF",
-    "name": "Coasteering",
+    "name": "Coasteering – Madeira",
     "country": "Portugal",
     "category": "Aktiviteter og opplevelser",
     "lat": 32.7391038,
@@ -50512,7 +50541,7 @@
   },
   {
     "id": "6j46782Vmxc6Rhxm",
-    "name": "Terrengsykling (Enduro)",
+    "name": "Terrengsykling (Enduro) – Poiso",
     "country": "Portugal",
     "category": "Aktiviteter og opplevelser",
     "lat": 32.7151722,
