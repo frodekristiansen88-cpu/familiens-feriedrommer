@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Caminito del Rey",
+    "country": "Spania",
+    "category": "Fotturer",
+    "lat": 36.916,
+    "lng": -4.772,
+    "description": "Gangbroer gjennom en spektakulær kløft ved Málaga.",
+    "video": "https://www.facebook.com/reel/890801160789168",
+    "todoist": "https://app.todoist.com/app/task/6j44J36GpH48Jj8F"
+  },
+  {
+    "name": "Leutascher Geisterklamm",
+    "country": "Østerrike / Tyskland",
+    "category": "Fotturer",
+    "lat": 47.428,
+    "lng": 11.222,
+    "description": "Alpekløft med fossefall og grensekryssing til fots.",
+    "video": "https://www.facebook.com/reel/1123509233366498"
+  }
+]
