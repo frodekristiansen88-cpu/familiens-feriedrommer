@@ -34,20 +34,26 @@ def clean_name(content):
     s = re.sub(r"^[^\w]+", "", content, flags=re.UNICODE).strip()
     return re.split(r"\s+[–—-]\s+", s, 1)[0].strip()
 def extract(desc, label):
-    match = re.search(r"(?im)^\*\*" + re.escape(label) + r"\*\*:\s*(.+)$", desc)
-    return match.group(1).strip() if match else ""
+    """Read either **Label:** value or **Label**: value."""
+    for line in desc.splitlines():
+        stripped = line.strip()
+        for prefix in (f"**{label}:**", f"**{label}**:"):
+            if stripped.casefold().startswith(prefix.casefold()):
+                return stripped[len(prefix):].strip()
+    return ""
+
 def extract_block(desc, label):
-    """Return multiline body between **Label:** and next **Label:**."""
     lines = desc.splitlines()
     for i, line in enumerate(lines):
-        if re.match(r"^\\*\\*" + re.escape(label) + r"\\*\\*:", line, re.I):
-            first = re.sub(r"^\\*\\*" + re.escape(label) + r"\\*\\*:[ \\t]*", "", line, flags=re.I).strip()
-            rest = []
-            for next_line in lines[i+1:]:
-                if re.match(r"^\\*\\*[^\\n]+\\*\\*:", next_line):
-                    break
-                rest.append(next_line)
-            return "\\n".join(([first] if first else []) + rest).strip()
+        stripped = line.strip()
+        for prefix in (f"**{label}:**", f"**{label}**:"):
+            if stripped.casefold().startswith(prefix.casefold()):
+                rest = [stripped[len(prefix):].strip()]
+                for next_line in lines[i+1:]:
+                    if re.match(r"^\*\*[^\n]+(?:\*\*:|:\*\*)", next_line.strip()):
+                        break
+                    rest.append(next_line)
+                return "\n".join(rest).strip()
     return ""
 
 def first_link(desc, label):
@@ -55,11 +61,14 @@ def first_link(desc, label):
     match = URL_RE.search(line)
     return match.group(0).rstrip(".,") if match else ""
 def coordinates_from_description(desc):
-    match = re.search(r"(?im)^(?:\*\*)?(?:Koordinater|Coordinates)(?:\*\*)?:\s*(-?\d{1,2}\.\d+)\s*[,;]\s*(-?\d{1,3}\.\d+)", desc)
+    line = extract(desc, "Koordinater") or extract(desc, "Coordinates")
+    match = re.search(r"(-?\d{1,2}\.\d+)\s*[,;]\s*(-?\d{1,3}\.\d+)", line)
     if match:
         lat, lng = map(float, match.groups())
-        if -90 <= lat <= 90 and -180 <= lng <= 180: return lat, lng
+        if -90 <= lat <= 90 and -180 <= lng <= 180:
+            return lat, lng
     return None
+
 def geocode(query):
     url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode({"q":query, "format":"json", "limit":1})
     req = urllib.request.Request(url, headers={"User-Agent":"FamiliensFeriedrommer/1.0 (GitHub Pages family map)"})
