@@ -4,8 +4,7 @@
   "use strict";
   const STORAGE_KEY = "familien-feriedrommer-turplaner-v1";
   const STARTER = [
-    {id:"madeira-februar-2027",name:"Madeira – februar 2027",lat:32.7356,lng:-16.9286,radiusKm:75,placeIds:[]},
-    {id:"luzern-sommer-2027",name:"Luzern – sommer 2027",lat:47.0502,lng:8.3093,radiusKm:130,placeIds:[]}
+    {id:"ny-tur",name:"Min første tur",lat:47.0,lng:8.0,radiusKm:100,placeIds:[]}
   ];
   const copy = value => JSON.parse(JSON.stringify(value));
   const validCoordinate = (lat,lng) => Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat)<=90 && Math.abs(lng)<=180;
