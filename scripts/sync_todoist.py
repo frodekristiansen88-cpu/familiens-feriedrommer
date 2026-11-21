@@ -95,10 +95,12 @@ def geocode(query, country=""):
 # Madeira PR tracks: catalogue GPX data is derived from OSM (ODbL).
 # Validate geography, length and continuity; do not invent missing tracks.
 def madeira_track(desc, name):
-    if "Madeira" not in extract(desc, "Emneknagger").split(",")[0].strip() or not re.match(r"^PR \d",name):
+    if "Madeira" not in [x.strip() for x in extract(desc, "Emneknagger").split(",")]:
         return None
     url = first_link(desc, "GPX")
-    if not re.fullmatch(r"https://hikemadeira\.com/tracks/pr-\d+(?:-\d+)?\.gpx",url):
+    is_pr = bool(re.fullmatch(r"https://hikemadeira\.com/tracks/pr-\d+(?:-\d+)?\.gpx",url))
+    is_tripmadeira = bool(re.fullmatch(r"https://www\.tripmadeira\.com/v1/en/resources/gps/[a-z0-9]+\.gpx",url))
+    if not (is_pr or is_tripmadeira):
         return None
     try:
         points = parse_gpx(download(url))
@@ -106,11 +108,16 @@ def madeira_track(desc, name):
             raise ValueError("Track outside Madeira or insufficient points")
         distances = [km(a,b) for a,b in zip(points,points[1:])]
         length = sum(distances)
-        expected = float(extract(desc,"PR-lengde"))
-        if not expected*.65 <= length <= expected*2.35 or max(distances) > .65:
+        if is_pr:
+            expected = float(extract(desc,"PR-lengde"))
+        else:
+            match = re.search(r"Lengde:\s*(?:ca\.\s*)?(\d+(?:[,.]\d+)?)\s*km",desc)
+            if not match: raise ValueError("Missing distance for source check")
+            expected = float(match.group(1).replace(",","."))
+        if not expected*.65 <= length <= expected*(2.35 if is_pr else 1.35) or max(distances) > .65:
             raise ValueError(f"Track length or continuity suspicious: {length:.2f} km vs official {expected:.2f} km")
         print("MADEIRA GPX:",name,len(points),round(length,2))
-        return {"coordinates":simplify(points),"distanceKm":round(length,1),"confidence":"OSM-basert GPX – ikke kvalitetssikret for navigasjon"}, points[0]
+        return {"coordinates":simplify(points),"distanceKm":round(length,1),"confidence":("OSM-basert GPX" if is_pr else "GPX fra Tripmadeira")+" – ikke kvalitetssikret for navigasjon"}, points[0]
     except Exception as exc:
         print("MADEIRA GPX FAILED:",name,exc)
         return None
@@ -118,12 +125,21 @@ def madeira_track(desc, name):
 # Restrict Commons search to route-specific name; never invent images or licence.
 def madeira_photo(name):
     match = re.match(r"^PR \d+(?:\.\d+)? (.+)",name)
-    if not match: return None
-    title = match.group(1)
+    title = match.group(1) if match else name
     short = re.sub(r"^(?:Vereda (?:do|da|dos|das) |Levada (?:do|da|das|dos) |Caminho (?:Real )?(?:do|da) )","",title,flags=re.I)
     if short in ("Ilha","Monte","Moinho","Rei","Norte","Risco","Barreiro","Burro"):
         terms = [title]
     else: terms = [title,short]
+    if not match:
+        photo_terms = {
+            "Levada Nova og Levada do Moinho": ["Levada Nova", "Levada do Moinho"],
+            "Vereda do Larano og Boca do Risco": ["Vereda do Larano", "Boca do Risco"],
+            "Levada do Caniçal og Pico do Facho": ["Levada do Caniçal", "Pico do Facho"],
+            "Levada do Seixal og Chão da Ribeira": ["Chão da Ribeira"],
+            "Vereda da Trompica og Chão dos Terreiros": ["Chão dos Terreiros", "Vereda da Trompica"],
+            "Vereda da Rocha do Navio": ["Rocha do Navio"],
+        }
+        terms = photo_terms.get(name,[title])
     for term in dict.fromkeys(terms):
         try:
             result=wiki_json("commons.wikimedia.org",{
@@ -161,25 +177,24 @@ for t in tasks():
     video = first_link(desc,"Inspirasjonsvideo") or first_link(desc,"Video som inspirerte") or first_link(desc,"Video") or previous.get("video","")
     info = first_link(desc,"Offisiell side / billetter") or first_link(desc,"Mer informasjon") or previous.get("info","")
     coords = coordinates_from_description(desc)
-    is_madeira_pr = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")] and bool(re.match(r"^PR \d",name))
+    is_madeira_hike = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")] and category == "Fotturer"
+    is_madeira_pr = is_madeira_hike and bool(re.match(r"^PR \d",name))
     imported = None
-    if is_madeira_pr and not len((previous.get("route") or {}).get("coordinates",[]))>=2:
+    if is_madeira_hike and not len((previous.get("route") or {}).get("coordinates",[]))>=2:
         imported = madeira_track(desc,name)
         if imported:
             coords = imported[1]
     if not coords and previous.get("lat") is not None and previous.get("lng") is not None:
         coords = previous["lat"], previous["lng"]
-    if not coords and is_madeira_pr:
-        # No verified GPX/coordinate: defer the entry rather than guess a trailhead.
-        print("DEFERRED MADEIRA ROUTE WITHOUT GPX:",name)
-        continue
     if not coords:
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
-        candidates = [location, name + (", " + country if country else "")]
+        candidates = [location, name + (", Madeira, Portugal" if is_madeira_hike else ", " + country if country else "")]
         for query in dict.fromkeys(q for q in candidates if q):
             coords = geocode(query, country)
             time.sleep(1.15)
+            if coords and is_madeira_hike and not (32.60 <= coords[0] <= 32.91 and -17.28 <= coords[1] <= -16.65):
+                coords = None
             if coords:
                 break
     if not coords:
@@ -201,7 +216,11 @@ for t in tasks():
     route_note = previous.get("routeNote","")
     if is_madeira_pr:
         route_note = "Kartbasert GPX © OpenStreetMap contributors (ODbL), via Hike Madeira. Kan omfatte stengte etapper. Sjekk IFCN før turen; følg lokale skilt. https://www.openstreetmap.org/copyright"
-    photo = madeira_photo(name) if is_madeira_pr and not image else None
+    if is_madeira_hike and not is_madeira_pr:
+        route_note = "Uklassifisert sti. Kontroller lokal adgang, stengninger og eventuelle avgiftsbelagte PR-delstrekninger. GPX-kilde: Tripmadeira eller oppgitt rutekilde; ikke kvalitetssikret for navigasjon."
+    if is_madeira_hike and not (route or {}).get("coordinates"):
+        route_note += " Kartnålen viser omtrentlig område; GPS-spor er ikke importert."
+    photo = madeira_photo(name) if is_madeira_hike and not image else None
     if photo: image=photo["image"]
     photo_fields = photo or previous
     stops = previous.get("stops",[])
