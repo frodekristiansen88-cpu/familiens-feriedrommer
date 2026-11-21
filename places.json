@@ -4,8 +4,8 @@
     "name": "Caminito del Rey",
     "country": "Spania",
     "category": "Fotturer",
-    "lat": 36.916,
-    "lng": -4.772,
+    "lat": 36.931338,
+    "lng": -4.801665,
     "description": "En spektakulær vandring på smale gangbroer festet til bratte fjellvegger over Gaitanes-kløften, nordvest for Málaga. Høydepunktet er utsikten ned i juvet og hengebroen nær slutten av turen.",
     "video": "https://www.facebook.com/reel/890801160789168",
     "todoist": "https://app.todoist.com/app/task/6j44J36GpH48Jj8F",
@@ -23,7 +23,7 @@
       "Høydeskrekk",
       "Kløfter"
     ],
-    "routeNote": "En alternativ GPX-fil fra en eldre turbeskrivelse (2015) er funnet. Den kan vise feil eller utdatert trasé og avvikende tur/retur; offisiell enveisrute nord–sør, adkomstregler og billetter gjelder. GPS-sporet er KUN illustrasjon, ikke grunnlag for navigasjon. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting.",
+    "routeNote": "En alternativ GPX-fil fra en eldre turbeskrivelse (2015) er funnet. Den kan vise feil eller utdatert trasé og avvikende tur/retur; offisiell enveisrute nord–sør, adkomstregler og billetter gjelder. GPS-sporet er KUN illustrasjon, ikke grunnlag for navigasjon. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting. Kartmarkøren er satt ved den nordlige starten av GPX-sporet, men møtestedet for billetter kan være et annet sted.",
     "route": {
       "confidence": "Foreløpig GPX – ikke kvalitetssikret",
       "coordinates": [
@@ -5520,8 +5520,8 @@
     "name": "Uracher Wasserfall",
     "country": "Bad Urach, Tyskland",
     "category": "Fotturer",
-    "lat": 48.482,
-    "lng": 9.349,
+    "lat": 48.496127,
+    "lng": 9.372987,
     "description": "En naturskjønn fottur til Uracher Wasserfall, et fossefall omgitt av skog og kalksteinslandskap. Spesielt flott om høsten, når løvskogen skifter farge og tåken gir dalen en stemningsfull atmosfære.",
     "video": "https://www.facebook.com/reel/1665126545400704",
     "todoist": "https://app.todoist.com/app/task/6j44hhrCX9cjhC4F",
@@ -5538,7 +5538,7 @@
       "Fosser",
       "Skogsturer"
     ],
-    "routeNote": "Valgt GPS-runde er ca. 5 km fra en lokal turbok/privat turblogg. Inspirasjonsvideoen omtaler omtrent 10 km. GPX-sporet er en annen, kortere turvariant. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting.",
+    "routeNote": "Valgt GPS-runde er ca. 5 km fra en lokal turbok/privat turblogg. Inspirasjonsvideoen omtaler omtrent 10 km. GPX-sporet er en annen, kortere turvariant. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting. Kartmarkøren er satt ved starten av den valgte 4,7 km-runden (ved P23), i stedet for på fossen.",
     "route": {
       "confidence": "Foreløpig GPX – ikke kvalitetssikret",
       "coordinates": [
@@ -13719,7 +13719,7 @@
       "Gangbroer",
       "Kløfter"
     ],
-    "routeNote": "Foreløpig rute fra campingelroble.com; mulig alternativ: entremontanas.com. Markøren viser P3-parkeringen. Vannstand, billett/tilkomst, stengninger og nøyaktig spor må kontrolleres. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting.",
+    "routeNote": "Foreløpig rute fra campingelroble.com; mulig alternativ: entremontanas.com. Markøren viser P3-parkeringen. Vannstand, billett/tilkomst, stengninger og nøyaktig spor må kontrolleres. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting. Det importerte sporet er ca. 6,6 km og starter i sør og ender ved P3. Det er derfor ikke sikkert at sporet viser hele den vanlige tur-retur-turen som beskrives i videoen.",
     "route": {
       "coordinates": [
         [
