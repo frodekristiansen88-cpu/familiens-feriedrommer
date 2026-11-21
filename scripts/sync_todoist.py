@@ -7,6 +7,7 @@ from fetch_images import get_json as wiki_json, photo_data
 
 PROJECT = "6hvJmr29qp2mmf5F"
 SECTION = "6j44Hq4M8CFrjj8F"
+EXTRA_PROJECT = "6j4679mJqhXv7C5W"
 PATH = Path("places.json")
 CATEGORIES = ("Fotturer", "Natur og utsikt", "Byer og kultur", "Aktiviteter og opplevelser", "Strender og badeplasser")
 TOKEN = os.environ["TODOIST_API_TOKEN"]
@@ -16,11 +17,11 @@ def get_json(url, headers=None):
     req = urllib.request.Request(url, headers=headers or HEADERS)
     with urllib.request.urlopen(req, timeout=25) as response:
         return json.load(response)
-def tasks():
+def tasks_in_project(project):
     cursor = None
     seen = set()
     while True:
-        params = {"project_id": PROJECT, "limit": "100"}
+        params = {"project_id": project, "limit": "100"}
         if cursor: params["cursor"] = cursor
         payload = get_json("https://api.todoist.com/api/v1/tasks?" + urllib.parse.urlencode(params))
         if isinstance(payload, list):
@@ -32,6 +33,11 @@ def tasks():
                 yield task
         cursor = payload.get("next_cursor")
         if not cursor: break
+def tasks():
+    # Finish fetching both sources before writing places.json.
+    yield from tasks_in_project(PROJECT)
+    yield from tasks_in_project(EXTRA_PROJECT)
+
 def clean_name(content):
     s = re.sub(r"^[^\w]+", "", content, flags=re.UNICODE).strip()
     return re.split(r"\s+[–—-]\s+", s, 1)[0].strip()
@@ -204,7 +210,7 @@ by_id = {str(p.get("id")):p for p in old if p.get("id")}
 by_name = {p.get("name","").casefold():p for p in old}
 new = []
 for t in tasks():
-    if str(t.get("section_id")) != SECTION or t.get("is_completed") or t.get("is_uncompletable") or "Familiens feriekart" in t.get("content", ""):
+    if (str(t.get("section_id")) != SECTION and str(t.get("project_id")) != EXTRA_PROJECT) or t.get("is_completed") or t.get("is_uncompletable") or "Familiens feriekart" in t.get("content", ""):
         continue
     name = clean_name(t.get("content",""))
     desc = t.get("description","")
@@ -216,6 +222,7 @@ for t in tasks():
     info = first_link(desc,"Offisiell side / billetter") or first_link(desc,"Mer informasjon") or previous.get("info","")
     coords = coordinates_from_description(desc)
     is_madeira_hike = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")] and category == "Fotturer"
+    is_madeira = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")]
     is_madeira_pr = is_madeira_hike and bool(re.match(r"^PR \d",name))
     is_madeira_beach = category=="Strender og badeplasser" and "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")]
     imported = None
@@ -232,11 +239,11 @@ for t in tasks():
     if not coords:
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
-        candidates = [location, name + (", Madeira, Portugal" if is_madeira_hike else ", " + country if country else "")]
+        candidates = [location, name + (", Madeira, Portugal" if is_madeira else ", " + country if country else "")]
         for query in dict.fromkeys(q for q in candidates if q):
             coords = geocode(query, country)
             time.sleep(1.15)
-            if coords and is_madeira_hike and not (32.60 <= coords[0] <= 32.91 and -17.28 <= coords[1] <= -16.65):
+            if coords and is_madeira and not (32.60 <= coords[0] <= 32.91 and -17.28 <= coords[1] <= -16.65):
                 coords = None
             if coords:
                 break
@@ -274,7 +281,7 @@ for t in tasks():
         route_note = "Uklassifisert sti. Kontroller lokal adgang, stengninger og eventuelle avgiftsbelagte PR-delstrekninger. GPX-kilde: Tripmadeira eller oppgitt rutekilde; ikke kvalitetssikret for navigasjon."
     if is_madeira_hike and not (route or {}).get("coordinates"):
         route_note += " Kartnålen viser omtrentlig område; GPS-spor er ikke importert."
-    photo = madeira_photo(name) if (is_madeira_hike or is_madeira_beach) and not image else None
+    photo = madeira_photo(name) if is_madeira and not image else None
     if photo: image=photo["image"]
     photo_fields = photo or previous
     stops = previous.get("stops",[])
