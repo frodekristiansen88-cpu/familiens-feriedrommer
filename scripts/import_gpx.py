@@ -42,6 +42,23 @@ SOURCES = {
     "Caminito del Rey": [
         "https://entremontanas.com/wp-content/themes/Bigemployee-child/descargas/tracks/el-caminito-del-rey.gpx",
     ],
+    "Ruta del Cares": [
+        "https://rutasdeasturias.com/downloads/track/1648762893/",
+    ],
+    "Stoos Ridge Hike": [
+        "https://wegwandern.ch/gpx/klingenstockfronalpstock.gpx",
+        "https://alsnuff.ch/wp-content/uploads/trackinfo/4826.gpx",
+    ],
+    "Bisse de Gorperi": [
+        "https://www.valais.ch/api/v1/download/gpx?url=%2F%2Fassets.ctfassets.net%2Fukaa6ik2569a%2F3FiXfOBmhfYxvfeRHmuQdW%2F0b533ea66a514b6a1d57409136b82213%2F23_Niwaaerch_-_Gorperi_-_Undra.gpx",
+    ],
+    "Tre Cime di Lavaredo": [
+        "https://www.outdooractive.com/download.tour.gpx?i=17892834&key=HFTHFSSU-EMWGMZCT-4OSSEDAU&project=api-dolomitisuperski",
+    ],
+    "Rifugio Giussani": [
+        "https://www.outdooractive.com/download.tour.gpx?i=49552064&key=HFTHFSSU-EMWGMZCT-4OSSEDAU&project=api-dolomitisuperski",
+    ],
+
 }
 # Each source must contain a GPS track, not arbitrary coordinates or a straight line.
 MAX_BYTES = 18_000_000
@@ -144,6 +161,11 @@ def main():
                 if nearest > MAX_RADIUS_KM:
                     raise ValueError(f"Trail is {nearest:.1f} km away from place pin")
                 length = sum(km(a, b) for a, b in zip(points, points[1:]))
+                expected_bounds = {"Ruta del Cares":(7,30), "Stoos Ridge Hike":(3.5,8), "Bisse de Gorperi":(12,19), "Tre Cime di Lavaredo":(6,14), "Rifugio Giussani":(2,18)}
+                if place["name"] in expected_bounds:
+                    lo, hi = expected_bounds[place["name"]]
+                    if not (lo <= length <= hi):
+                        raise ValueError(f"GPX length {length:.1f} km does not match selected trail ({lo}-{hi} km)")
                 if place["name"] == "Liechtenstein Trail" and not (55 <= length <= 90):
                     raise ValueError(f"Incomplete Liechtenstein Trail: {length:.1f} km")
                 if not (0.15 <= length <= 90):
