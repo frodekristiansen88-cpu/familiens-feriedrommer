@@ -2,6 +2,8 @@
 """Synchronize the Todoist Feriedrømmer section to places.json."""
 import json, os, re, time, urllib.parse, urllib.request
 from pathlib import Path
+from import_gpx import download, parse_gpx, simplify, km
+from fetch_images import get_json as wiki_json, photo_data
 
 PROJECT = "6hvJmr29qp2mmf5F"
 SECTION = "6j44Hq4M8CFrjj8F"
@@ -90,6 +92,59 @@ def geocode(query, country=""):
         print(f"Geocoding failed for {query!r}: {exc}")
     return None
 
+# Madeira PR tracks: catalogue GPX data is derived from OSM (ODbL).
+# Validate geography, length and continuity; do not invent missing tracks.
+def madeira_track(desc, name):
+    if "Madeira" not in extract(desc, "Emneknagger").split(",")[0].strip() or not re.match(r"^PR \d",name):
+        return None
+    url = first_link(desc, "GPX")
+    if not re.fullmatch(r"https://hikemadeira\.com/tracks/pr-\d+(?:-\d+)?\.gpx",url):
+        return None
+    try:
+        points = parse_gpx(download(url))
+        if len(points)<5 or any(not (32.60 <= p[0] <= 32.91 and -17.28 <= p[1] <= -16.65) for p in points):
+            raise ValueError("Track outside Madeira or insufficient points")
+        distances = [km(a,b) for a,b in zip(points,points[1:])]
+        length = sum(distances)
+        expected = float(extract(desc,"PR-lengde"))
+        if not expected*.65 <= length <= expected*2.35 or max(distances) > .65:
+            raise ValueError(f"Track length or continuity suspicious: {length:.2f} km vs official {expected:.2f} km")
+        print("MADEIRA GPX:",name,len(points),round(length,2))
+        return {"coordinates":simplify(points),"distanceKm":round(length,1),"confidence":"OSM-basert GPX – ikke kvalitetssikret for navigasjon"}, points[0]
+    except Exception as exc:
+        print("MADEIRA GPX FAILED:",name,exc)
+        return None
+
+# Restrict Commons search to route-specific name; never invent images or licence.
+def madeira_photo(name):
+    match = re.match(r"^PR \d+(?:\.\d+)? (.+)",name)
+    if not match: return None
+    title = match.group(1)
+    short = re.sub(r"^(?:Vereda (?:do|da|dos|das) |Levada (?:do|da|das|dos) |Caminho (?:Real )?(?:do|da) )","",title,flags=re.I)
+    if short in ("Ilha","Monte","Moinho","Rei","Norte","Risco","Barreiro","Burro"):
+        terms = [title]
+    else: terms = [title,short]
+    for term in dict.fromkeys(terms):
+        try:
+            result=wiki_json("commons.wikimedia.org",{
+                "action":"query","list":"search","srnamespace":"6",
+                "srsearch":'intitle:"'+term+'" Madeira',"srlimit":"8","format":"json"
+            })
+            for candidate in result.get("query",{}).get("search",[]):
+                filename=candidate.get("title","").removeprefix("File:")
+                if not filename.lower().endswith((".jpg",".jpeg",".png",".webp")): continue
+                # Search results must match the specific geographic subject in filename.
+                if term.casefold() not in filename.replace("_"," ").casefold(): continue
+                photo=photo_data(filename)
+                if photo:
+                    print("MADEIRA PHOTO:",name,filename)
+                    return photo
+        except Exception as exc:
+            print("MADEIRA PHOTO FAILED:",name,str(exc)[:150])
+        time.sleep(.4)
+    print("NO ROUTE-SPECIFIC LICENSED PHOTO:",name)
+    return None
+
 old = json.loads(PATH.read_text(encoding="utf-8")) if PATH.exists() else []
 by_id = {str(p.get("id")):p for p in old if p.get("id")}
 by_name = {p.get("name","").casefold():p for p in old}
@@ -106,8 +161,18 @@ for t in tasks():
     video = first_link(desc,"Inspirasjonsvideo") or first_link(desc,"Video som inspirerte") or first_link(desc,"Video") or previous.get("video","")
     info = first_link(desc,"Offisiell side / billetter") or first_link(desc,"Mer informasjon") or previous.get("info","")
     coords = coordinates_from_description(desc)
+    is_madeira_pr = "Madeira" in [x.strip() for x in extract(desc,"Emneknagger").split(",")] and bool(re.match(r"^PR \d",name))
+    imported = None
+    if is_madeira_pr and not len((previous.get("route") or {}).get("coordinates",[]))>=2:
+        imported = madeira_track(desc,name)
+        if imported:
+            coords = imported[1]
     if not coords and previous.get("lat") is not None and previous.get("lng") is not None:
         coords = previous["lat"], previous["lng"]
+    if not coords and is_madeira_pr:
+        # No verified GPX/coordinate: defer the entry rather than guess a trailhead.
+        print("DEFERRED MADEIRA ROUTE WITHOUT GPX:",name)
+        continue
     if not coords:
         # Try the specific map location before the task name; never invent coordinates.
         location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
@@ -132,9 +197,15 @@ for t in tasks():
     own_tags = [x.strip() for x in extract(desc, "Emneknagger").split(",") if x.strip()]
     tags = sorted(set(previous.get("tags", [])) | set(own_tags) | {label for label in labels if label not in CATEGORIES})
     # Route geometry is curated separately. Never infer a walking trail from straight-line coordinates.
-    route = previous.get("route",{})
+    route = imported[0] if imported else previous.get("route",{})
+    route_note = previous.get("routeNote","")
+    if is_madeira_pr:
+        route_note = "Kartbasert GPX © OpenStreetMap contributors (ODbL), via Hike Madeira. Kan omfatte stengte etapper. Sjekk IFCN før turen; følg lokale skilt. https://www.openstreetmap.org/copyright"
+    photo = madeira_photo(name) if is_madeira_pr and not image else None
+    if photo: image=photo["image"]
+    photo_fields = photo or previous
     stops = previous.get("stops",[])
-    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"tags":tags,"routeNote":previous.get("routeNote",""),"route":route,"stops":stops})
+    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":photo_fields.get("imageCredit",""),"imageSource":photo_fields.get("imageSource",""),"imageLicense":photo_fields.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"tags":tags,"routeNote":route_note,"route":route,"stops":stops})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
