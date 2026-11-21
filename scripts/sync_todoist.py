@@ -210,7 +210,18 @@ for t in tasks():
     route_url = first_link(desc,"GPX") or previous.get("routeUrl","")
     route_source = first_link(desc,"Rutekilde") or previous.get("routeSource","")
     own_tags = [x.strip() for x in extract(desc, "Emneknagger").split(",") if x.strip()]
-    tags = sorted(set(previous.get("tags", [])) | set(own_tags) | {label for label in labels if label not in CATEGORIES})
+    # Admission tags are authoritative from Todoist. Do not retain stale fee labels.
+    # Future entries: use Gratis or Avgiftsbelagt for non-obvious admission; omit
+    # obvious cities, beaches, shops/restaurants etc. Optional parking/transport
+    # is not an admission fee. If uncertain, use Sjekk avgift rather than guess.
+    fee_tags = {"Gratis", "Avgiftsbelagt", "Sjekk avgift", "Reservasjon påkrevd"}
+    tags = sorted((set(previous.get("tags", [])) - fee_tags) | set(own_tags) | {label for label in labels if label not in CATEGORIES})
+    admission = extract(desc, "Adgang og avgift")
+    if admission:
+        admission_text = "ADGANG OG AVGIFT\n" + admission
+        # Strip a prior generated admission section when falling back to old details.
+        detail_text = detail_text.split("\n\nADGANG OG AVGIFT\n", 1)[0].strip()
+        detail_text = (detail_text + "\n\n" + admission_text).strip()
     # Route geometry is curated separately. Never infer a walking trail from straight-line coordinates.
     route = imported[0] if imported else previous.get("route",{})
     route_note = previous.get("routeNote","")
