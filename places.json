@@ -29,8 +29,8 @@
     "name": "Leutascher Geisterklamm",
     "country": "Østerrike / Tyskland",
     "category": "Fotturer",
-    "lat": 47.428,
-    "lng": 11.222,
+    "lat": 47.42712,
+    "lng": 11.23443,
     "description": "En vakker kløftvandring mellom Mittenwald i Bayern og Leutasch i Tirol, med turkist vann, fossefall og gangbroer. Et spesielt høydepunkt er at man kan krysse grensen mellom Tyskland og Østerrike til fots.",
     "video": "https://www.facebook.com/reel/1123509233366498",
     "todoist": "https://app.todoist.com/app/task/6j44JRfV4V2GR65m",
@@ -43,7 +43,7 @@
     "routeType": "Dagstur",
     "routeUrl": "https://tirol.mapservices.eu/nefos_app/api/gpx/imx_xR7kIE5LaSrqNTM6/de/generate/32118038",
     "routeSource": "https://www.tirol.at/aktivitaeten/sport/wandern/wandertouren/leutascher-geisterklamm",
-    "routeNote": "GPX fra Tirols turistside for ca. 5 km rundtur. Kort Wasserfallsteig kan være en separat avstikker. Sesongstengt om vinteren. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting.",
+    "routeNote": "GPX fra Tirols turistside for ca. 5 km rundtur. Kort Wasserfallsteig kan være en separat avstikker. Sesongstengt om vinteren. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting. Kartmarkøren viser startpunktet i den importerte GPX-filen, som ikke nødvendigvis tilsvarer offisiell inngang eller parkering.",
     "route": {
       "coordinates": [
         [
