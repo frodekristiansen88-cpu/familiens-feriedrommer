@@ -62,7 +62,7 @@ by_id = {str(p.get("id")):p for p in old if p.get("id")}
 by_name = {p.get("name","").casefold():p for p in old}
 new = []
 for t in tasks():
-    if str(t.get("section_id")) != SECTION or t.get("is_completed"):
+    if str(t.get("section_id")) != SECTION or t.get("is_completed") or t.get("is_uncompletable") or "Familiens feriekart" in t.get("content", ""):
         continue
     name = clean_name(t.get("content",""))
     desc = t.get("description","")
