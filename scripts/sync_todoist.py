@@ -69,13 +69,23 @@ def coordinates_from_description(desc):
             return lat, lng
     return None
 
-def geocode(query):
-    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode({"q":query, "format":"json", "limit":1})
-    req = urllib.request.Request(url, headers={"User-Agent":"FamiliensFeriedrommer/1.0 (GitHub Pages family map)"})
+COUNTRY_CODES = {"Spania":"es","Tsjekkia":"cz","Polen":"pl","Frankrike":"fr","Sveits":"ch","Island":"is","Østerrike":"at","Portugal":"pt","Sverige":"se","Italia":"it"}
+def geocode(query, country=""):
+    """Resolve the explicitly supplied place, within its destination country."""
+    params = {"q":query, "format":"json", "limit":3}
+    if COUNTRY_CODES.get(country):
+        params["countrycodes"] = COUNTRY_CODES[country]
+    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={"User-Agent":"FamiliensFeriedrommer/1.0 (personal family travel map)"})
     try:
-        with urllib.request.urlopen(req, timeout=20) as response:
+        with urllib.request.urlopen(req, timeout=22) as response:
             result = json.load(response)
-        if result: return float(result[0]["lat"]), float(result[0]["lon"])
+        for item in result:
+            typ = item.get("type", "")
+            # Named attractions or towns are acceptable; coordinates merely locate the destination.
+            if typ in ("country", "state", "province"):
+                continue
+            return float(item["lat"]), float(item["lon"])
     except Exception as exc:
         print(f"Geocoding failed for {query!r}: {exc}")
     return None
@@ -99,9 +109,14 @@ for t in tasks():
     if not coords and previous.get("lat") is not None and previous.get("lng") is not None:
         coords = previous["lat"], previous["lng"]
     if not coords:
-        # New places are geocoded once; ambiguous results should be checked manually.
-        coords = geocode(name + (", " + country if country else ""))
-        time.sleep(1.1)
+        # Try the specific map location before the task name; never invent coordinates.
+        location = extract(desc, "Kartlokasjon") or extract(desc, "Sted")
+        candidates = [location, name + (", " + country if country else "")]
+        for query in dict.fromkeys(q for q in candidates if q):
+            coords = geocode(query, country)
+            time.sleep(1.15)
+            if coords:
+                break
     if not coords:
         print(f"SKIPPED: No verified coordinates for {name}")
         continue
@@ -114,7 +129,8 @@ for t in tasks():
         route_type = "Dagstur" if category == "Fotturer" else "Enkeltsted"
     route_url = first_link(desc,"GPX") or previous.get("routeUrl","")
     route_source = first_link(desc,"Rutekilde") or previous.get("routeSource","")
-    tags = sorted(set(previous.get("tags", [])) | {label for label in labels if label not in CATEGORIES})
+    own_tags = [x.strip() for x in extract(desc, "Emneknagger").split(",") if x.strip()]
+    tags = sorted(set(previous.get("tags", [])) | set(own_tags) | {label for label in labels if label not in CATEGORIES})
     # Route geometry is curated separately. Never infer a walking trail from straight-line coordinates.
     route = previous.get("route",{})
     stops = previous.get("stops",[])
