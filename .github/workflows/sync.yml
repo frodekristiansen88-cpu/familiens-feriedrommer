@@ -22,6 +22,8 @@ jobs:
         run: python scripts/sync_todoist.py
       - name: Importer tilgjengelige GPX-spor
         run: python scripts/import_gpx.py
+      - name: Suppler manglende bilder med lisenskontrollert Wikimedia-foto
+        run: python scripts/fetch_images.py
       - name: Lagre oppdaterte kartdata
         run: |
           if ! git diff --quiet -- places.json; then
