@@ -258,8 +258,9 @@
     });
     renderSelect();
     refreshButtons();
+    window.ferieRerender?.(false);
   }
-  window.feriePlanner={createToggleButton,filterPlaces,isSelected:hasPlace};
+  window.feriePlanner={createToggleButton,filterPlaces,isSelected:hasPlace,setMode};
   function onReady(){
     if(!window.ferieMap||!Array.isArray(window.ferieData))return;
     if(map){places=window.ferieData;byId=new Map(places.map(p=>[String(p.id),p]));renderLists();return;}
