@@ -1985,11 +1985,11 @@
     "category": "Byer og kultur",
     "lat": 51.1563185,
     "lng": 14.991018,
-    "description": "",
-    "video": "",
+    "description": "En usedvanlig godt bevart tysk historisk by med renessanse-, barokk- og jugendarkitektur, torg og gangbro til polske Zgorzelec.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9m3j2Fw4M9m",
-    "info": "",
-    "details": "",
+    "info": "https://www.visitgoerlitz.de/sehenswuerdigkeiten/",
+    "details": "OM STEDET\nEn usedvanlig godt bevart tysk historisk by med renessanse-, barokk- og jugendarkitektur, torg og gangbro til polske Zgorzelec.\nOmråde: Sachsen ved elven Neisse, på grensen mot Polen.\n\nHVA KAN VI OPPLEVE?\nUntermarkt og Obermarkt; Peterskirche; Nikolaiturm og Reichenbacher Turm; gamlebybroen til Zgorzelec.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Beregn gjerne en halv til hel dag. Gamlebyen utforskes best til fots; broen til Polen kan krysses til fots. Kombiner med et måltid på den polske siden.\n\nI NÆRHETEN\nBautzen, Zittau-fjellene og Zgorzelec..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2002,7 +2002,8 @@
     "stops": [],
     "tags": [
       "Historiske byer",
-      "Arkitektur"
+      "Arkitektur",
+      "Grensebyer"
     ]
   },
   {
@@ -2012,11 +2013,11 @@
     "category": "Byer og kultur",
     "lat": 49.2303439,
     "lng": 9.1621599,
-    "description": "",
-    "video": "",
+    "description": "En stemningsfull middelalderby med bindingsverk, rester av Hohenstaufernes keiserpalass og det kjente Blauer Turm.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9pcH2xMqPRF",
-    "info": "",
-    "details": "",
+    "info": "https://www.badwimpfen.de/gaeste-bereich/bad-wimpfen-entdecken/altstadt-sehenswuerdigkeiten/sehenswuerdigkeiten",
+    "details": "OM STEDET\nEn stemningsfull middelalderby med bindingsverk, rester av Hohenstaufernes keiserpalass og det kjente Blauer Turm.\nOmråde: Baden-Württemberg ved Neckar.\n\nHVA KAN VI OPPLEVE?\nBlauer Turm (det blå tårnet), Roter Turm, gamlebyen, Kaiserpfalz og utsikten over Neckar.\n\nPRAKTISK\nAnbefalt tidsbruk: 2–4 timer. Passer som et 2–4 timers stopp eller en rolig halvdag. De gamle gatene har brostein og noen bakker. Kontroller åpningstid for tårnet.\n\nI NÆRHETEN\nHeilbronn, Neckardalen og Burg Guttenberg..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2028,7 +2029,9 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Historiske byer"
+      "Historiske byer",
+      "Bindingsverk",
+      "Utsiktspunkter"
     ]
   },
   {
@@ -2038,11 +2041,11 @@
     "category": "Natur og utsikt",
     "lat": 48.91849,
     "lng": 11.8722777,
-    "description": "",
-    "video": "",
+    "description": "Utgangspunkt for Donaudurchbruch i Weltenburger Enge, der Donau passerer mellom imponerende kalksteinsklipper på vei mot Weltenburg kloster.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9jwfWGpQ4xF",
-    "info": "",
-    "details": "",
+    "info": "https://tourismus.kelheim.de/adressen/weltenburger-enge/",
+    "details": "OM STEDET\nUtgangspunkt for Donaudurchbruch i Weltenburger Enge, der Donau passerer mellom imponerende kalksteinsklipper på vei mot Weltenburg kloster.\nOmråde: Bayern, der Altmühl møter Donau.\n\nHVA KAN VI OPPLEVE?\nBåttur gjennom Donaudurchbruch; Kloster Weltenburg og Asamkirken; utsikt over kløften; Befreiungshalle over byen.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Sett av en halv til hel dag. Båtavganger og vannstand er sesong-/væravhengige. Det finnes også turstier som Weltenburger Höhenweg for dem som ønsker å gå.\n\nI NÆRHETEN\nRegensburg, Altmühltal og Riedenburg..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2054,7 +2057,10 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Elvelandskap"
+      "Elvelandskap",
+      "Kløfter",
+      "Båttur",
+      "Kloster"
     ]
   },
   {
@@ -2064,11 +2070,11 @@
     "category": "Natur og utsikt",
     "lat": 51.9532976,
     "lng": 13.8848784,
-    "description": "",
-    "video": "",
+    "description": "UNESCO-biosfærereservat med et labyrintisk nettverk av naturlige vannløp og kanaler, små landsbyer og tradisjonelle båtturer.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9qRx4r7XFvm",
-    "info": "",
-    "details": "",
+    "info": "https://www.spreewald.de/en/activities-map",
+    "details": "OM STEDET\nUNESCO-biosfærereservat med et labyrintisk nettverk av naturlige vannløp og kanaler, små landsbyer og tradisjonelle båtturer.\nOmråde: Brandenburg sørøst for Berlin, rundt Lübbenau og Burg.\n\nHVA KAN VI OPPLEVE?\nTradisjonell Kahn-båttur fra Lübbenau, Burg eller Lübben; padling med kano; landsbyen Lehde og friluftsmuseet; sykkelturer langs kanalene.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–2 dager. En dag er et minimum, gjerne en helg for padling og sykkelturer. Vannveiene har vernesoner og regler; bruk merkede ruter. Populært om sommeren, men kan også oppleves andre årstider.\n\nI NÆRHETEN\nBerlin, Cottbus og Lübben..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2081,7 +2087,10 @@
     "stops": [],
     "tags": [
       "Kanaler",
-      "Natur"
+      "Natur",
+      "Båttur",
+      "Padling",
+      "UNESCO"
     ]
   },
   {
@@ -2091,11 +2100,11 @@
     "category": "Fotturer",
     "lat": 49.1102539,
     "lng": 7.7705851,
-    "description": "",
-    "video": "",
+    "description": "Et vandreområde kjent for spektakulære, røde sandsteinsklipper, skogsstier, panoramautsikter og borgruiner.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9vqhqpx8vQF",
-    "info": "",
-    "details": "",
+    "info": "https://www.dahner-felsenland.net/vg_dahner_felsenland/Tourismus/Wandern/Premiumwanderwege/Dahner%20Felsenpfad%2012%2C7%20km/",
+    "details": "OM STEDET\nEt vandreområde kjent for spektakulære, røde sandsteinsklipper, skogsstier, panoramautsikter og borgruiner.\nOmråde: Rheinland-Pfalz i Pfälzerwald nær franskegrensen.\n\nHVA KAN VI OPPLEVE?\nDahner Felsenpfad (omtrent 12,7 km), utsikt fra Lämmerfelsen, sandsteinstårn og borgruiner ved Altdahn.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Velg konkret runde før GPX-import: regionen har mange turmuligheter. Dahner Felsenpfad er en lengre dagstur med stigning og skogsstier; ta solide sko. Sjekk lokal tilkomst og kartmerking.\n\nI NÆRHETEN\nBurg Altdahn, Hauenstein og franske Nord-Vosges..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2108,7 +2117,9 @@
     "stops": [],
     "tags": [
       "Fjellformasjoner",
-      "Skogsturer"
+      "Skogsturer",
+      "Sandstein",
+      "Borgruiner"
     ]
   },
   {
@@ -2116,18 +2127,18 @@
     "name": "Upper Danube Valley",
     "country": "Tyskland",
     "category": "Fotturer",
-    "lat": 45.8025196,
-    "lng": 18.8861614,
-    "description": "",
-    "video": "",
+    "lat": 48.0505,
+    "lng": 8.9692,
+    "description": "Dramatisk dal langs øvre Donau med lyse kalksteinsklipper, buktende elv, middelalderborger og mange spektakulære utsiktspunkter og turstier.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9qQRrH5g29F",
-    "info": "",
-    "details": "",
+    "info": "https://www.donaubergland.de/en/danube-valley/",
+    "details": "OM STEDET\nDramatisk dal langs øvre Donau med lyse kalksteinsklipper, buktende elv, middelalderborger og mange spektakulære utsiktspunkter og turstier.\nOmråde: Naturpark Obere Donau i Baden-Württemberg, mellom Mühlheim, Beuron og Sigmaringen.\n\nHVA KAN VI OPPLEVE?\nBeuron kloster og Haus der Natur; utsiktspunkter som Knopfmacherfelsen; klippene ved Hausen im Tal; Burg Wildenstein og de mange borgruinene; Schloss Sigmaringen. Velg også en av de merkede DonauFelsenLäufe-rundene.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 dager. Dette er en hel region, ikke én bestemt fottur. For kartet er markøren lagt ved Beuron som et sentralt utgangspunkt, og ikke ved en bestemt sti. Beregn helst 1–3 dager for vandring mellom utsiktspunktene og slottene. Noen klippestier er bratte eller utsatte; sjekk aktuell rundtur, stengninger og fottøy. Regionen har togstasjoner langs Donau; padling krever hensyn til elvens vannstand og vernebestemmelser.\n\nI NÆRHETEN\nSigmaringen, Beuron, Fridingen an der Donau, Hausen im Tal, Inzigkofen og Schwäbische Alb..\n\nTURFORSLAG\n• Korte turer fra Beuron til nærliggende utsiktspunkter.\n• DonauFelsenLäufe – merkede rundturer i regionen.\n• Donauberglandweg – egen langdistansetur over fire etapper og omtrent 60 km. Den er IKKE den samme som hele Upper Danube Valley og bør registreres som en separat flerdagstur ved behov.\n\nRUTEUSIKKERHET\nOppføringen gjelder en stor region, og har ikke én riktig GPX-rute. Hver tur må velges og registreres separat.\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
     "imageLicense": "",
-    "routeType": "Dagstur",
+    "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
     "routeNote": "",
@@ -2135,7 +2146,10 @@
     "stops": [],
     "tags": [
       "Elvelandskap",
-      "Utsiktspunkter"
+      "Utsiktspunkter",
+      "Kalksteinsklipper",
+      "Borgruiner",
+      "Flere dagsturer"
     ]
   },
   {
@@ -2145,11 +2159,11 @@
     "category": "Natur og utsikt",
     "lat": 54.6602197,
     "lng": 8.3287701,
-    "description": "",
-    "video": "",
+    "description": "Rolig nordsjøøy med den enorme sandflaten Kniepsand, store sanddyner, fugleliv og små frisiske landsbyer.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9rFRHqHmchm",
-    "info": "",
-    "details": "",
+    "info": "https://www.amrum.de/urlaubsthemen/naturerlebnis/kniepsand-und-duenen",
+    "details": "OM STEDET\nRolig nordsjøøy med den enorme sandflaten Kniepsand, store sanddyner, fugleliv og små frisiske landsbyer.\nOmråde: Nordfrisiske øyer, Schleswig-Holstein, Nordsjøen.\n\nHVA KAN VI OPPLEVE?\nGå på Kniepsand, besøk Amrum Odde, se fyret og landsbyen Nebel, utforsk strand- og dyneområder fra Norddorf eller Wittdün.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–2 dager. Beregn minst en hel dag, helst en overnatting. Ankomst med ferge; merk tidevann, vind og beskyttede naturområder. Ikke gå utenfor merkede stier i sårbare sanddyner.\n\nI NÆRHETEN\nFöhr, Sylt og vadehavsområdet..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2162,7 +2176,9 @@
     "stops": [],
     "tags": [
       "Øyer",
-      "Strender"
+      "Strender",
+      "Sanddyner",
+      "Fugleliv"
     ]
   },
   {
@@ -2172,11 +2188,11 @@
     "category": "Byer og kultur",
     "lat": 53.6288297,
     "lng": 11.4148038,
-    "description": "",
-    "video": "",
+    "description": "Innsjøby med et eventyrlig residensslott på en øy og et historisk slotts- og bygningsensemble som kom på UNESCOs verdensarvliste i 2024.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9vfMC3pPRGF",
-    "info": "",
-    "details": "",
+    "info": "https://whc.unesco.org/en/list/1705/",
+    "details": "OM STEDET\nInnsjøby med et eventyrlig residensslott på en øy og et historisk slotts- og bygningsensemble som kom på UNESCOs verdensarvliste i 2024.\nOmråde: Mecklenburg-Vorpommern ved Schweriner See.\n\nHVA KAN VI OPPLEVE?\nSchweriner Schloss med hageanlegg, slottssjøen, gamlebyen, domkirken og en spasertur rundt Pfaffenteich.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Beregn en halv til hel dag, gjerne mer med slott, hager og båttur. Deler av residensslottet brukes av delstatsparlamentet; kontroller tilgjengelige omvisninger.\n\nI NÆRHETEN\nWismar, Rostock og Mecklenburgsjøene..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2189,7 +2205,9 @@
     "stops": [],
     "tags": [
       "Slott",
-      "Historiske byer"
+      "Historiske byer",
+      "UNESCO",
+      "Innsjøer"
     ]
   },
   {
@@ -2199,11 +2217,11 @@
     "category": "Byer og kultur",
     "lat": 51.7855428,
     "lng": 11.1519933,
-    "description": "",
-    "video": "",
+    "description": "UNESCO-vernet middelalderby med over 2000 bindingsverkshus fra flere århundrer, romantiske smug og imponerende kirkebygg.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9xG32f3m6mF",
-    "info": "",
-    "details": "",
+    "info": "https://www.quedlinburg-info.de/en/",
+    "details": "OM STEDET\nUNESCO-vernet middelalderby med over 2000 bindingsverkshus fra flere århundrer, romantiske smug og imponerende kirkebygg.\nOmråde: Sachsen-Anhalt ved Harz.\n\nHVA KAN VI OPPLEVE?\nAltstadt med bindingsverkshus, Marktplatz, Stiftsberg og Stiftskirche St. Servatius, Münzenberg og Brühlpark.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Sett av en halv til hel dag. Smale gater og brostein gjør byen mest egnet for vandring til fots. Kombiner med Harz-fjellene.\n\nI NÆRHETEN\nWernigerode, Thale og nasjonalparken Harz..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2216,7 +2234,9 @@
     "stops": [],
     "tags": [
       "Historiske byer",
-      "Arkitektur"
+      "Arkitektur",
+      "UNESCO",
+      "Bindingsverk"
     ]
   },
   {
@@ -2226,11 +2246,11 @@
     "category": "Byer og kultur",
     "lat": 50.1483916,
     "lng": 7.1663195,
-    "description": "",
-    "video": "",
+    "description": "En postkortvakker vinby ved Mosel, med historisk gamleby, bratte dalsider og Reichsburg Cochem på høyden.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44jC2Q3WHV2vwF",
-    "info": "",
-    "details": "",
+    "info": "https://burgcochem.de/",
+    "details": "OM STEDET\nEn postkortvakker vinby ved Mosel, med historisk gamleby, bratte dalsider og Reichsburg Cochem på høyden.\nOmråde: Rheinland-Pfalz i Moseldalen.\n\nHVA KAN VI OPPLEVE?\nBesøk Reichsburg med omvisning, gå i gamlebyen, nyt utsikten over Mosel og se slottet fra elvebredden; eventuelt båttur.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. En halv til hel dag passer fint. Borgen ligger et stykke opp fra sentrum; det er stigning. Billetter/omvisning og båttider må kontrolleres.\n\nI NÆRHETEN\nBurg Eltz, Beilstein, Zell og Mosel-vinlandsbyene..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2243,7 +2263,9 @@
     "stops": [],
     "tags": [
       "Slott",
-      "Historiske byer"
+      "Historiske byer",
+      "Elvelandskap",
+      "Utsiktspunkter"
     ]
   },
   {
@@ -2253,11 +2275,11 @@
     "category": "Byer og kultur",
     "lat": 51.9059936,
     "lng": 10.4266284,
-    "description": "",
-    "video": "",
+    "description": "Historisk bergverks- og keiserby der gamlebyen og Rammelsberg-gruvene er del av UNESCO-verdensarven.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9wqwW2J7vMm",
-    "info": "",
-    "details": "",
+    "info": "https://www.rammelsberg.de/en-gb/visit",
+    "details": "OM STEDET\nHistorisk bergverks- og keiserby der gamlebyen og Rammelsberg-gruvene er del av UNESCO-verdensarven.\nOmråde: Niedersachsen, vest ved Harzfjellene.\n\nHVA KAN VI OPPLEVE?\nKaiserpfalz (keiserpalasset), gamlebyens bindingsverk og Marktplatz, Rammelsberg gruvedriftmuseum og utsikt mot Harz.\n\nPRAKTISK\nAnbefalt tidsbruk: Hel dag. Sett av minst en hel dag dersom både gamlebyen og gruvemuseet skal besøkes. Gruveomvisning kan kreve forhåndsbestilling og innebære trapper og lavere temperatur.\n\nI NÆRHETEN\nNationalpark Harz, Brocken og Bad Harzburg..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2269,7 +2291,10 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Historiske byer"
+      "Historiske byer",
+      "UNESCO",
+      "Bindingsverk",
+      "Bergverk"
     ]
   },
   {
@@ -2277,13 +2302,13 @@
     "name": "Lichtenstein Castle",
     "country": "Tyskland",
     "category": "Byer og kultur",
-    "lat": 50.1416891,
-    "lng": 10.7793294,
-    "description": "",
-    "video": "",
+    "lat": 48.4066,
+    "lng": 9.2583,
+    "description": "Eventyrlig nygotisk slott fra 1840–1842, oppført på en klippe over Echazdalen og inspirert av Wilhelm Hauffs roman Lichtenstein.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44jC2rPpxMR9Jm",
-    "info": "",
-    "details": "",
+    "info": "https://www.schloss-lichtenstein.de/en/",
+    "details": "OM STEDET\nEventyrlig nygotisk slott fra 1840–1842, oppført på en klippe over Echazdalen og inspirert av Wilhelm Hauffs roman Lichtenstein.\nOmråde: Schloss Lichtenstein ved Honau, Baden-Württemberg, Schwäbische Alb.\n\nHVA KAN VI OPPLEVE?\nSe den spektakulære klippeplasseringen, slottets ytre og slottsgården; bli med på guidet tur inne hvis åpent, og se utsiktspunktene i nærområdet.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 timer. Beregn 1–3 timer for slottet, mer hvis dere går tur i området. Interiøret besøkes på guidede turer; sjekk språk, tider og eventuell vinterstenging. Parkeringsmuligheter finnes i nærheten, med noen turstier ned i dalen.\n\nI NÆRHETEN\nUracher Wasserfall, Bad Urach og Reutlingen. God kombinasjon med tur til Uracher Wasserfall..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2295,7 +2320,10 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Slott"
+      "Slott",
+      "Arkitektur",
+      "Utsiktspunkter",
+      "Romantikken"
     ]
   },
   {
@@ -2305,11 +2333,11 @@
     "category": "Byer og kultur",
     "lat": 50.570561,
     "lng": 8.531245,
-    "description": "",
-    "video": "",
+    "description": "Historisk by med vakre bindingsverkshus, den middelalderske Lahn-broen, en særegen domkirke og steder knyttet til Goethe.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44jC55GJfH4j6F",
-    "info": "",
-    "details": "",
+    "info": "https://www.wetzlar.de/microsite/en/Discovering/historical-walk.php",
+    "details": "OM STEDET\nHistorisk by med vakre bindingsverkshus, den middelalderske Lahn-broen, en særegen domkirke og steder knyttet til Goethe.\nOmråde: Hessen ved elven Lahn.\n\nHVA KAN VI OPPLEVE?\nWetzlarer Dom, Alte Lahnbrücke, gamlebyen og Marktplatz, Lottehaus og Goethe-miljøet samt spaserturen langs Lahn.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv dag. Beregn en halv dag, eller mer med museer. Kommunen har en merket kort byvandring på rundt 1,3 km gjennom historiske sentrum.\n\nI NÆRHETEN\nGießen, Braunfels og Lahn-dalen..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2321,7 +2349,10 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Historiske byer"
+      "Historiske byer",
+      "Bindingsverk",
+      "Litteratur",
+      "Elvelandskap"
     ]
   },
   {
@@ -2331,11 +2362,11 @@
     "category": "Byer og kultur",
     "lat": 49.905385,
     "lng": 9.3073639,
-    "description": "",
-    "video": "",
+    "description": "Romantisk renessanseslott omgitt av vann og skog; dagens utseende stammer hovedsakelig fra ombyggingen på 1500-tallet.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44jC523rjfWw5F",
-    "info": "",
-    "details": "",
+    "info": "https://www.schloss-mespelbrunn.de/en/",
+    "details": "OM STEDET\nRomantisk renessanseslott omgitt av vann og skog; dagens utseende stammer hovedsakelig fra ombyggingen på 1500-tallet.\nOmråde: Spessart, Bayern.\n\nHVA KAN VI OPPLEVE?\nSe Schloss Mespelbrunn speile seg i vollgraven, slottsgården og historiske rom på omvisning; kombiner med en tur i Spessart-skogen.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–2 timer. Beregn 1–2 timer. Slottet er fortsatt bebodd av eierfamilien, og innvendig adgang er normalt guidet og sesongbasert. Sjekk offisiell åpning før besøk. Vær oppmerksom på vannkanten med små barn.\n\nI NÆRHETEN\nAschaffenburg, Weibersbrunn og Spessart..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
     "image": "",
     "imageCredit": "",
     "imageSource": "",
@@ -2347,7 +2378,9 @@
     "route": {},
     "stops": [],
     "tags": [
-      "Slott"
+      "Slott",
+      "Vannslott",
+      "Skog"
     ]
   },
   {
@@ -2465,5 +2498,31 @@
       "Fosser",
       "Gangbroer"
     ]
+  },
+  {
+    "id": "6j44j9w6rgHF3R4m",
+    "name": "Kriebstein Castle",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 51.04253,
+    "lng": 13.01756,
+    "description": "Godt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.",
+    "details": "OM STEDET\nGodt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.\nOmråde: Mittelsachsen ved Zschopau-elven, Sachsen.\n\nHVA KAN VI OPPLEVE?\nBurg Kriebstein, borggården, historiske utstillinger og kapell; rusle i dalområdet ved Zschopau; se Kriebstein-demningen og reservoaret.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 timer. Sett av 1–3 timer til borgbesøket. Sjekk sesong, billetter og guidede turer. Adkomsten omfatter oppoverbakke og historiske trapper.\n\nI NÆRHETEN\nWaldheim, Kriebstein-demningen og Chemnitz..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
+    "todoist": "https://app.todoist.com/app/task/6j44j9w6rgHF3R4m",
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": "",
+    "route": {},
+    "stops": [],
+    "routeType": "Enkeltsted",
+    "tags": [
+      "Slott",
+      "Middelalder",
+      "Borgruiner",
+      "Elvelandskap"
+    ],
+    "info": "https://www.burg-kriebstein.eu/en/kriebstein-castle/"
   }
 ]
