@@ -4,6 +4,7 @@
 Uses explicit Wikipedia article targets to avoid mixing up similarly named places.
 No photo is published unless its Commons licence and attribution can be verified.
 Does not replace existing curated images.
+Missing or uncertain licences are skipped rather than guessed.
 """
 import html
 import json
