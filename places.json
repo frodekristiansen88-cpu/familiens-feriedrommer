@@ -18,16 +18,16 @@
     "routeType": "Dagstur",
     "routeUrl": "https://www.wikiloc.com/hiking-trails/caminito-del-rey-286693283",
     "routeSource": "https://www.caminitodelrey.info/en/your-visit/access-route",
+    "tags": [
+      "Gangbroer",
+      "Høydeskrekk",
+      "Kløfter"
+    ],
     "routeNote": "Offisiell enveisrute på ca. 8 km. Wikiloc-sporet er brukerregistrert og kan avvike i adkomst og trasé; bekreft med offisiell rutebeskrivelse.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": [],
-    "tags": [
-      "Kløfter",
-      "Gangbroer",
-      "Høydeskrekk"
-    ]
+    "stops": []
   },
   {
     "id": "6j44JRfV4V2GR65m",
@@ -48,6 +48,13 @@
     "routeType": "Dagstur",
     "routeUrl": "https://tirol.mapservices.eu/nefos_app/api/gpx/imx_xR7kIE5LaSrqNTM6/de/generate/32118038",
     "routeSource": "https://www.tirol.at/aktivitaeten/sport/wandern/wandertouren/leutascher-geisterklamm",
+    "tags": [
+      "Familieturer",
+      "Fosser",
+      "Gangbroer",
+      "Grensebyer",
+      "Kløfter"
+    ],
     "routeNote": "GPX fra Tirols turistside for ca. 5 km rundtur. Kort Wasserfallsteig kan være en separat avstikker. Sesongstengt om vinteren. GPS-sporet er hentet automatisk og er ikke kontrollert mot gjeldende tilkomst, stengninger eller skilting. Kartmarkøren viser startpunktet i den importerte GPX-filen, som ikke nødvendigvis tilsvarer offisiell inngang eller parkering.",
     "route": {
       "coordinates": [
@@ -1943,14 +1950,7 @@
       "distanceKm": 4.9,
       "confidence": "Foreløpig GPX – ikke kvalitetssikret"
     },
-    "stops": [],
-    "tags": [
-      "Kløfter",
-      "Fosser",
-      "Familieturer",
-      "Gangbroer",
-      "Grensebyer"
-    ]
+    "stops": []
   },
   {
     "id": "6j44hhrCX9cjhC4F",
@@ -1963,23 +1963,23 @@
     "video": "https://www.facebook.com/reel/1665126545400704",
     "todoist": "https://app.todoist.com/app/task/6j44hhrCX9cjhC4F",
     "info": "https://www.badurach-tourismus.de/en/poi/detail/urach-waterfall-bad8f2a7a9",
-    "details": "OM STEDET\nUracher Wasserfall ligger ved Bad Urach i naturområdet Schwäbische Alb, sørøst for Stuttgart. Vannet renner over en kalksteinskant og ned i den skogkledde dalen. Området er særlig kjent for grønn vegetasjon, kalksteinsformasjoner og flotte høstfarger.\n\nHVA KAN VI OPPLEVE?\n• Gå gjennom skogen til fossefallet og oppleve vannet fra ulike vinkler.\n• Velge en lengre rundtur med utsiktspunkter over dalen.\n• Nyte høstfargene når forholdene ligger til rette.\n• Kombinere turen med et besøk i Bad Urach.\n\nPRAKTISK\n• Inspirasjonsvideoen beskriver en moderat rundtur på 10 km; det finnes også kortere alternativer.\n• Stier kan være våte og glatte, særlig ved regn og løvfall.\n• Gode tursko anbefales. Vannføringen varierer med årstid og nedbør.\n• Sjekk turtrasé, parkering og eventuelle stengninger før besøket.\n\nI NÆRHETEN\nBad Urachs gamleby, Burg Hohenurach og Schwäbische Alb.\n\nBEKREFTET BESØKSINFO\n• Bad Urachs turistinformasjon oppgir et fall på omtrent 37 meter.\n• Parkeringsplassen P23 er et aktuelt utgangspunkt til fossen. Wasserfallsteig kan også knytte sammen Uracher og Gütersteiner Wasserfall.\n• Den rundt 10 km lange runden fra videoen er bare ett av flere alternativer. Schloss Lichtenstein kan kombineres på samme ferie.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "details": "OM STEDET\nUracher Wasserfall ligger ved Bad Urach i naturområdet Schwäbische Alb, sørøst for Stuttgart. Vannet renner over en kalksteinskant og ned i den skogkledde dalen. Området er særlig kjent for grønn vegetasjon, kalksteinsformasjoner og flotte høstfarger.\n\nHVA KAN VI OPPLEVE?\n• Gå gjennom skogen til fossefallet og oppleve vannet fra ulike vinkler.\n• Velge en lengre rundtur med utsiktspunkter over dalen.\n• Nyte høstfargene, spesielt i oktober og november når forholdene ligger til rette.\n• Kombinere turen med et besøk i den historiske småbyen Bad Urach.\n\nPRAKTISK\n• Inspirasjonsvideoen beskriver en moderat rundtur på 10 km; dette er én mulig rute, ikke nødvendigvis den korteste veien til fossen.\n• Stier kan være våte, gjørmete og glatte, særlig ved regn og løvfall.\n• Gode tursko anbefales. Ta med drikke og kle deg etter været.\n• Vannføringen og opplevelsen varierer med nedbør og årstid.\n• Sjekk turtrasé, parkering og eventuelle stengninger før besøket.\n\nI NÆRHETEN\nBad Urachs gamleby, ruinene av Burg Hohenurach og andre turmuligheter i Schwäbische Alb.\n\n\nBEKREFTET BESØKSINFO\n• Bad Urachs turistinformasjon oppgir et fall på omtrent 37 meter.\n• Parkeringsplassen P23 er et aktuelt utgangspunkt til fossen. Wasserfallsteig kan også knytte sammen Uracher og Gütersteiner Wasserfall.\n• Den rundt 10 km lange runden fra videoen er bare ett av flere alternativer. Schloss Lichtenstein kan kombineres på samme ferie.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Wasserfall_in_Bad_Urach.jpg/960px-Wasserfall_in_Bad_Urach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Steffen Stanischa · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Wasserfall_in_Bad_Urach.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Dagstur",
     "routeUrl": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
     "routeSource": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
+    "tags": [
+      "Fosser",
+      "Skogsturer"
+    ],
     "routeNote": "Alternativ rundtur fra regional turistaktør med GPX på kildesiden. Kan avvike fra 10 km-ruten i inspirasjonsvideoen.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": [],
-    "tags": [
-      "Fosser",
-      "Skogsturer"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9m3j2Fw4M9m",
@@ -2000,14 +2000,14 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Grensebyer",
+      "Historiske byer"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Historiske byer",
-      "Arkitektur",
-      "Grensebyer"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9pcH2xMqPRF",
@@ -2028,14 +2028,14 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Bindingsverk",
+      "Historiske byer",
+      "Utsiktspunkter"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Historiske byer",
-      "Bindingsverk",
-      "Utsiktspunkter"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9jwfWGpQ4xF",
@@ -2049,22 +2049,22 @@
     "todoist": "https://app.todoist.com/app/task/6j44j9jwfWGpQ4xF",
     "info": "https://tourismus.kelheim.de/adressen/weltenburger-enge/",
     "details": "OM STEDET\nUtgangspunkt for Donaudurchbruch i Weltenburger Enge, der Donau passerer mellom imponerende kalksteinsklipper på vei mot Weltenburg kloster.\nOmråde: Bayern, der Altmühl møter Donau.\n\nHVA KAN VI OPPLEVE?\nBåttur gjennom Donaudurchbruch; Kloster Weltenburg og Asamkirken; utsikt over kløften; Befreiungshalle over byen.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Sett av en halv til hel dag. Båtavganger og vannstand er sesong-/væravhengige. Det finnes også turstier som Weltenburger Höhenweg for dem som ønsker å gå.\n\nI NÆRHETEN\nRegensburg, Altmühltal og Riedenburg..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Aerial_image_of_the_Danube_Gorge_near_Weltenburg.jpg/960px-Aerial_image_of_the_Danube_Gorge_near_Weltenburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Carsten Steger · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Danube_Gorge_near_Weltenburg.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Båttur",
+      "Elvelandskap",
+      "Kloster",
+      "Kløfter"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Elvelandskap",
-      "Kløfter",
-      "Båttur",
-      "Kloster"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9qRx4r7XFvm",
@@ -2085,16 +2085,16 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
-    "routeNote": "",
-    "route": {},
-    "stops": [],
     "tags": [
+      "Båttur",
       "Kanaler",
       "Natur",
-      "Båttur",
       "Padling",
       "UNESCO"
-    ]
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
   },
   {
     "id": "6j44j9vqhqpx8vQF",
@@ -2108,22 +2108,22 @@
     "todoist": "https://app.todoist.com/app/task/6j44j9vqhqpx8vQF",
     "info": "https://www.dahner-felsenland.net/vg_dahner_felsenland/Tourismus/Wandern/Premiumwanderwege/Dahner%20Felsenpfad%2012%2C7%20km/",
     "details": "OM STEDET\nEt vandreområde kjent for spektakulære, røde sandsteinsklipper, skogsstier, panoramautsikter og borgruiner.\nOmråde: Rheinland-Pfalz i Pfälzerwald nær franskegrensen.\n\nHVA KAN VI OPPLEVE?\nDahner Felsenpfad (omtrent 12,7 km), utsikt fra Lämmerfelsen, sandsteinstårn og borgruiner ved Altdahn.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Velg konkret runde før GPX-import: regionen har mange turmuligheter. Dahner Felsenpfad er en lengre dagstur med stigning og skogsstier; ta solide sko. Sjekk lokal tilkomst og kartmerking.\n\nI NÆRHETEN\nBurg Altdahn, Hauenstein og franske Nord-Vosges..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Dahner_Felsenpfad_2025.jpg/960px-Dahner_Felsenpfad_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Heidy Bonn · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dahner_Felsenpfad_2025.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Dagstur",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Borgruiner",
+      "Fjellformasjoner",
+      "Sandstein",
+      "Skogsturer"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Fjellformasjoner",
-      "Skogsturer",
-      "Sandstein",
-      "Borgruiner"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9qQRrH5g29F",
@@ -2137,23 +2137,23 @@
     "todoist": "https://app.todoist.com/app/task/6j44j9qQRrH5g29F",
     "info": "https://www.donaubergland.de/en/danube-valley/",
     "details": "OM STEDET\nDramatisk dal langs øvre Donau med lyse kalksteinsklipper, buktende elv, middelalderborger og mange spektakulære utsiktspunkter og turstier.\nOmråde: Naturpark Obere Donau i Baden-Württemberg, mellom Mühlheim, Beuron og Sigmaringen.\n\nHVA KAN VI OPPLEVE?\nBeuron kloster og Haus der Natur; utsiktspunkter som Knopfmacherfelsen; klippene ved Hausen im Tal; Burg Wildenstein og de mange borgruinene; Schloss Sigmaringen. Velg også en av de merkede DonauFelsenLäufe-rundene.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 dager. Dette er en hel region, ikke én bestemt fottur. For kartet er markøren lagt ved Beuron som et sentralt utgangspunkt, og ikke ved en bestemt sti. Beregn helst 1–3 dager for vandring mellom utsiktspunktene og slottene. Noen klippestier er bratte eller utsatte; sjekk aktuell rundtur, stengninger og fottøy. Regionen har togstasjoner langs Donau; padling krever hensyn til elvens vannstand og vernebestemmelser.\n\nI NÆRHETEN\nSigmaringen, Beuron, Fridingen an der Donau, Hausen im Tal, Inzigkofen og Schwäbische Alb..\n\nTURFORSLAG\n• Korte turer fra Beuron til nærliggende utsiktspunkter.\n• DonauFelsenLäufe – merkede rundturer i regionen.\n• Donauberglandweg – egen langdistansetur over fire etapper og omtrent 60 km. Den er IKKE den samme som hele Upper Danube Valley og bør registreres som en separat flerdagstur ved behov.\n\nRUTEUSIKKERHET\nOppføringen gjelder en stor region, og har ikke én riktig GPX-rute. Hver tur må velges og registreres separat.\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
-    "routeType": "Enkeltsted",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/FFH-Gebiet_Oberes_Donautal_zwischen_Beuron_und_Sigmaringen.jpg/960px-FFH-Gebiet_Oberes_Donautal_zwischen_Beuron_und_Sigmaringen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Olga Ernst · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:FFH-Gebiet_Oberes_Donautal_zwischen_Beuron_und_Sigmaringen.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "routeType": "Dagstur",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Borgruiner",
+      "Elvelandskap",
+      "Flere dagsturer",
+      "Kalksteinsklipper",
+      "Utsiktspunkter"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Elvelandskap",
-      "Utsiktspunkter",
-      "Kalksteinsklipper",
-      "Borgruiner",
-      "Flere dagsturer"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9rFRHqHmchm",
@@ -2167,22 +2167,22 @@
     "todoist": "https://app.todoist.com/app/task/6j44j9rFRHqHmchm",
     "info": "https://www.amrum.de/urlaubsthemen/naturerlebnis/kniepsand-und-duenen",
     "details": "OM STEDET\nRolig nordsjøøy med den enorme sandflaten Kniepsand, store sanddyner, fugleliv og små frisiske landsbyer.\nOmråde: Nordfrisiske øyer, Schleswig-Holstein, Nordsjøen.\n\nHVA KAN VI OPPLEVE?\nGå på Kniepsand, besøk Amrum Odde, se fyret og landsbyen Nebel, utforsk strand- og dyneområder fra Norddorf eller Wittdün.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–2 dager. Beregn minst en hel dag, helst en overnatting. Ankomst med ferge; merk tidevann, vind og beskyttede naturområder. Ikke gå utenfor merkede stier i sårbare sanddyner.\n\nI NÆRHETEN\nFöhr, Sylt og vadehavsområdet..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Luftaufnahmen_Nordseekueste_2012-05-by-RaBoe-104.jpg/960px-Luftaufnahmen_Nordseekueste_2012-05-by-RaBoe-104.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "© Ra Boe / Wikipedia · CC BY-SA 3.0 de",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Luftaufnahmen_Nordseekueste_2012-05-by-RaBoe-104.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Fugleliv",
+      "Sanddyner",
+      "Strender",
+      "Øyer"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Øyer",
-      "Strender",
-      "Sanddyner",
-      "Fugleliv"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9vfMC3pPRGF",
@@ -2196,22 +2196,22 @@
     "todoist": "https://app.todoist.com/app/task/6j44j9vfMC3pPRGF",
     "info": "https://whc.unesco.org/en/list/1705/",
     "details": "OM STEDET\nInnsjøby med et eventyrlig residensslott på en øy og et historisk slotts- og bygningsensemble som kom på UNESCOs verdensarvliste i 2024.\nOmråde: Mecklenburg-Vorpommern ved Schweriner See.\n\nHVA KAN VI OPPLEVE?\nSchweriner Schloss med hageanlegg, slottssjøen, gamlebyen, domkirken og en spasertur rundt Pfaffenteich.\n\nPRAKTISK\nAnbefalt tidsbruk: Halv–hel dag. Beregn en halv til hel dag, gjerne mer med slott, hager og båttur. Deler av residensslottet brukes av delstatsparlamentet; kontroller tilgjengelige omvisninger.\n\nI NÆRHETEN\nWismar, Rostock og Mecklenburgsjøene..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Aerial_image_of_Schwerin_Castle_%28view_from_the_east%29.jpg/960px-Aerial_image_of_Schwerin_Castle_%28view_from_the_east%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Carsten Steger · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schwerin_Castle_(view_from_the_east).jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Historiske byer",
+      "Innsjøer",
+      "Slott",
+      "UNESCO"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Slott",
-      "Historiske byer",
-      "UNESCO",
-      "Innsjøer"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9xG32f3m6mF",
@@ -2232,15 +2232,15 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Bindingsverk",
+      "Historiske byer",
+      "UNESCO"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Historiske byer",
-      "Arkitektur",
-      "UNESCO",
-      "Bindingsverk"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jC2Q3WHV2vwF",
@@ -2261,15 +2261,15 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Elvelandskap",
+      "Historiske byer",
+      "Slott",
+      "Utsiktspunkter"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Slott",
-      "Historiske byer",
-      "Elvelandskap",
-      "Utsiktspunkter"
-    ]
+    "stops": []
   },
   {
     "id": "6j44j9wqwW2J7vMm",
@@ -2290,15 +2290,15 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Bergverk",
+      "Bindingsverk",
+      "Historiske byer",
+      "UNESCO"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Historiske byer",
-      "UNESCO",
-      "Bindingsverk",
-      "Bergverk"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jC2rPpxMR9Jm",
@@ -2312,22 +2312,51 @@
     "todoist": "https://app.todoist.com/app/task/6j44jC2rPpxMR9Jm",
     "info": "https://www.schloss-lichtenstein.de/en/",
     "details": "OM STEDET\nEventyrlig nygotisk slott fra 1840–1842, oppført på en klippe over Echazdalen og inspirert av Wilhelm Hauffs roman Lichtenstein.\nOmråde: Schloss Lichtenstein ved Honau, Baden-Württemberg, Schwäbische Alb.\n\nHVA KAN VI OPPLEVE?\nSe den spektakulære klippeplasseringen, slottets ytre og slottsgården; bli med på guidet tur inne hvis åpent, og se utsiktspunktene i nærområdet.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 timer. Beregn 1–3 timer for slottet, mer hvis dere går tur i området. Interiøret besøkes på guidede turer; sjekk språk, tider og eventuell vinterstenging. Parkeringsmuligheter finnes i nærheten, med noen turstier ned i dalen.\n\nI NÆRHETEN\nUracher Wasserfall, Bad Urach og Reutlingen. God kombinasjon med tur til Uracher Wasserfall..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Honau_Schloss_Lichtenstein_2024_01.jpg/960px-Honau_Schloss_Lichtenstein_2024_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Windharp · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Honau_Schloss_Lichtenstein_2024_01.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Romantikken",
+      "Slott",
+      "Utsiktspunkter"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
+    "stops": []
+  },
+  {
+    "id": "6j44j9w6rgHF3R4m",
+    "name": "Kriebstein Castle",
+    "country": "Tyskland",
+    "category": "Byer og kultur",
+    "lat": 51.04253,
+    "lng": 13.01756,
+    "description": "Godt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.",
+    "video": "https://www.facebook.com/reel/1807349610394035",
+    "todoist": "https://app.todoist.com/app/task/6j44j9w6rgHF3R4m",
+    "info": "https://www.burg-kriebstein.eu/en/kriebstein-castle/",
+    "details": "OM STEDET\nGodt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.\nOmråde: Mittelsachsen ved Zschopau-elven, Sachsen.\n\nHVA KAN VI OPPLEVE?\nBurg Kriebstein, borggården, historiske utstillinger og kapell; rusle i dalområdet ved Zschopau; se Kriebstein-demningen og reservoaret.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 timer. Sett av 1–3 timer til borgbesøket. Sjekk sesong, billetter og guidede turer. Adkomsten omfatter oppoverbakke og historiske trapper.\n\nI NÆRHETEN\nWaldheim, Kriebstein-demningen og Chemnitz..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20230917_2_Burg_Kriebstein.jpg/960px-20230917_2_Burg_Kriebstein.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Code · CC BY 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:20230917_2_Burg_Kriebstein.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by/4.0",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "",
     "tags": [
-      "Slott",
-      "Arkitektur",
-      "Utsiktspunkter",
-      "Romantikken"
-    ]
+      "Borgruiner",
+      "Elvelandskap",
+      "Middelalder",
+      "Slott"
+    ],
+    "routeNote": "",
+    "route": {},
+    "stops": []
   },
   {
     "id": "6j44jC55GJfH4j6F",
@@ -2348,15 +2377,15 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Bindingsverk",
+      "Elvelandskap",
+      "Historiske byer",
+      "Litteratur"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Historiske byer",
-      "Bindingsverk",
-      "Litteratur",
-      "Elvelandskap"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jC523rjfWw5F",
@@ -2377,14 +2406,14 @@
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Skog",
+      "Slott",
+      "Vannslott"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Slott",
-      "Vannslott",
-      "Skog"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jRQhXjCJrxGm",
@@ -2397,26 +2426,26 @@
     "video": "https://www.facebook.com/reel/2648036365636938",
     "todoist": "https://app.todoist.com/app/task/6j44jRQhXjCJrxGm",
     "info": "https://www.visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/",
-    "details": "OM STEDET\nPico do Arieiro ligger 1 818 meter over havet og er et av de mest kjente fjellutsiktspunktene på Madeira. Her kan man oppleve dramatiske fjellformasjoner og noen ganger stå over et hav av skyer.\n\nNÅR BØR VI BESØKE STEDET?\n• Soloppgang: Spektakulært, men populært. Beregn ekstra tid til parkering.\n• Dagtid: Passer for å utforske landskapet og åpne turstier.\n• Solnedgang: Guiden i videoen foretrekker ofte dette. Kom gjerne 45–60 minutter før.\n\nFJELLTURER\n• PR1 er en kjent fjellsti. Sjekk stengninger og krav om reservasjon på SIMplifica før avreise.\n• Ikke start en lengre fjelltur uten å kontrollere vær og åpne strekninger.\n\nPRAKTISK\n• Været på fjellet kan være helt annerledes enn i Funchal.\n• Sjekk fjellwebkameraer og værmelding før avreise.\n• Ta med varme klær og vindtett jakke.\n\nI NÆRHETEN\nFjellutsiktspunkter og turmuligheter mot Pico Ruivo, når rutene er åpne.\n\nVIKTIG OPPDATERT TURSTATUS – NOVEMBER 2026\n• PR1 mellom Pico do Areeiro og Pico Ruivo ble gjenåpnet i mai 2026 etter tidligere stengning. Tilgjengeligheten kan likevel endres raskt.\n• Oppdateringer 18.–21. november 2026 tyder på at deler av PR1 igjen er begrenset, med toveis adgang mot Pedra Rija, mens videre etappe kan være stengt. Bruk den offisielle statuslisten fra IFCN rett før en eventuell fottur.\n• For utsiktspunktet på Pico do Arieiro er det ikke nødvendig å gå PR1. Tidspunkt, vær, transport, forhåndsbestilling og avgifter vurderes separat fra turen.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "details": "OM STEDET\nPico do Arieiro ligger 1 818 meter over havet og er et av de mest kjente fjellutsiktspunktene på Madeira. Her kan man oppleve dramatiske fjellformasjoner, skiftende skydekke og noen ganger stå over et hav av skyer.\n\nNÅR BØR VI BESØKE STEDET?\n• Soloppgang: Svært stemningsfullt, men også populært. Parkering kan bli vanskelig; beregn god tid.\n• Dagtid: Godt egnet for å utforske fjellandskapet og eventuelle åpne turstier.\n• Solnedgang: Guiden i inspirasjonsvideoen foretrekker ofte dette på grunn av gyllent lys og gjerne færre besøkende. Ankom gjerne 45–60 minutter før solnedgang.\n\nFJELLTURER\n• PR1 er en av Madeiras mest kjente fjellstier, men tilgang, stengninger og krav om reservasjon kan endres.\n• Videoen opplyser at turer krever forhåndsreservasjon gjennom den offisielle SIMplifica-plattformen. Kontroller gjeldende regler og status før avreise.\n• Ikke legg ut på lengre fjellturer uten å sjekke vær, rute og åpne strekninger.\n\nPRAKTISK\n• Ikke vurder været bare ut fra Funchal: forholdene på fjellet kan være helt annerledes.\n• Sjekk fjellwebkameraer og værvarsel før avreise. Toppen kan ligge over skyene eller være helt innhyllet i tåke.\n• Ta med varme klær og vindtett jakke, også når det er varmt ved kysten.\n• Beregn ekstra tid til parkering ved populære tidspunkter.\n\nI NÆRHETEN\nAndre fjellutsiktspunkter på Madeiras sentrale fjellrygg og turmuligheter mot Pico Ruivo, når rutene er åpne.\n\n\nVIKTIG OPPDATERT TURSTATUS – NOVEMBER 2026\n• PR1 mellom Pico do Areeiro og Pico Ruivo ble gjenåpnet i mai 2026 etter tidligere stengning. Tilgjengeligheten kan likevel endres raskt.\n• Oppdateringer 18.–21. november 2026 tyder på at deler av PR1 igjen er begrenset, med toveis adgang mot Pedra Rija, mens videre etappe kan være stengt. Bruk den offisielle statuslisten fra IFCN rett før en eventuell fottur.\n• For utsiktspunktet på Pico do Arieiro er det ikke nødvendig å gå PR1. Tidspunkt, vær, transport, forhåndsbestilling og avgifter vurderes separat fra turen.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pico_do_Areeiro%2C_2025.jpg/960px-Pico_do_Areeiro%2C_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Krib · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Pico_do_Areeiro%2C_2025.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Enkeltsted",
     "routeUrl": "https://levadas.live/trails/PR1/",
     "routeSource": "https://www.visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-1-vereda-do-areeiro/",
+    "tags": [
+      "Fjelltopper",
+      "Madeira",
+      "Solnedgang",
+      "Soloppgang",
+      "Utsiktspunkter"
+    ],
     "routeNote": "PR1 er en separat fjelltur, ikke nødvendig for å besøke utsiktspunktet. GPX fra OSM-data. Deler av PR1 kan være stengt eller enveisregulert; sjekk offisiell status.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": [],
-    "tags": [
-      "Fjelltopper",
-      "Utsiktspunkter",
-      "Madeira",
-      "Soloppgang",
-      "Solnedgang"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jg56FRWv66Vm",
@@ -2425,29 +2454,29 @@
     "category": "Fotturer",
     "lat": 42.091,
     "lng": 0.697,
-    "description": "Spektakulær kløft med en smal tursti i bratte fjellvegger over turkist vann. Viktig: Pasarelas de Montfalcó er stengt etter steinras i august 2026, men kløftstien fra katalansk side kan fortsatt besøkes.",
+    "description": "En spektakulær kløft der en smal tursti er hugget inn i bratte kalksteinsvegger over turkist vann. Ruten forbindes med de berømte tretrappene ved Montfalcó og hengebroer, men disse tretrappene er stengt etter steinras i august 2026.",
     "video": "https://www.facebook.com/reel/1769233194126717",
     "todoist": "https://app.todoist.com/app/task/6j44jg56FRWv66Vm",
-    "info": "https://pasarelasmontfalcomontrebei.com/avisos-de-la-ruta/",
-    "details": "OM STEDET\nCongost de Mont-rebei er en dramatisk kløft skåret ut av elven Noguera Ribagorzana mellom Aragón og Catalonia.\n\nHVA KAN VI OPPLEVE?\n• Vandre på kløftstien fra La Masieta med flott utsikt over vannet.\n• Se dramatiske kalksteinsklipper og hengebroer langs åpne deler av ruten.\n• Vurdere kajakk på vannet der forholdene tillater det.\n• Oppleve Montfalcó-tretrappene når de en gang åpner igjen.\n\nVIKTIG STATUS – NOVEMBER 2026\n• Pasarelas de Montfalcó er STENGT etter steinras i august 2026, uten bekreftet gjenåpningsdato.\n• Kløftstien på katalansk side er fortsatt tilgjengelig. Sjekk status før besøk: https://pasarelasmontfalcomontrebei.com/avisos-de-la-ruta/\n\nPRAKTISK\n• Vanskelighetsgrad avhenger av valgt rute. Den fulle Montfalcó-ruten kan være krevende.\n• Langruten er rundt 16 km tur/retur og tar omtrent 6 timer når åpen.\n• Ikke egnet ved sterk høydeskrekk. Ta med vann og gode tursko.\n• Undersøk parkering ved La Masieta og eventuelle reservasjoner.\n\nI NÆRHETEN\nMontsec-fjellene, Montañana og Àger.\n\nSISTE VERIFISERTE TILGANG\n• Statussiden for Montfalcó (sist oppdatert 11. august 2026) oppgir kløftstien åpen, men Montfalcó-trappene stengt. Den importerte/lenkede Montfalcó-ruten må ikke brukes som bekreftelse på ferdselsrett.\n• Velg en tur med adkomst fra La Masieta bare etter å ha kontrollert gjeldende adgang, reservasjon og vær.\n• Aktuell status: https://pasarelasmontfalcomontrebei.com/avisos-de-la-ruta/",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "info": "https://www.turismodearagon.com/ficha/congosto-de-mont-rebei/",
+    "details": "OM STEDET\nCongost de Mont-rebei er en dramatisk kløft skåret ut av elven Noguera Ribagorzana mellom Aragón og Catalonia. Turstien langs fjellveggen gir utsikt mot bratte kalksteinsklipper og det turkise vannet i Canelles-reservoaret.\n\nHVA KAN VI OPPLEVE?\n• Vandre på den smale kløftstien fra La Masieta, med storslått utsikt over elven.\n• Se hengebroer og fjellvegger langs ruten, avhengig av valgt og åpen trasé.\n• Vurdere kajakk på vannet dersom lokale operatører og forholdene tillater det.\n• Når anlegget en gang åpner igjen: oppleve de berømte tretrappene Pasarelas de Montfalcó, festet til stupbratte klipper.\n\nVIKTIG STATUS – NOVEMBER 2026\n• Pasarelas de Montfalcó er STENGT etter et steinras i august 2026. Det er ikke oppgitt noen sikker åpningsdato.\n• Kløftstien på katalansk side er fortsatt tilgjengelig. Kontroller alltid siste status før reisen.\n• Statuskilde: [Avisos Ruta Pasarelas de Montfalcó y Mont Rebei | Pasarelas de Montfalcó](https://pasarelasmontfalcomontrebei.com/avisos-de-la-ruta/)\n\nPRAKTISK\n• Videoen beskriver vanskelighetsgraden som moderat, men dette avhenger sterkt av rutevalg. Den fulle Montfalcó-ruten kan være krevende.\n• Den lange turen fra Montfalcó omtales av Aragóns turistmyndigheter som rundt 16 km tur/retur, cirka 6 timer og betydelig stigning, når ruten er åpen.\n• Ikke egnet ved sterk høydeskrekk. Ta med vann, gode tursko og solbeskyttelse.\n• Omtrent 2 t 45 min fra Barcelona ifølge videoen, men kjøretiden avhenger av hvilket startpunkt som velges.\n• Undersøk parkering ved La Masieta og eventuelle reservasjoner på forhånd.\n\nI NÆRHETEN\nMontsec-fjellene, landsbyen Montañana og området ved Àger.\n\n\nSISTE VERIFISERTE TILGANG\n• Statussiden for Montfalcó (sist oppdatert 11. august 2026) oppgir kløftstien åpen, men Montfalcó-trappene stengt. Den importerte/lenkede Montfalcó-ruten må ikke brukes som bekreftelse på ferdselsrett.\n• Velg en tur med adkomst fra La Masieta bare etter å ha kontrollert gjeldende adgang, reservasjon og vær.\n• Aktuell status: [Avisos Ruta Pasarelas de Montfalcó y Mont Rebei | Pasarelas de Montfalcó](https://pasarelasmontfalcomontrebei.com/avisos-de-la-ruta/)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/MontRebei1.jpg/960px-MontRebei1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Mikipons · CC BY-SA 3.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:MontRebei1.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0",
     "routeType": "Dagstur",
     "routeUrl": "https://turismoribagorza.org/en/wp-content/Uploads/2025/06/natural_path_footbridges.gpx",
     "routeSource": "https://turismoribagorza.org/en/rue/natural-path-from-montfalco-to-the-gorge-of-mont-rebei/",
+    "tags": [
+      "Gangbroer",
+      "Kajakk",
+      "Kløfter",
+      "Stengninger"
+    ],
     "routeNote": "GPX fra regional turistaktør, men denne traséen inkluderer Montfalcó-gangbroene. Ikke bruk den som aktuell turplan før stengningene er opphevet.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": [],
-    "tags": [
-      "Kløfter",
-      "Gangbroer",
-      "Kajakk",
-      "Stengninger"
-    ]
+    "stops": []
   },
   {
     "id": "6j44jr8rCXfw6p8F",
@@ -2460,22 +2489,22 @@
     "video": "https://www.facebook.com/reel/1758398281929351",
     "todoist": "https://app.todoist.com/app/task/6j44jr8rCXfw6p8F",
     "info": "https://www.castillomonumentocolomares.com/",
-    "details": "OM STEDET\nCastillo de Colomares er et monument i Benalmádena ved Costa del Sol, ikke en historisk kongeborg. Ifølge inspirasjonsvideoen startet byggingen i 1987 og pågikk i syv år. En lege og to lokale håndverkere sto bak byggverket.\n\nARKITEKTUR OG HISTORIE\n• Monumentet er viet Christofer Columbus og reisene hans.\n• Bygningen kombinerer gotiske, romanske, bysantinske og mauriske stilelementer.\n• Utsmykningene forteller en historie i 16 episoder, ifølge videoen.\n\nHVA KAN VI OPPLEVE?\n• Se fantasifulle tårn, buer og utskårne detaljer.\n• Fotografere monumentet fra ulike vinkler og studere symbolikken.\n• Nyte utsikten over området rundt Benalmádena.\n\nPRAKTISK\n• Dette er et kort kulturstopp, ikke et stort slott med mange innendørsrom.\n• Sjekk åpningstider, billetter og adgang før besøket.\n\nI NÆRHETEN\nBenalmádena Pueblo, Málaga, Mijas og Costa del Sol.\n\nBEKREFTET BESØKSTIPS\n• Monumentets offisielle nettsted opplyser at det bare kan besøkes utendørs; det er ikke en ordinær slottsomvisning inne.\n• Et kort fotostopp ved Benalmádena Pueblo passer fint sammen med andre opplevelser på Costa del Sol.\n• Kontroller åpningstid og billettpris på offisiell nettside før besøket.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "details": "OM STEDET\nCastillo de Colomares er et monument i Benalmádena ved Costa del Sol, ikke en historisk kongeborg. Ifølge inspirasjonsvideoen startet byggingen i 1987 og pågikk i syv år. En lege og to lokale håndverkere sto bak det håndlagde byggverket.\n\nARKITEKTUR OG HISTORIE\n• Monumentet er viet Christofer Columbus og historien om reisene hans.\n• Bygningen kombinerer gotiske, romanske, bysantinske og mauriske stilelementer.\n• Utsmykningene og veggene er laget for å fortelle en historie i 16 episoder, slik videoen beskriver.\n• Detaljene er ment å oppdages mens man går rundt, ikke å fungere som et forsvarsverk.\n\nHVA KAN VI OPPLEVE?\n• Se de fantasifulle tårnene, buene og de mange utskårne detaljene.\n• Fotografere monumentet fra ulike vinkler og studere symbolikken.\n• Nyte utsikten over området rundt Benalmádena.\n\nPRAKTISK\n• Dette er et forholdsvis kort kulturstopp, ikke et stort slott med mange innendørsrom.\n• Sjekk gjeldende åpningstider, billetter og adgang før besøket.\n• Ligger nær Málaga og kan kombineres med andre opplevelser på Costa del Sol.\n\nI NÆRHETEN\nBenalmádena Pueblo, Málaga, Mijas og strendene langs Costa del Sol.\n\n\nBEKREFTET BESØKSTIPS\n• Monumentets offisielle nettsted opplyser at det bare kan besøkes utendørs; det er ikke en ordinær slottsomvisning inne.\n• Et kort fotostopp ved Benalmádena Pueblo passer fint sammen med andre opplevelser på Costa del Sol.\n• Kontroller åpningstid og billettpris på offisiell nettside før besøket.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Castillo_de_Colomares%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_75.jpg/960px-Castillo_de_Colomares%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_75.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Diego Delso · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Castillo_de_Colomares%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_75.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Enkeltsted",
     "routeUrl": "",
     "routeSource": "",
+    "tags": [
+      "Arkitektur",
+      "Historie",
+      "Slott"
+    ],
     "routeNote": "",
     "route": {},
-    "stops": [],
-    "tags": [
-      "Slott",
-      "Arkitektur",
-      "Historie"
-    ]
+    "stops": []
   },
   {
     "id": "6j44m489hmcM5cMF",
@@ -2488,49 +2517,23 @@
     "video": "https://www.facebook.com/reel/1677472900681798",
     "todoist": "https://app.todoist.com/app/task/6j44m489hmcM5cMF",
     "info": "https://www.josalzburg.com/en/activities/opening-hours-prices.html",
-    "details": "OM STEDET\nLiechtensteinklamm ligger ved St. Johann im Pongau i delstaten Salzburg. Kløften er kjent for svært høye fjellvegger, kraftig rennende vann, tunneler og den markante spiraltrappen Helix.\n\nHVA KAN VI OPPLEVE?\n• Vandre på gangveier gjennom den trange kløften.\n• Se Helix-spiraltrappen.\n• Gå gjennom tunneler og oppleve brusende vann.\n• Besøke det store fossefallet innerst i kløften.\n\nPRAKTISK\n• Videoen oppgir omtrent 1 km hver vei og rundt 440 trappetrinn hver vei.\n• Beregn rundt 1,5 time eller mer med fotostopp.\n• Ta med et ekstra kleslag; det er kjøligere inne i kløften.\n• Kan være folksomt selv utenom høysesong.\n• Mange trapper gjør turen lite egnet ved begrenset bevegelighet.\n• Sjekk sesongåpning og billetter før avreise.\n\nADKOMST\nKan besøkes som dagstur fra Salzburg med tog og buss, ifølge videoen.\n\nI NÆRHETEN\nSt. Johann im Pongau, Salzburg og Pongau-regionen.\n\nBEKREFTET BESØKSTIPS\n• Salzburgs turistinformasjon beskriver cirka 1 km inn i kløften og samme vei tilbake; spiraltrappen Helix går rundt 30 meter ned.\n• Offisiell turistside opplyser i november 2026 at kløften er vinterstengt etter sommersesongen.\n• Sjekk gjenåpning og billetter før tur; det er mange trapper og gangveiene kan oppleves våte og kalde.",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
+    "details": "OM STEDET\nLiechtensteinklamm ligger ved St. Johann im Pongau i delstaten Salzburg. Kløften er kjent for svært høye fjellvegger, kraftig rennende vann, passasjer gjennom fjellet og den markante spiraltrappen Helix. Innerst venter et imponerende fossefall.\n\nHVA KAN VI OPPLEVE?\n• Vandre på tilrettelagte gangveier gjennom den trange kløften.\n• Se Helix-spiraltrappen, et særpreget arkitektonisk innslag.\n• Gå gjennom tunneler og se vannet fosse mellom klippeveggene.\n• Besøke det store fossefallet innerst i kløften.\n\nPRAKTISK\n• Videoen oppgir omtrent 1 km hver vei og rundt 440 trappetrinn hver vei.\n• Beregn rundt 1,5 time eller mer dersom dere vil stoppe og fotografere.\n• Ta med et ekstra kleslag; det kan være kjøligere inne i kløften.\n• Stedet kan være travelt selv på hverdager i september. Vurder å unngå høysesongen om dere ønsker mindre folkemengder.\n• Besøket innebærer mange trapper og passer dårlig ved begrenset bevegelighet.\n• Sjekk sesongåpning, værforhold, adgang og billetter før avreise.\n\nADKOMST OG KOMBINASJONER\n• Ifølge videoen er stedet egnet som dagstur fra Salzburg med tog og buss.\n• Den reisende overnattet i Salzburg i stedet for å kjøre direkte fra Wien, som ble oppgitt til omtrent fem timer én vei.\n• Kan kombineres med andre opplevelser i Salzburgerland.\n\nI NÆRHETEN\nSt. Johann im Pongau, Salzburg og fjellandskapet i Pongau-regionen.\n\n\nBEKREFTET BESØKSTIPS\n• Salzburgs turistinformasjon beskriver cirka 1 km inn i kløften og samme vei tilbake; spiraltrappen Helix går rundt 30 meter ned.\n• Offisiell turistside opplyser i november 2026 at kløften er vinterstengt etter sommersesongen.\n• Sjekk gjenåpning og billetter før tur; det er mange trapper og gangveiene kan oppleves våte og kalde.",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Lichtensteinklamm.jpg/960px-Lichtensteinklamm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Gaby1266 · CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lichtensteinklamm.jpg",
+    "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Dagstur",
     "routeUrl": "https://www.bergfex.at/sommer/salzburg/touren/themenweg/1459137,liechtensteinklamm-mit-helix/",
     "routeSource": "https://www.bergfex.at/sommer/salzburg/touren/themenweg/1459137,liechtensteinklamm-mit-helix/",
+    "tags": [
+      "Fosser",
+      "Gangbroer",
+      "Kløfter"
+    ],
     "routeNote": "Rutekart fra tredjepart. Sammenlign med gjeldende besøksrute og åpningstider; ikke bekreftet at GPX kan lastes ned uten innlogging.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
-    "stops": [],
-    "tags": [
-      "Kløfter",
-      "Fosser",
-      "Gangbroer"
-    ]
-  },
-  {
-    "id": "6j44j9w6rgHF3R4m",
-    "name": "Kriebstein Castle",
-    "country": "Tyskland",
-    "category": "Byer og kultur",
-    "lat": 51.04253,
-    "lng": 13.01756,
-    "description": "Godt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.",
-    "details": "OM STEDET\nGodt bevart senmiddelaldersk borg på en bratt klippe over Zschopau, med tårn, slottsrom og utsikt over den skogkledde elvedalen.\nOmråde: Mittelsachsen ved Zschopau-elven, Sachsen.\n\nHVA KAN VI OPPLEVE?\nBurg Kriebstein, borggården, historiske utstillinger og kapell; rusle i dalområdet ved Zschopau; se Kriebstein-demningen og reservoaret.\n\nPRAKTISK\nAnbefalt tidsbruk: 1–3 timer. Sett av 1–3 timer til borgbesøket. Sjekk sesong, billetter og guidede turer. Adkomsten omfatter oppoverbakke og historiske trapper.\n\nI NÆRHETEN\nWaldheim, Kriebstein-demningen og Chemnitz..\n\nKILDER OG KONTROLL\nInformasjonen bygger på stedets offisielle turist- eller forvaltningsside. Åpningstider, priser og tilgjengelighet må sjekkes på nytt før reisen.",
-    "video": "https://www.facebook.com/reel/1807349610394035",
-    "todoist": "https://app.todoist.com/app/task/6j44j9w6rgHF3R4m",
-    "image": "",
-    "imageCredit": "",
-    "imageSource": "",
-    "imageLicense": "",
-    "route": {},
-    "stops": [],
-    "routeType": "Enkeltsted",
-    "tags": [
-      "Slott",
-      "Middelalder",
-      "Borgruiner",
-      "Elvelandskap"
-    ],
-    "info": "https://www.burg-kriebstein.eu/en/kriebstein-castle/"
+    "stops": []
   }
 ]
