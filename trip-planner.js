@@ -173,9 +173,17 @@
     }
   }
   function setMode(next){
+    if(!["all","near","selected"].includes(next))return;
     mode=next;
     renderMode();
     updateView(false);
+    if(next==="near")zoomToTrip();
+    if(next==="selected"){
+      const pts=current().placeIds.map(id=>byId.get(id)).filter(p=>p&&validCoordinate(+p.lat,+p.lng)).map(p=>[+p.lat,+p.lng]);
+      if(pts.length>=2)map.fitBounds(pts,{padding:[45,45],maxZoom:12});
+      else if(pts.length===1)map.setView(pts[0],12);
+      else zoomToTrip();
+    }
   }
   function exportPlans(){
     const payload={format:"familiens-feriedrommer-turer",version:1,exportedAt:new Date().toISOString(),trips};
