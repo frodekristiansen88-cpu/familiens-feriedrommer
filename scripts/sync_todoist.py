@@ -100,10 +100,11 @@ for t in tasks():
         route_type = "Dagstur"
     route_url = first_link(desc,"GPX") or previous.get("routeUrl","")
     route_source = first_link(desc,"Rutekilde") or previous.get("routeSource","")
+    tags = sorted(set(previous.get("tags", [])) | {label for label in labels if label not in CATEGORIES})
     # Route geometry is curated separately. Never infer a walking trail from straight-line coordinates.
     route = previous.get("route",{})
     stops = previous.get("stops",[])
-    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"routeNote":previous.get("routeNote",""),"route":route,"stops":stops})
+    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense",""),"routeType":route_type,"routeUrl":route_url,"routeSource":route_source,"tags":tags,"routeNote":previous.get("routeNote",""),"route":route,"stops":stops})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
