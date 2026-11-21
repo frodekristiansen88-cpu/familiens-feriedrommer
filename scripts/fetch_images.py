@@ -105,6 +105,9 @@ ARTICLES.update({
 })
 CURATED_FILES.update({
     "Tilas Stoll": "Tilas Stoll in Högbergsfältet.JPG",
+    "Wąwóz Czarownic": "Wąwóz Ciężkowicki 3.jpg",
+    "Castelo dos Mouros": "Castelo dos Mouros, Sintra, 2022 (09).jpg",
+    "Pietrapertosa": "Comune di Pietrapertosa.jpg",
 })
 USER_AGENT = "FamiliensFeriedrommer/1.0 (https://github.com/frodekristiansen88-cpu/familiens-feriedrommer)"
 BAD_NAME = ("coat_of_arms", "wappen", "flagge", "flag_of", "logo", "locator", "location_map", "lage", "karte", "map_", "plan_", "icon")
