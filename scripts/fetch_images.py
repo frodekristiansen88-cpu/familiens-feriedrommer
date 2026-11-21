@@ -260,6 +260,20 @@ def search_photo(place):
             time.sleep(.5)
     return None
 
+
+# Berlin: use exact landmark articles, not generic city photographs.
+ARTICLES.update({
+    "Berlin – historisk byvandring": [("de", "Brandenburger Tor")],
+    "Potsdamer Platz": [("de", "Potsdamer Platz")],
+    "Topographie des Terrors": [("de", "Topographie des Terrors")],
+    "Checkpoint Charlie": [("de", "Checkpoint Charlie")],
+    "Gendarmenmarkt": [("de", "Gendarmenmarkt")],
+    "Holocaust-minnesmerket": [("de", "Denkmal für die ermordeten Juden Europas")],
+    "Brandenburger Tor": [("de", "Brandenburger Tor")],
+    "Reichstag og glasskuppelen": [("de", "Reichstagsgebäude")],
+})
+CURATED_FILES.update({"Topographie des Terrors": "Topographie des Terrors Berlin.JPG"})
+
 def main():
     places = json.loads(PATH.read_text(encoding="utf-8"))
     updated = 0
