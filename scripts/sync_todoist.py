@@ -87,7 +87,8 @@ for t in tasks():
     details = [line.strip() for line in desc.splitlines() if line.strip() and not any(line.startswith("**"+key+"**:") for key in ("Sted","Opplevelse","Inspirasjonsvideo","Video som inspirerte","Video","Bilder og inspirasjon","Kart","Offisiell side / billetter","Mer informasjon","Bilde","Koordinater"))]
     if details: summary = summary + ("\n\n" if summary else "") + "\n".join(details)
     image = first_link(desc,"Bilde") or previous.get("image","")
-    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense","")})
+    detail_text = previous.get("details","")
+    new.append({"id":str(t["id"]),"name":name,"country":country,"category":category,"lat":coords[0],"lng":coords[1],"description":summary,"video":video,"todoist":"https://app.todoist.com/app/task/"+str(t["id"]),"info":info,"details":detail_text,"image":image,"imageCredit":previous.get("imageCredit",""),"imageSource":previous.get("imageSource",""),"imageLicense":previous.get("imageLicense","")})
 if not new:
     raise SystemExit("No mapped places; preserving existing data.")
 PATH.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
