@@ -2535,5 +2535,255 @@
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
     "stops": []
+  },
+  {
+    "id": "6j458WH4pfWWg9Pm",
+    "name": "Liechtenstein Trail",
+    "country": "Liechtenstein",
+    "category": "Fotturer",
+    "lat": 47.21789,
+    "lng": 9.56981,
+    "description": "En rundt 75 km lang sammenhengende langtur gjennom hele Liechtenstein, via slott, vingårder, skog, landsbyer og utsikter mot Rhindalen. Foreslått som fem etapper med overnatting i tettsteder.",
+    "details": "OM TUREN\nDen merkede Liechtenstein Trail ble etablert i 2019 og går gjennom alle landets 11 kommuner, på en blanding av fortau, veier, skogsstier og høydedrag. Underveis finnes historiske steder, slott og mange utsyn over Rhindalen.\n\nFEM DAGSETAPPER – NORD TIL SØR\n1. Schaanwald → Ruggell, ca. 19,4 km.\n2. Ruggell → Nendeln, ca. 14,8 km.\n3. Nendeln → Vaduz, ca. 13,4 km.\n4. Vaduz → Triesenberg, ca. 10,4 km.\n5. Triesenberg → Balzers, ca. 15,7 km.\nRekkefølgen er motsatt av den offisielle sør-til-nord-presentasjonen. Videoen oppgir et litt annet lengdeanslag for tredje etappe (17 km).\n\nPRAKTISK\nOvernatting på hotell og pensjonater, ikke en tradisjonell fjellhytte-til-hytte-tur. Det finnes gode bussforbindelser som også kan gjøre det mulig å ha én base. Ruten beskrives som forholdsvis lett, men har opp- og nedstigninger, variert underlag og enkelte lengre dager. Sjekk årstid, vær, booking og transport før avreise.\n\nGPS / USIKKERHET\nGPX fra hiking-trails.com er identifisert, men må kontrolleres før bruk. Etappestoppene er foreløpig plassert ved sentrum/knutepunkt i de enkelte stedene; de er ikke nødvendigvis nøyaktige overnattingssteder. Oppgitt total og etappelengder kan variere.",
+    "video": "https://www.facebook.com/reel/2629251680888353",
+    "todoist": "https://app.todoist.com/app/task/6j458WH4pfWWg9Pm",
+    "info": "https://en.tourismus.li/entdecken/liechtenstein-weg/gehen.html",
+    "routeType": "Flerdagstur",
+    "routeUrl": "https://hiking-trails.com/wp-content/uploads/2024/04/Liechtenstein-trail.gpx",
+    "routeSource": "https://en.tourismus.li/entdecken/liechtenstein-weg/gehen.html",
+    "routeNote": "Foreløpig GPS-spor fra hiking-trails.com. Beskrivelsen går fra Schaanwald til Balzers (nord–sør); offisiell turistside viser etappene motsatt vei. Byene er omtrentlige etappestopp, ikke eksakte overnattingssteder. Ruten må kontrolleres før tur.",
+    "route": {
+      "days": 5,
+      "distanceKm": 75
+    },
+    "stops": [
+      {
+        "name": "Schaanwald",
+        "day": 1,
+        "lat": 47.21789,
+        "lng": 9.56981,
+        "note": "Start ved østerrikskegrensen"
+      },
+      {
+        "name": "Ruggell",
+        "day": 1,
+        "lat": 47.23799,
+        "lng": 9.5254,
+        "note": "Overnatting etter ca. 19,4 km"
+      },
+      {
+        "name": "Nendeln",
+        "day": 2,
+        "lat": 47.19846,
+        "lng": 9.543,
+        "note": "Etappe 2, ca. 14,8 km"
+      },
+      {
+        "name": "Vaduz",
+        "day": 3,
+        "lat": 47.1406,
+        "lng": 9.5222,
+        "note": "Hovedstaden, ca. 13,4 km"
+      },
+      {
+        "name": "Triesenberg",
+        "day": 4,
+        "lat": 47.11815,
+        "lng": 9.54197,
+        "note": "Etappe 4, ca. 10,4 km"
+      },
+      {
+        "name": "Balzers",
+        "day": 5,
+        "lat": 47.0652,
+        "lng": 9.5001,
+        "note": "Mål ved Burg Gutenberg, ca. 15,7 km"
+      }
+    ],
+    "tags": [
+      "Langtur",
+      "Flerdagstur",
+      "Kulturhistorie",
+      "Gjennom hele landet"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
+  },
+  {
+    "id": "6j458WHwjvrmjxMF",
+    "name": "Cathedral Cave og Slater's Bridge",
+    "country": "Storbritannia",
+    "category": "Fotturer",
+    "lat": 54.43367,
+    "lng": -3.03738,
+    "description": "En naturskjønn dagstur til den enorme skifergruvegrotten Cathedral Cave og den historiske steinbroen Slater’s Bridge i Little Langdale.",
+    "details": "OM STEDET\nCathedral Cave er en enorm, menneskeskapt grotte etter utvinning av skifer. Man går inn gjennom en mørk tunnel og kommer til et høyt rom med en massiv steinsøyle. Slater’s Bridge er en sjarmerende, vernet steinbro i Little Langdale.\n\nHVA OPPLEVER VI?\nElterwater, småveier og stier mellom steingjerder, den gamle broen over Brathay, den mørke tunnelen og Cathedral Cave. Turen kan også forlenges via Skelwith Force og Colwith Force.\n\nPRAKTISK\nStart ved Elterwater National Trust-parkering. Ha med hodelykt/lykt til tunnelen, gode sko, og vær forsiktig rundt gammel gruve, løs stein og våte partier. National Trust har en detaljert turbeskrivelse; kontroller adgang og sikkerhetsbeskjeder før besøket.\n\nGPS / USIKKERHET\nGPX-kilden er en 9 km rundtur fra Walking Englishman som også går via Skelwith Force og Colwith Force, og er LENGRE enn korteste rute i videoen. Den viser derfor et mulig, men ikke identisk, opplegg. Markøren viser Elterwater-parkeringen; grotten ligger videre langs turen.",
+    "video": "https://www.facebook.com/reel/2759573227772115",
+    "todoist": "https://app.todoist.com/app/task/6j458WHwjvrmjxMF",
+    "info": "https://www.nationaltrust.org.uk/visit/lake-district/the-langdales/elterwater-to-cathedral-quarry",
+    "routeType": "Dagstur",
+    "routeUrl": "https://www.walkingenglishman.com/lakes/lakes66elterwater/trackfile.gpx",
+    "routeSource": "https://www.nationaltrust.org.uk/visit/lake-district/the-langdales/elterwater-to-cathedral-quarry",
+    "routeNote": "GPX fra Walking Englishman er en 9 km runde som også går via Skelwith Force og Colwith Force, ikke nødvendigvis den kortere turen i inspirasjonsvideoen. Markeringspunktet er Elterwater-parkeringen.",
+    "route": {},
+    "stops": [
+      {
+        "name": "Elterwater",
+        "lat": 54.43367,
+        "lng": -3.03738,
+        "note": "Start ved National Trust-parkeringen"
+      },
+      {
+        "name": "Slater's Bridge",
+        "lat": 54.41783,
+        "lng": -3.06165,
+        "note": "Historisk steinbro"
+      },
+      {
+        "name": "Cathedral Quarry",
+        "lat": 54.4161,
+        "lng": -3.0586,
+        "note": "Grotten og den gamle skifergruven"
+      }
+    ],
+    "tags": [
+      "Grotteturer",
+      "Historiske broer",
+      "Lake District"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
+  },
+  {
+    "id": "6j458WPm3MF9f52F",
+    "name": "Gruta Iris – Monasterio de Piedra",
+    "country": "Spania",
+    "category": "Fotturer",
+    "lat": 41.193565,
+    "lng": -1.782265,
+    "description": "Et eventyraktig parkbesøk med fossefall, innsjøer og den spektakulære Gruta Iris, en grotte bak den store Cola de Caballo-fossen.",
+    "details": "OM STEDET\nMonasterio de Piedra ved Nuévalos har et historisk cistercienserkloster og et frodig parkområde langs elven Piedra. Gruta Iris ligger ved det store fossefallet Cola de Caballo, som er over 50 meter høyt.\n\nHVA OPPLEVER VI?\nTur langs flere fosser, dammer, trapper og gangveier i parken, samt klosteret. En grottetunnel gir spesiell utsikt mot fossen der adkomsten er åpen.\n\nPRAKTISK\nParken har egen inngangsbillett/parkbillett og merket intern besøksrute. Beregn tid til trapper og våte partier. Det finnes parkeringsplass ved anlegget, men kontroller regler for bobilparkering og overnatting separat. Videoens billettpriser er omtrentlige og kan endre seg.\n\nVIKTIG USIKKERHET\nOffisielt parkkart fra 2025 markerte Gruta Iris som midlertidig stengt. Sjekk det nyeste 2026-kartet og faktisk adgang til grotten før turen. Kartmarkøren er ved klosteret/parkens inngang, ikke ved selve grotten. Ingen kontrollert GPX-fil for parkens interne runde foreløpig. Bruk offisielt besøkskart.",
+    "video": "https://www.facebook.com/reel/2048370769199292",
+    "todoist": "https://app.todoist.com/app/task/6j458WPm3MF9f52F",
+    "info": "https://monasteriopiedra.com/parque/",
+    "routeType": "Dagstur",
+    "routeUrl": "",
+    "routeSource": "https://monasteriopiedra.com/parque/",
+    "routeNote": "Det finnes offisielt parkkart, men ingen kontrollert GPX-rute importert. Gruta Iris var midlertidig stengt i et offisielt parkkart fra 2025. Undersøk status på nyere kart. Markøren viser park-/klosteranlegget, ikke gruteinngangen.",
+    "route": {},
+    "stops": [],
+    "tags": [
+      "Grotteturer",
+      "Fosser",
+      "Kloster",
+      "Tilrettelagt tur"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
+  },
+  {
+    "id": "6j458WQR47CrF9pF",
+    "name": "Ponte dei Salti",
+    "country": "Sveits",
+    "category": "Natur og utsikt",
+    "lat": 46.26001,
+    "lng": 8.83604,
+    "description": "En pittoresk, dobbeltbuet steinbro over den krystallklare, turkise Verzasca-elven, med blankskurte klipper og fjellandskap.",
+    "details": "OM STEDET\nPonte dei Salti ligger i Lavertezzo i den sveitsiske Verzasca-dalen. Den berømte steinbroen med to buer er et av de mest fotograferte motivene i Ticino.\n\nHVA OPPLEVER VI?\nUtsikt over de blankskurte steinene og det klare vannet, broen og landsbyen Lavertezzo. Kan kombineres med dalens andre steder eller en lengre vandring langs Verzasca.\n\nPRAKTISK\nSelve broen kan besøkes med kort gangavstand fra nærliggende holdeplasser/parkering; en lang fottur er ikke nødvendig. Vannet kan være ekstremt kaldt, med farlige strømmer og glatte berg – ikke vurder badeforhold ut fra bilder. Parkering kan være begrenset i høysesong.\n\nGPS / USIKKERHET\nDette registreres som enkeltsted. Det finnes mange GPX-fotturer i Verzasca-dalen, men ingen bestemt vandring er nevnt i videoen, så det ville vært misvisende å tegne en vilkårlig tur som selve Ponte dei Salti.",
+    "video": "https://www.facebook.com/reel/1665312891668837",
+    "todoist": "https://app.todoist.com/app/task/6j458WQR47CrF9pF",
+    "info": "https://www.ascona-locarno.com/en/commons/details/Ponte-dei-Salti/2405",
+    "routeType": "Enkeltsted",
+    "routeUrl": "",
+    "routeSource": "https://www.ascona-locarno.com/en/commons/details/Ponte-dei-Salti/2405",
+    "routeNote": "Broen er et enkeltsted med kort adkomst; ingen lang tur behøves. GPX for turer i Verzasca-dalen ville vært en annen opplevelse.",
+    "route": {},
+    "stops": [],
+    "tags": [
+      "Historiske broer",
+      "Elver",
+      "Turkist vann",
+      "Ticino"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
+  },
+  {
+    "id": "6j458WPwV68QC99F",
+    "name": "Parrizal de Beceite",
+    "country": "Spania",
+    "category": "Fotturer",
+    "lat": 40.797373656,
+    "lng": 0.2032943,
+    "description": "En spektakulær tur mellom høye kalksteinsvegger langs Matarraña-elven, med smale gangbroer, turkise vannkulper og trang kløft.",
+    "details": "OM STEDET\nParrizal de Beceite (Parrissal de Beseit) er en vakker elvekløft i Matarraña i Teruel, med gangbroer langs elven og bratte kalksteinsvegger ved Els Estrets.\n\nHVA OPPLEVER VI?\nFra parkering P3 går turen forbi den botaniske stien og bergmalerier ved Fenellassa, videre over gangbroer langs elven Matarraña og til den smale kløften.\n\nPRAKTISK\nAdkomst er via smal vei fra Beceite; turstart er ved P3, ikke i selve landsbyen. Antall billetter og parkering kan være regulert, spesielt i sesong. Bestill på offisiell side. Underlaget kan være glatt eller vått. Ikke bad i beskyttede elveområder uten at det uttrykkelig er tillatt. Sjekk vannstand og eventuelle stengninger.\n\nGPS / USIKKERHET\nGPX fra campingelroble.com er identifisert, samt alternative brukerregistrerte spor. GPS-ruten kan inneholde ekstra sløyfer eller tur/retur-avvik. Startpunktet er parkering P3; den nøyaktige traséen må bekreftes mot lokale skilt og adgangsregler. Videoens priser er ikke verifisert som gjeldende.",
+    "video": "https://www.facebook.com/reel/1814705002903014",
+    "todoist": "https://app.todoist.com/app/task/6j458WPwV68QC99F",
+    "info": "https://entradasbeceite.arteyocio.com/ruta-del-parrizal/",
+    "routeType": "Dagstur",
+    "routeUrl": "https://campingelroble.com/wp-content/uploads/2024/10/parrizal-de-beceite-1.gpx",
+    "routeSource": "https://entradasbeceite.arteyocio.com/ruta-del-parrizal/",
+    "routeNote": "Foreløpig rute fra campingelroble.com; mulig alternativ: entremontanas.com. Markøren viser P3-parkeringen. Vannstand, billett/tilkomst, stengninger og nøyaktig spor må kontrolleres.",
+    "route": {},
+    "stops": [
+      {
+        "name": "Parkering P3",
+        "lat": 40.797373656,
+        "lng": 0.2032943,
+        "note": "Startpunkt, kontroll og parkering"
+      }
+    ],
+    "tags": [
+      "Kløfter",
+      "Gangbroer",
+      "Aragón"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
+  },
+  {
+    "id": "6j458WQqV32Q59Xm",
+    "name": "Coto Cuende og Gibaja",
+    "country": "Spania",
+    "category": "Fotturer",
+    "lat": 43.282221,
+    "lng": -3.438374,
+    "description": "To turmuligheter ved Gibaja langs elven Asón: Coto Cuende-elvestien og en tur til hengebroen og fossefallene i området.",
+    "details": "OM STEDET\nVed Gibaja i Cantabria går en elvesti langs Asón. Coto Cuende er et område langs elven, kjent blant annet for fiske og grønne stier. Videoen omtaler en kombinasjon av denne turen og et annet parti ved hengebro og fosser.\n\nTO DELER I VIDEOEN\n1. Coto Cuende – start fra området ved Gibaja stasjon, via Barrio de Bárcena, og gå på stien langs elven mot Refugio nº 6.\n2. Hengebro og fossefall – annet stopp fra området ved Baolafuente, med nedgang til elven.\nBegge turdelene kan kreve at man kjører eller går til ulike utgangspunkter. Ikke tegn rett linje mellom dem som om det er én sammenhengende merket rute.\n\nPRAKTISK\nBruk gode sko, ta med vann, og undersøk flom- og vannforhold. Det finnes brukerregistrerte spor på Wikiloc for Coto Cuende, men ingen direkte GPX-fil for hele kombinasjonen er bekreftet.\n\nGPS / USIKKERHET\nMarkøren er ved Gibaja jernbanestasjon, et dokumentert utgangspunkt for Coto Cuende, ikke ved hengebroen. Videoen gir ikke tilstrekkelig detaljert trasé eller distanser til å registrere en bekreftet helhetlig GPS-rute.",
+    "video": "https://www.facebook.com/reel/2725384181248667",
+    "todoist": "https://app.todoist.com/app/task/6j458WQqV32Q59Xm",
+    "info": "https://es.wikiloc.com/rutas-senderismo/coto-cuende-paseo-fluvial-hasta-el-refugio-n0-6-271218336",
+    "routeType": "Dagstur",
+    "routeUrl": "",
+    "routeSource": "https://es.wikiloc.com/rutas-senderismo/coto-cuende-paseo-fluvial-hasta-el-refugio-n0-6-271218336",
+    "routeNote": "Wikiloc har GPS-registrering for Coto Cuende, men ikke en verifisert fri nedlastingsfil. Videoen beskriver to turdeler, og vi tegner dem ikke som én sammenhengende rute. Markøren er ved Gibaja stasjon.",
+    "route": {},
+    "stops": [
+      {
+        "name": "Gibaja stasjon",
+        "lat": 43.282221,
+        "lng": -3.438374,
+        "note": "Startpunkt for Coto Cuende-elvestien"
+      }
+    ],
+    "tags": [
+      "Elvestier",
+      "Hengebroer",
+      "Cantabria"
+    ],
+    "image": "",
+    "imageCredit": "",
+    "imageSource": "",
+    "imageLicense": ""
   }
 ]
