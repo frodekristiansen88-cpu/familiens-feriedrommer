@@ -21,6 +21,7 @@ SOURCES = {
     "Congost de Mont-rebei og Pasarelas de Montfalcó": [
         "https://caminosnaturales.es/dam/caminos-naturales/caminos-naturales/Sector_II_Noreste/montfalco/s2_40gpx_143859.zip",
         "https://turismoribagorza.org/en/wp-content/Uploads/2025/06/natural_path_footbridges.gpx",
+        "https://www.rutaspirineos.org/images/congost-de-mont-rebei/descargar.php?id=congost-de-mont-rebei&tipo=gpx",
     ],
     "Liechtenstein Trail": [
         "https://hiking-trails.com/wp-content/uploads/2024/04/Liechtenstein-trail.gpx",
