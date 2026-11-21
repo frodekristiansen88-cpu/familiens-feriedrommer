@@ -17,13 +17,13 @@
     "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
     "routeType": "Dagstur",
     "routeUrl": "https://www.wikiloc.com/hiking-trails/caminito-del-rey-286693283",
-    "routeSource": "https://www.caminitodelrey.info/en/your-visit/access-route",
+    "routeSource": "https://www.caminitodelrey.info/en",
     "tags": [
       "Gangbroer",
       "Høydeskrekk",
       "Kløfter"
     ],
-    "routeNote": "Offisiell enveisrute på ca. 8 km. Wikiloc-sporet er brukerregistrert og kan avvike i adkomst og trasé; bekreft med offisiell rutebeskrivelse.",
+    "routeNote": "En alternativ GPX-fil fra en eldre turbeskrivelse (2015) er funnet. Den kan vise feil eller utdatert trasé og avvikende tur/retur; offisiell enveisrute nord–sør, adkomstregler og billetter gjelder. GPS-sporet er KUN illustrasjon, ikke grunnlag for navigasjon.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
@@ -1969,13 +1969,13 @@
     "imageSource": "https://commons.wikimedia.org/wiki/File:Wasserfall_in_Bad_Urach.jpg",
     "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Dagstur",
-    "routeUrl": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
-    "routeSource": "https://www.erlebnisregion-stuttgart.de/a-8-rund-um-den-wasserfall/2",
+    "routeUrl": "https://blumen-natur.de/wanderung_uracher_wasserfall.gpx",
+    "routeSource": "https://blumen-natur.de/uracher-wasserfall/",
     "tags": [
       "Fosser",
       "Skogsturer"
     ],
-    "routeNote": "Alternativ rundtur fra regional turistaktør med GPX på kildesiden. Kan avvike fra 10 km-ruten i inspirasjonsvideoen.",
+    "routeNote": "Valgt GPS-runde er ca. 5 km fra en lokal turbok/privat turblogg. Inspirasjonsvideoen omtaler omtrent 10 km. GPX-sporet er en annen, kortere turvariant.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
@@ -2101,8 +2101,8 @@
     "name": "Dahner Felsenland",
     "country": "Tyskland",
     "category": "Fotturer",
-    "lat": 49.1102539,
-    "lng": 7.7705851,
+    "lat": 49.14532,
+    "lng": 7.77065,
     "description": "Et vandreområde kjent for spektakulære, røde sandsteinsklipper, skogsstier, panoramautsikter og borgruiner.",
     "video": "https://www.facebook.com/reel/1807349610394035",
     "todoist": "https://app.todoist.com/app/task/6j44j9vqhqpx8vQF",
@@ -2113,15 +2113,15 @@
     "imageSource": "https://commons.wikimedia.org/wiki/File:Dahner_Felsenpfad_2025.jpg",
     "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0",
     "routeType": "Dagstur",
-    "routeUrl": "",
-    "routeSource": "",
+    "routeUrl": "https://www.wanderinstitut.de/gpx/dahner-felsenpfad.gpx",
+    "routeSource": "https://www.wanderinstitut.de/premiumwege/rheinland-pfalz/dahner-felsenpfad/",
     "tags": [
       "Borgruiner",
       "Fjellformasjoner",
       "Sandstein",
       "Skogsturer"
     ],
-    "routeNote": "",
+    "routeNote": "Valgt rute er Dahner Felsenpfad (ca. 12,8 km), én konkret rundtur i den mye større regionen Dahner Felsenland. Start ved Dahn. Følg lokal skilting og sjekk eventuelle endringer.",
     "route": {},
     "stops": []
   },
@@ -2464,15 +2464,15 @@
     "imageSource": "https://commons.wikimedia.org/wiki/File:MontRebei1.jpg",
     "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0",
     "routeType": "Dagstur",
-    "routeUrl": "https://turismoribagorza.org/en/wp-content/Uploads/2025/06/natural_path_footbridges.gpx",
-    "routeSource": "https://turismoribagorza.org/en/rue/natural-path-from-montfalco-to-the-gorge-of-mont-rebei/",
+    "routeUrl": "https://caminosnaturales.es/dam/caminos-naturales/caminos-naturales/Sector_II_Noreste/montfalco/s2_40gpx_143859.zip",
+    "routeSource": "https://caminosnaturales.es/es/red-de-caminos-naturales/camino-detalle/sector-noreste/montfalco",
     "tags": [
       "Gangbroer",
       "Kajakk",
       "Kløfter",
       "Stengninger"
     ],
-    "routeNote": "GPX fra regional turistaktør, men denne traséen inkluderer Montfalcó-gangbroene. Ikke bruk den som aktuell turplan før stengningene er opphevet.",
+    "routeNote": "OFFISIELL STENGING: Montfalcó-gangbroene er stengt etter ras. GPX-data fra spanske myndigheter beskriver historisk trasé, ikke tilgjengelig ferdselsrute. Ikke følg denne stien før myndighetene melder gjenåpning.",
     "route": {
       "confidence": "Kilde funnet – GPS-spor ikke importert"
     },
