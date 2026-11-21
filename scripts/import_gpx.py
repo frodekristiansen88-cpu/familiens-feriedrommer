@@ -74,7 +74,7 @@ def download(url):
 
 def parse_gpx(data):
     # Official Spanish authorities package their GPX in a ZIP.
-    if data[:4] == b"PK\\x03\\x04":
+    if data[:4] == bytes((80, 75, 3, 4)):
         with zipfile.ZipFile(io.BytesIO(data)) as archive:
             entries = [x for x in archive.infolist() if x.filename.lower().endswith(".gpx") and x.file_size <= MAX_BYTES]
             if not entries:
@@ -143,6 +143,8 @@ def main():
                 if nearest > MAX_RADIUS_KM:
                     raise ValueError(f"Trail is {nearest:.1f} km away from place pin")
                 length = sum(km(a, b) for a, b in zip(points, points[1:]))
+                if place["name"] == "Liechtenstein Trail" and not (55 <= length <= 90):
+                    raise ValueError(f"Incomplete Liechtenstein Trail: {length:.1f} km")
                 if not (0.15 <= length <= 90):
                     raise ValueError(f"Suspicious trail length: {length:.1f} km")
                 points = simplify(points)
