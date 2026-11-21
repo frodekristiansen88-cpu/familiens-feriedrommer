@@ -37,13 +37,19 @@ def extract(desc, label):
     match = re.search(r"(?im)^\*\*" + re.escape(label) + r"\*\*:\s*(.+)$", desc)
     return match.group(1).strip() if match else ""
 def extract_block(desc, label):
-    match = re.search(r"(?im)^\\*\\*" + re.escape(label) + r"\\*\\*:[ \\t]*(.*)$", desc)
-    if not match: return ""
-    first = match.group(1).strip()
-    rest = desc[match.end():]
-    end = re.search(r"(?m)^\\*\\*[^\\n]+\\*\\*:", rest)
-    body = rest[:end.start() if end else None].strip()
-    return (first + ("\\n" if first and body else "") + body).strip()
+    """Return multiline body between **Label:** and next **Label:**."""
+    lines = desc.splitlines()
+    for i, line in enumerate(lines):
+        if re.match(r"^\\*\\*" + re.escape(label) + r"\\*\\*:", line, re.I):
+            first = re.sub(r"^\\*\\*" + re.escape(label) + r"\\*\\*:[ \\t]*", "", line, flags=re.I).strip()
+            rest = []
+            for next_line in lines[i+1:]:
+                if re.match(r"^\\*\\*[^\\n]+\\*\\*:", next_line):
+                    break
+                rest.append(next_line)
+            return "\\n".join(([first] if first else []) + rest).strip()
+    return ""
+
 def first_link(desc, label):
     line = extract(desc, label)
     match = URL_RE.search(line)
@@ -77,7 +83,7 @@ for t in tasks():
     previous = by_id.get(str(t["id"])) or by_name.get(name.casefold(), {})
     labels = t.get("labels", [])
     category = next((c for c in CATEGORIES if c in labels), previous.get("category","Natur og utsikt"))
-    country = extract(desc, "Sted") or previous.get("country","")
+    country = extract(desc, "Land") or previous.get("country","") or extract(desc, "Sted")
     video = first_link(desc,"Inspirasjonsvideo") or first_link(desc,"Video som inspirerte") or first_link(desc,"Video") or previous.get("video","")
     info = first_link(desc,"Offisiell side / billetter") or first_link(desc,"Mer informasjon") or previous.get("info","")
     coords = coordinates_from_description(desc)
